@@ -62,17 +62,10 @@
 <script>
 
 
-function randImage(){
-        var files = [            
-    "hello" ,
-    "helloeveryone" ,
-    "hellohie" ,
-            ];
-            var randIndex = Math.floor(Math.random() * files.length);
-            document.getElementById("textquote").files[randIndex] ;
-        }
-    randImage();
-    setInterval(randImage, 5000);
+setTimeout('document.getElementById("textquote").innerHTML += "How ";', 2000);
+        setTimeout('document.getElementById("textquote").innerHTML += "are ";', 4000);
+        setTimeout('document.getElementById("textquote").innerHTML += "you";', 6000);
+        setTimeout('document.getElementById("textquote").innerHTML += "?";', 8000);
 
 
     var dt = new Date();
