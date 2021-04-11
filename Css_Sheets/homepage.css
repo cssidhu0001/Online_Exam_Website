@@ -3,6 +3,7 @@
     padding: 0px;}
     
     header{
+        
         display: flex;
         align-items:center;
         justify-content: center;
@@ -99,6 +100,7 @@
 }
 
 .mainbox{
+    border:none;
     position:absolute;
     margin: 0px;
 padding: 0px;
@@ -116,7 +118,7 @@ box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
     left: 0;
     width: 100%;
     overflow: hidden;
-  
+  border:none;
     background-color: rgba(64, 161, 252, 0.863);
   height: 71vh;
   content: normal;
@@ -133,12 +135,13 @@ box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
     margin: 0px;
     padding: 0px;
     content: "";
-  
+  border:none;
     
 }
 
 .custom-shape-divider-top-1618066111 .shape-fill {
     fill: whitesmoke;
+    border:none;
 }
 
 /** For mobile devices **/
@@ -147,6 +150,7 @@ box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
         width: calc(100% + 1.3px);
         margin: 0px;
         padding: 0px;
+        border:none;
         height: 50px;
     }
 }
@@ -165,7 +169,7 @@ box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
     margin: 0px;
     padding: 0px;
   position: relative;
-    
+    border:none;
   
 }
 .navbar ul{
