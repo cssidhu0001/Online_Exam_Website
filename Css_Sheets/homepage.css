@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kaushan+Script&family=Ma+Shan+Zheng&family=Merienda:wght@700&family=New+Tegomin&display=swap');
+*{margin: 0px;
+    padding: 0px;}
+    
+    header{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        background-color: rgb(47, 47, 179);
+        filter:grayscale(40%);
+        height: 100vh;
+        width: 100vw;
+    }
+    #datetime{
+        font-size:1.5 rem;
+        float:right;
+        display: inline-block;
+        margin-top: 0px;
+        padding:0.3rem;
+        margin-right: 1rem;
+        color: white;
+     font-weight: bolder;
+        font-family: 'New Tegomin', serif;
+    
+    
+}
+
+.maintext{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+.headingtext{
+     display: inline-block;
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-left: 1.5em;
+    margin-right: 2.8em;
+    padding-top: 0px;
+    font-family: 'Concert One', cursive;
+    color:white;
+}
+.headingtext:hover{
+     
+    color:rgb(248, 233, 233);
+}
+    .headtext{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.btn{
+    
+    width: 400px;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size:2rem;
+    font-family: 'Concert One', cursive; 
+   
+    border-radius: 2rem;
+    border:4px solid  whitesmoke;
+    background-color:transparent;
+    color:rgb(47, 47, 179);
+    
+}
+.btn:hover{
+    background-color:whitesmoke;
+    color:rgb(102, 97, 97);
+    box-shadow: 4px 4px 15px slategrey;
+    width: 403px;
+    height: 65px;
+    transition:width 0.1s,height 0.1s;
+   
+}
+.headingtext span{
+     display: inline-block;
+    font-size: 4rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: 'Concert One', cursive;
+    color:rgb(102, 97, 97);
+}
+.headingtext span:hover{
+    
+    color:rgb(39, 37, 37);
+}
+.textquote{
+    font-family: 'Merienda', cursive;
+    font-size: 1.5em;
+    margin-left:5.5em;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    line-height: 2.3rem;
+    margin-right: 3em;
+    color:rgb(65, 66, 66);
+}
+
+.mainbox{
+    position:absolute;
+    margin: 0px;
+padding: 0px;
+    height: 85%;
+    width: 90%;
+    background-color: whitesmoke;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74); 
+box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
+}
+
+.custom-shape-divider-top-1618066111{
+    position: relative;
+     border-radius:  0rem 0rem 1.5rem 1.5rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  
+    background-color: rgba(64, 161, 252, 0.863);
+  height: 71vh;
+  content: normal;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.custom-shape-divider-top-1618066111 svg{
+    position:relative;  
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotateY(180deg);
+    margin: 0px;
+    padding: 0px;
+    content: "";
+  
+    
+}
+
+.custom-shape-divider-top-1618066111 .shape-fill {
+    fill: whitesmoke;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1618066111 svg {
+        width: calc(100% + 1.3px);
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+    }
+}
+
+.homeimage{
+    height: 720px;
+    width: 680px;
+ float:right;
+ position: relative;
+ margin-right: 2rem;
+ bottom: 9.5rem;
+ 
+}
+
+.navbar{ 
+    margin: 0px;
+    padding: 0px;
+  position: relative;
+    
+  
+}
+.navbar ul{
+    display: flex;
+    float: right;
+    flex-direction: row;
+  
+    margin-top:2.3rem;
+
+}
+.navbar  ul li  a{
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 2em;
+    font-family: 'New Tegomin', serif;
+    font-weight: bolder;
+    color:dodgerblue;
+    border:none;
+
+}
+/* .tooltip{
+visibility: hidden;
+    width: 120px;
+  background-color: rgb(220, 242, 248);
+  color: rgb(32, 29, 29);
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px;
+    font-size: 1rem ;
+    position: absolute;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top:5.5rem;
+  left: 35rem;
+}
+.navbar  ul li  a:hover .tooltip{
+visibility: visible;
+}
+   */
+.navbar  ul li  a:hover{
+    padding: 2rem;
+    font-size: 2.2em;
+    font-family: 'New Tegomin', serif;
+    font-weight: bolder;
+    cursor: pointer;
+    color:rgb(7, 91, 175);
+    
+}
+.navbar  ul li  {
+    list-style: none;
+}
+.navimage{
+    margin: 0.8rem;
+    padding: 0.5rem;
+   left: 2rem;
+    position:relative;
+    float: left;
+    height: 70px;
+    width: 70px;
+}
+.qoute{
+   position: absolute;
+   left: 5em;
+   margin-top:1.2rem ;
+   padding: 0.5rem;
+   font-size:1.5em;
+   
+   font-style: normal;
+   font-family: 'Kaushan Script', cursive;
+   color:indigo;
+}
