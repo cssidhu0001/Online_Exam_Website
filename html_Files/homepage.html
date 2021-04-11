@@ -16,7 +16,7 @@
     <header>
         <section class="mainbox">
             <div class="navbar">
-                <div> <img src="/Homepageimages/logo.png" alt="Image not Found" class="navimage">
+                <div> <img src="../Homepageimages/logo.png" alt="Image not Found" class="navimage">
                     <p class="qoute">"Don't Stop<br> Until you're ProuD" </p>
                     <ul>
                         <li><a href="#">HOME</a></li>
@@ -42,14 +42,14 @@
                                     <div class="headingtext">Online Examination
                                         <br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portal</span>
                                     </div>
-                                    <div class="textquote"> "It's not over when you Loose<br>It's over When you
-                                        Quit !!! " 
+                                    <div id="textquote">
+                                        <!-- quotes display -->
                                     </div>
                                         <button class="btn" id="login" name="login"> Get started..</button>
                                         <button class="btn" id="SignUp" name="singup"> Sign Up</button>
                                     </div>
 
-                                <img src="/Homepageimages/back1.png" alt=" Image not found " class="homeimage">
+                                <img src="../Homepageimages/back1.png" alt=" Image not found " class="homeimage">
                             </div>
                         </svg>
                     </div>
@@ -62,15 +62,25 @@
 <script>
 
 
-setTimeout('document.getElementById("textquote").innerHTML += "How ";', 2000);
-        setTimeout('document.getElementById("textquote").innerHTML += "are ";', 4000);
-        setTimeout('document.getElementById("textquote").innerHTML += "you";', 6000);
-        setTimeout('document.getElementById("textquote").innerHTML += "?";', 8000);
+// setTimeout('document.getElementById("textquote").innerHTML += "How ";', 2000);
+        // setTimeout('document.getElementById("textquote").innerHTML += "are ";', 4000);
+        // setTimeout('document.getElementById("textquote").innerHTML += "you";', 6000);
+        // setTimeout('document.getElementById("textquote").innerHTML += "?";', 8000);
+// 
+
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
 
-    var dt = new Date();
-    document.getElementById("datetime").innerHTML = dt.toLocaleString();
-
+//updateQuotes
+function updateQuotes() {
+	var myQuotes =["It's not over when you Loose<br>It's over When you Quit !!! " ,
+                    "next qoutes A",
+                    "next qoutes B"];  //quotes
+	document.getElementById("textquote").innerHTML=myQuotes[Math.floor(Math.random() * myQuotes.length)];
+        }
+	updateQuotes();
+	setInterval(updateQuotes,1000);
 
 
 </script>
