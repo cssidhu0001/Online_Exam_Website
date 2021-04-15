@@ -249,7 +249,7 @@
     font-size:1.5 rem;
     float:right;
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 3rem;
     padding:0.3rem;
     margin-right: 1rem;
     color: white;
@@ -264,7 +264,7 @@
 when the screen is max to 1800px  mainly for the big screens */
 @media (max-width:1800px) {
     header{
-        height: 120vh;
+        height: 130vh;
         width: 100vw;
     }
     .mainbox{
@@ -279,7 +279,7 @@ when the screen is max to 1800px  mainly for the big screens */
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 85vh;
+      height: 86vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -323,7 +323,7 @@ when the screen is max to 1800px  mainly for the big screens */
 
 @media (max-width:1600px) {
     header{
-        height: 120vh;
+        height: 130vh;
         width: 100vw;
     }
     .mainbox{
@@ -338,7 +338,7 @@ when the screen is max to 1800px  mainly for the big screens */
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 85vh;
+      height: 86vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -412,7 +412,7 @@ when the screen is max to 1800px  mainly for the big screens */
 /* when the screen is max to 1400px mainly for the ipads and tablets  */
 @media (max-width:1400px) {
     header{
-        height: 130vh;
+        height: 150vh;
         width: 100vw;
     }
     .navimage{
@@ -434,7 +434,7 @@ when the screen is max to 1800px  mainly for the big screens */
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 95vh;
+      height: 101vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -495,7 +495,7 @@ when the screen is max to 1800px  mainly for the big screens */
 /* when the screen is max to 1200px mainly for the ipads and tablets  */
 @media (max-width:1200px) {
     header{
-        height: 130vh;
+        height: 140vh;
         width: 100vw;
     }
     .navimage{
@@ -524,7 +524,7 @@ when the screen is max to 1800px  mainly for the big screens */
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 91vh;
+      height: 96vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -735,7 +735,7 @@ when the screen is max to 1800px  mainly for the big screens */
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 145vh;
+      height: 148   vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -869,7 +869,7 @@ label #cancel{
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 121vh;
+      height: 125vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -1024,8 +1024,8 @@ label #cancel{
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 90vh;
-      height: 90vh;
+      
+      height: 92vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
