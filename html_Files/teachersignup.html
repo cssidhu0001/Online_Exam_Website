@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,31 +16,35 @@
     <link rel="stylesheet" type="text/css" href="../Css_Sheets/country/dd.css" />
     <script src="../Js/country/jquery.dd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../Css_Sheets/country/flags.css" />
-    
+
 </head>
-    <body>
-        <div class="container">
-            <div id="staticnavbar">
-                <img src="../Homepageimages/logo.png" alt="Image not Found" id="logo">
-                <div id="teacher">
-                    REGISTER TEACHER 
-                </div>  
+
+<body>
+    <div class="container">
+        <div id="staticnavbar">
+            <img src="../Homepageimages/logo.png" alt="Image not Found" id="logo">
+            <div id="teacher">
+                REGISTER TEACHER
             </div>
-            <div class="formcontent">
-                <form action="#" method="POST">
-                    <div class="uname">
-                        <input type="text" 
-                            id="fname" 
-                            name="fname" 
-                            title="Enter your first name" 
-                            placeholder="First Name" 
+        </div>
+        <div class="formcontent">
+            <form action="#" method="POST">
+                <div class="uname">
+                    <input type="text" id="fname" name="fname" title="Enter your first name" placeholder="First Name"
+                        required />
+                    <input type="text" id="lname" name="lname" title="Enter your last name" placeholder="Last Name"
+                        required />
+                </div>
+                <div class="otherdata">
+                    <div class="usergender">
+                        <label>I am </label>
+                        <input type="radio" class="gender" name="gender" title="You are a male" required />
+                        <label>Male</label>
+                        <input type="radio" class="gender" name="gender" title="You are a female" required />
+                        <label>Female</label>
+                        <input type="radio" class="gender" name="gender" title="You are belong to others gender"
                             required />
-                        <input type="text" 
-                            id="lname" 
-                            name="lname" 
-                            title="Enter your last name"
-                            placeholder="Last Name" 
-                            required />
+                        <label>Others</label>
                     </div>
                     <div class="otherdata">
                         <div class="usergender">
@@ -354,22 +359,31 @@
                         <label>If already Registered <a href="#">Login here</a>.
                         </label>
                     </div>
-                    <div class="btn">
-                        <button type="submit" id="submit">
-                            SUBMIT
-                        </button>
-                        <button type="reset" id="reset">
-                            RESET
-                        </button>
+                    <div id="agreechkbox">
+                        <input type="checkbox" id="agreechk" name="agreechk" title="if agree then check it" required />
+                        <label>Accept our <a href="#">user terms</a> and our <a href="#">privacy policy</a>.
+                        </label>
                     </div>
-                </form>
-            </div>
+                    <label>If already Registered <a href="#">Login here</a>.
+                    </label>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit">
+                        SUBMIT
+                    </button>
+                    <button type="reset" id="reset">
+                        RESET
+                    </button>
+                </div>
+            </form>
         </div>
-    </body>
-    <script>
-        //country
-        $(document).ready(function() {
+    </div>
+</body>
+<script>
+    //country
+    $(document).ready(function () {
         $("#countries").msDropdown();
-            });
-    </script>
+    });
+</script>
+
 </html>

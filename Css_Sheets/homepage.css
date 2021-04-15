@@ -1,38 +1,162 @@
+/* CSS STYLE SHEET HOMEPAGE
+ Adding link of google fonts to add the fonts in the website
+*/
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kaushan+Script&family=Ma+Shan+Zheng&family=Merienda:wght@700&family=New+Tegomin&display=swap');
+/* Resetting the margin and padding of the body to 0px intially */
 *{margin: 0px;
     padding: 0px;}
     
-    header{
+    /* Main header of the page containting the background of the page  */
+    header{ 
         display: flex;
         align-items:center;
         justify-content: center;
-        background-color: rgb(47, 47, 179);
+        background-color: rgb(75, 75, 235)  ;
         filter:grayscale(40%);
         height: 100vh;
         width: 100vw;
     }
-    #datetime{
-        font-size:1.5 rem;
-        float:right;
-        display: inline-block;
-        margin-top: 0px;
-        padding:0.3rem;
-        margin-right: 1rem;
-        color: white;
-     font-weight: bolder;
-        font-family: 'New Tegomin', serif;
-    
-    
-}
 
-.maintext{
-    display: flex;
-    flex-direction: row;
+
+/* Main box of the page containting the whole homepage in it */
+    .mainbox{
+        border:none;
+        position:absolute;
+        margin: 0px;
+    padding: 0px;
+        height: 85%;
+        width: 90%;
+        background-color: whitesmoke;
+        border-radius: 1.5rem;
+        -webkit-box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74); 
+    box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
+    }
+
+    /* Navigation bar of the website containting the various links to locate the website */
+    .navbar{ 
+        margin: 0px;
+        padding: 0px;
+      position: relative;
+        border:none;
+      
+    }
+ 
+    /* Navigation image i.e the logo of the website  */
+    .navimage{
+        margin: 0.8rem;
+        padding: 0.5rem;
+       left: 2rem;
+        position:relative;
+        float: left;
+        height: 70px;
+        width: 70px;
+    }
+/* 
+    qoute that is attached with the logo of the website in the navigation bar */
+    .qoute{
+        position: absolute;
+        left: 5em;
+        margin-top:1.2rem ;
+        padding: 0.5rem;
+        font-size:1.5em;
+        
+        font-style: normal;
+        font-family: 'Kaushan Script', cursive;
+        color:indigo;
+     }
+
+
+    /* Curvy shape in the container which is given with the help of svg backgorund form the google containting the various links and formats init */
+     .custom-shape-divider-top-1618066111{
+        position: relative;
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+      border:none;
+        background-color: rgba(64, 161, 252, 0.863);
+      height: 71vh;
+      content: normal;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+    }
+     /* Cury shape  */
+    .custom-shape-divider-top-1618066111 svg{
+        position:relative;  
+        width: calc(100% + 1.3px);
+        height: 110px;
+        transform: rotateY(180deg);
+        margin: 0px;
+        padding: 0px;
+        content: "";
+      border:none;
+        
+    }
+    /* cury shape color */
+    .custom-shape-divider-top-1618066111 .shape-fill {
+        fill: whitesmoke;
+        border:none;
+    }
+    
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        .custom-shape-divider-top-1618066111 svg {
+            width: calc(100% + 1.3px);
+            margin: 0px;
+            padding: 0px;
+            border:none;
+            height: 50px;
+        }
+    }
+    
+    /* Main nav bar of the website  */
+    .navbar ul{
+        display: flex;
+        float: right;
+        flex-direction: row;
+      
+        margin-top:2.3rem;
+    
+    }
+    /* navbar with the ul and li of the navigation bar */
+    .navbar  ul li  a{
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 2em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        color:dodgerblue;
+        border:none;
+    
+    }
+    /* hover effect to the navigation bar of the website */
+    .navbar  ul li  a:hover{
+        padding: 2rem;
+        font-size: 2.2em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        cursor: pointer;
+        color:rgb(7, 91, 175);
+        
+    }
+    /* eleminating the list styling of the list items of the ul */
+    .navbar  ul li  {
+        list-style: none;
+    }
+    
+    
+
+    /* Main conatinet containing the main image and the buttons of the website */
+    .maintext{
+        display: flex;
+        flex-direction: row;
     margin: 0px;
     padding: 0px;
 }
+/* heading text of the website which is online examination  */
 .headingtext{
-     display: inline-block;
+    display: inline-block;
     font-size: 4rem;
     margin-top: 0px;
     margin-left: 1.5em;
@@ -41,16 +165,19 @@
     font-family: 'Concert One', cursive;
     color:white;
 }
+/* giving hover effects to the main text online examination */
 .headingtext:hover{
-     
+    
     color:rgb(248, 233, 233);
 }
-    .headtext{
-  display: flex;
-  flex-direction: column;
-  
+/* heading text container */
+.headtext{
+    display: flex;
+    flex-direction: column;
+    
 }
 
+/* button formatting in the  page containting the to main buttons of the website i.e login and sign up */
 .btn{
     
     width: 400px;
@@ -59,13 +186,14 @@
     padding: 0.5rem;
     font-size:2rem;
     font-family: 'Concert One', cursive; 
-   
+    
     border-radius: 2rem;
     border:4px solid  whitesmoke;
     background-color:transparent;
     color:rgb(47, 47, 179);
     
 }
+/* giving the hover effects to the buttons  */
 .btn:hover{
     background-color:whitesmoke;
     color:rgb(102, 97, 97);
@@ -73,166 +201,943 @@
     width: 403px;
     height: 65px;
     transition:width 0.1s,height 0.1s;
-   
+    
 }
+
+/* heading text i.e portal below the main text */
 .headingtext span{
      display: inline-block;
-    font-size: 4rem;
-    margin-top: 0px;
-    padding-top: 0px;
-    font-family: 'Concert One', cursive;
-    color:rgb(102, 97, 97);
-}
-.headingtext span:hover{
-    
-    color:rgb(39, 37, 37);
-}
-#textquote{
-    font-family: 'Merienda', cursive;
-    font-size: 1.5em;
-    margin-left:5.5em;
-    margin-top: 1.5rem;
-    padding: 0.5rem;
-    line-height: 2.3rem;
-    margin-right: 3em;
-    color:rgb(65, 66, 66);
-}
-
-.mainbox{
-    position:absolute;
-    margin: 0px;
-padding: 0px;
-    height: 85%;
-    width: 90%;
-    background-color: whitesmoke;
-    border-radius: 1.5rem;
-    -webkit-box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74); 
-box-shadow: -2px 1px 17px 4px rgba(12, 12, 56, 0.74);
-}
-
-.custom-shape-divider-top-1618066111{
-    position: relative;
-     border-radius:  0rem 0rem 1.5rem 1.5rem;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-  
-    background-color: rgba(64, 161, 252, 0.863);
-  height: 71vh;
-  content: normal;
-  align-items: center;
-  justify-content: center;
-  padding: 0px;
-}
-
-.custom-shape-divider-top-1618066111 svg{
-    position:relative;  
-    width: calc(100% + 1.3px);
-    height: 110px;
-    transform: rotateY(180deg);
-    margin: 0px;
-    padding: 0px;
-    content: "";
-  
-    
-}
-
-.custom-shape-divider-top-1618066111 .shape-fill {
-    fill: whitesmoke;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-top-1618066111 svg {
-        width: calc(100% + 1.3px);
-        margin: 0px;
-        padding: 0px;
-        height: 50px;
+     font-size: 4rem;
+     margin-top: 0px;
+     padding-top: 0px;
+     font-family: 'Concert One', cursive;
+     color:rgb(102, 97, 97);
     }
-}
+    /* giving the hover effects to the portal text */
+    .headingtext span:hover{
+        
+        color:rgb(39, 37, 37);
+    }
 
-.homeimage{
-    height: 720px;
+    /* quote which is updating time to time in the page giving the quotes  */
+    #textquote{
+        font-family: 'Merienda', cursive;
+        font-size: 1.5em;
+        margin-left:5.5em;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+        line-height: 2.3rem;
+        margin-right: 3em;
+        color:rgb(65, 66, 66);
+    }
+    
+    /* Main image of the website  */
+    
+    .homeimage{
+        height: 720px;
     width: 680px;
  float:right;
  position: relative;
  margin-right: 2rem;
  bottom: 9.5rem;
- 
+    }
+
+
+
+ /* current date and time of the page  */
+#datetime{
+    font-size:1.5 rem;
+    float:right;
+    display: inline-block;
+    margin-top: 0px;
+    padding:0.3rem;
+    margin-right: 1rem;
+    color: white;
+ font-weight: bolder;
+    font-family: 'New Tegomin', serif;
 }
 
-.navbar{ 
+/* End of the main code  */
+
+/* Starting of the media queries to make the  page responsive 
+
+when the screen is max to 1800px  mainly for the big screens */
+@media (max-width:1800px) {
+    header{
+        height: 120vh;
+        width: 100vw;
+    }
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 85vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-4px;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 3.7rem;
+        margin-top: 0px;
+        margin-left: 1.2em;
+        margin-right: 1.3em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size: 3.7rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 1.5em;
+        margin-left:4em;
+        margin-top: 1.5rem;
+        padding: 0.3rem;
+        line-height: 2.3rem;
+        margin-right: 2em;
+       
+    }
+    .homeimage{
+        height: 720px;
+    width: 680px;
+ margin-right: 1rem;
+ margin-left:5rem;
+ bottom: 9.5rem;
+    
+}
+
+/* when the screen is max to 1600px mainly for the laptops and desktops */
+
+@media (max-width:1600px) {
+    header{
+        height: 120vh;
+        width: 100vw;
+    }
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 85vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-4px;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 3.5rem;
+        margin-top: 0px;
+        margin-left: 0.5em;
+        margin-right: 0.8em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size: 3.5rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 1.2em;
+        margin-left:4em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+    .homeimage{
+        height: 680px;
+    width: 630px;
+ margin-right: 1rem;
+ margin-left:6rem;
+ bottom: 8.5rem;
+       }
+   .navbar  ul li  a{
+    
+        padding: 1.6rem;
+        font-size: 1.8em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        color:dodgerblue;
+        border:none;
+    
+    }
+    .navbar  ul li  a:hover{
+        padding: 1.8rem;
+        font-size: 2em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        cursor: pointer;
+        color:rgb(7, 91, 175);
+    }
+
+    .qoute{
+        
+        left: 5.5em;
+        margin-top:1.2rem ;
+        padding: 0.5rem;
+        font-size:1.3em;
+        
+        font-style: normal;
+        font-family: 'Kaushan Script', cursive;
+        color:indigo;
+     }
+    
+}
+
+/* when the screen is max to 1400px mainly for the ipads and tablets  */
+@media (max-width:1400px) {
+    header{
+        height: 130vh;
+        width: 100vw;
+    }
+    .navimage{
+        margin: 0.8rem;
+        padding: 0.5rem;
+       left: 0.5rem;
+        height: 70px;
+        width: 70px;
+    }
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 115vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 95vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-4px;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 3.5rem;
+        margin-top: 0px;
+        margin-left: 0.5em;
+        margin-right: 0.8em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size: 3.5rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 1.2em;
+        margin-left:4em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+    .homeimage{
+        height: 600px;
+    width: 520px;
+ margin-right: 1rem;
+ margin-left:1.6rem;
+ bottom: 7rem;
+       }
+   .navbar  ul li  a{
+        padding: 1.4rem;
+        font-size: 1.7em;
+    
+    }
+    .navbar  ul li  a:hover{
+        padding: 1.4rem;
+        font-size: 1.9em;
+    }
+
+    .qoute{
+        
+        left: 4.5em;
+        margin-top:1.5rem ;
+        padding: 0.5rem;
+        font-size:1.2em;
+     }
+    
+}
+
+/* when the screen is max to 1200px mainly for the ipads and tablets  */
+@media (max-width:1200px) {
+    header{
+        height: 130vh;
+        width: 100vw;
+    }
+    .navimage{
+        margin: 0.4rem;
+        padding: 0.5rem;
+        height: 50px;
+        width: 50px;
+    }
+    .qoute{
+        
+        left: 5em;
+        margin-top:1.1rem ;
+        padding: 0.5rem;
+        font-size:0.8em;
+     }
+    
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 105vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 91vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-1em;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 3.1rem;
+        margin-top: 0px;
+        margin-left: 0.3em;
+        margin-right: 0.2em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size: 3.1rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 1em;
+        margin-left:4em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+
+    .btn{
+        width: 300px;
+        margin-left: 9rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size:1.6rem;
+        color:rgb(47, 47, 179);
+    }
+    .btn:hover{
+        width: 303px;
+        height: 60px;
+        transition:width 0.1s,height 0.1s;
+        
+    }
+    .homeimage{
+        height: 550px;
+    width: 450px;
+ margin-right: 1rem;
+ margin-left:1.6rem;
+ bottom: 5rem;
+       }
+
+        
+    .navbar ul{
+      
+        margin-top:1.5rem;
+    
+    }
+   .navbar  ul li  a{
+        padding: 1.4rem;
+        font-size: 1.4em;
+    
+    }
+    .navbar  ul li  a:hover{
+        padding: 1.4rem;
+        font-size: 1.6em;
+    }
+
+}
+
+/* when the screen is max to 1000px mainly for the mobile phones  */
+@media (max-width:1000px) {
+    header{
+        height: 130vh;
+        width: 100vw;
+    }
+    .navimage{
+        margin: 0.3rem;
+        padding: 0.5rem;
+        height: 50px;
+        width: 50px;
+    }
+    .qoute{
+        
+        left: 5.3em;
+        margin-top:1.1rem ;
+        padding: 0.5rem;
+        font-size:0.7em;
+     }
+    
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 105vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 96vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-1em;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 2.8rem;
+        margin-top: 0px;
+        margin-left: 0.3em;
+        margin-right: 0.2em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size: 2.8rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 0.8em;
+        margin-left:4em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+
+    .btn{
+        width: 270px;
+        margin-left: 6rem;
+        margin-top: 1rem;
+        margin-right: 4rem;
+        padding: 0.5rem;
+        font-size:1.5rem;
+        color:rgb(47, 47, 179);
+    }
+    .btn:hover{
+        width: 275px;
+        height: 60px;
+        transition:width 0.1s,height 0.1s;
+        
+    }
+    .homeimage{
+        height: 500 px;
+    width: 380px;
+ /* margin-right: 1rem; */
+ /* margin-left:1.6rem; */
+ right: 5.5rem;
+ bottom: 5rem;
+       }
+
+        
+    .navbar ul{
+      
+        margin-top:1.5rem;
+    
+    }
+   .navbar  ul li  a{
+        padding: 1.2rem;
+        font-size: 1.1em;
+    
+    }
+    .navbar  ul li  a:hover{
+        padding: 1.2rem;
+        font-size: 1.3em;
+    }
+
+}
+
+/* when the screen is max to 800px mainly for the mobile phones  */
+
+@media (max-width:800px) {
+    header{
+        height: 200vh;
+        width: 100vw;
+    }
+    .navimage{
+        margin: 0.2rem;
+        padding: 0.4rem;
+        height: 40px;
+        width: 40px;
+    }
+    .qoute{
+        
+        left: 5.3em;
+        margin-top:0.8rem ;
+        padding: 0.5rem;
+        font-size:0.6em;
+     }
+    
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 155vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 145vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-1.2em;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 3rem;
+        margin-top: 20rem;
+        margin-left: 0.4em;
+        margin-right: 0.2em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size:3rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 1em;
+        margin-left:4em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+
+    .maintext{
+        display: flex;
+        flex-direction: column;
     margin: 0px;
     padding: 0px;
-  position: relative;
-    
-  
+    align-items: center;
+    justify-content: center;
 }
-.navbar ul{
-    display: flex;
+
+
+    .btn{
+        width: 270px;
+        margin-left: 5rem;
+        margin-top: 1rem;
+        margin-right: 4rem;
+        padding: 0.5rem;
+        font-size:1.5rem;
+        color:rgb(47, 47, 179);
+    }
+    .btn:hover{
+        width: 275px;
+        height: 60px;
+        transition:width 0.1s,height 0.1s;
+        
+    }
+    .homeimage{
+        
+        height: 450px;
+    width: 350px;
+margin-top: -41rem;
+margin-left: 11rem;
+
+       }
+
+        
+    .navbar ul{
+      
+        margin-top:1.5rem;
+    
+    }
+   .navbar  ul li  a{
+        padding: 0.5rem;
+        font-size: 1em
+    
+    }
+    .navbar  ul li  a:hover{
+        padding: 0.5rem;
+        font-size: 1.1em;
+    }
+
+}
+label #btn,
+label #cancel{
+    color:rgb(75, 75, 235);
+    font-size: 4rem;
     float: right;
-    flex-direction: row;
-  
-    margin-top:2.3rem;
-
-}
-.navbar  ul li  a{
-    text-decoration: none;
-    padding: 2rem;
-    font-size: 2em;
-    font-family: 'New Tegomin', serif;
-    font-weight: bolder;
-    color:dodgerblue;
-    border:none;
-
-}
-/* .tooltip{
-visibility: hidden;
-    width: 120px;
-  background-color: rgb(220, 242, 248);
-  color: rgb(32, 29, 29);
-  text-align: center;
-  border-radius: 20px;
-  padding: 3px;
-    font-size: 1rem ;
-    position: absolute;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  top:5.5rem;
-  left: 35rem;
-}
-.navbar  ul li  a:hover .tooltip{
-visibility: visible;
-}
-   */
-.navbar  ul li  a:hover{
-    padding: 2rem;
-    font-size: 2.2em;
-    font-family: 'New Tegomin', serif;
-    font-weight: bolder;
+    border-radius: 1rem;    
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
-    color:rgb(7, 91, 175);
+    display: none;
+    height: 40px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* when the screen is max to 600px mainly for the mobile phones  */
+@media (max-width:600px) {
+    header{
+        height: 200vh;
+        width: 100vw;
+    }
+    .navimage{
+        margin: 0.2rem;
+        padding: 0.4rem;
+        height: 60px;
+        width: 60px;
+    }
+    .qoute{
+        
+        left: 3.8em;
+        margin-top:0.5rem ;
+        padding: 0.5rem;
+        font-size:1.2em;
+     }
     
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 135vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 121vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-1.2em;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 2.5rem;
+        margin-top: 12rem;
+        margin-left: 1.2em;
+        margin-right: 0.2em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size:2.5rem;
+        margin-top: 0px;
+        padding-top: 0px;
+       }
+    #textquote{
+      
+        font-size: 1em;
+        margin-left:4em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+
+    .maintext{
+        display: flex;
+        flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
 }
-.navbar  ul li  {
-    list-style: none;
+
+
+    .btn{
+        width: 270px;
+        margin-left: 5rem;
+        margin-top: 1rem;
+        margin-right: 4rem;
+        padding: 0.5rem;
+        font-size:1.5rem;
+        color:rgb(47, 47, 179);
+    }
+    .btn:hover{
+        width: 275px;
+        height: 60px;
+        transition:width 0.1s,height 0.1s;
+        
+    }
+    .homeimage{
+        
+        height: 340px;
+    width: 300px;
+margin-top: -34.5rem;
+margin-left: 11rem;
+
+       }
+       .navbar ul{
+        display: block;
+        z-index:1;
+        margin-top:4.8rem;
+        position: absolute;
+        width: 90vw;
+        height: 122vh;
+        background-color:whitesmoke;
+        border-radius:  0rem 0rem 1.5rem 1.5rem;
+text-align: center;
+left: -120%;
+transition: all 0.5s;
+    
+    }
+    .navbar  ul li  a{
+        text-decoration: none;
+        padding: 0.2rem;
+        font-size: 2.4em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        color:dodgerblue;
+        border:none;
+      
+        
+    
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    .navbar  ul li  a:hover{
+        padding: 2rem;
+        font-size: 2.5em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        cursor: pointer;
+        color:rgb(7, 91, 175);
+        background-color: whitesmoke;
+        border-radius: 2rem;
+        
+    }
+    .navbar  ul li  {
+        list-style: none;
+        margin:4rem;  
+    }
+    
+    label #btn,
+    label #cancel{
+        display: block;
+        z-index: 1;
+    }
 }
-.navimage{
-    margin: 0.8rem;
-    padding: 0.5rem;
-   left: 2rem;
-    position:relative;
-    float: left;
-    height: 70px;
-    width: 70px;
+
+/* when the screen is max to 400px mainly for the  small mobile phones  */
+
+@media (max-width:400px) {
+    header{
+        height: 150vh;
+        width: 100vw;
+    }
+    .navimage{
+        margin: 0.4rem;
+        padding: 0.4rem;
+        height: 40px;
+        width: 40px;
+    }
+    .qoute{
+        
+        left: 3.8em;
+        margin-top:0.4rem ;
+        padding: 0.5rem;
+        font-size:0.9em;
+     }
+     label #btn,
+label #cancel{
+    font-size: 3.2rem;  
+    margin-right: 15px;
 }
-.qoute{
-   position: absolute;
-   left: 5em;
-   margin-top:1.2rem ;
-   padding: 0.5rem;
-   font-size:1.5em;
-   
-   font-style: normal;
-   font-family: 'Kaushan Script', cursive;
-   color:indigo;
+    
+    .mainbox{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 90%;
+        border-radius: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1618066111{
+         border-radius:  0rem 0rem 1.5rem 1.5rem;
+        left: 0;
+        width: 100%;
+      height: 90vh;
+      height: 90vh;
+      padding: 0px;
+    }
+    .custom-shape-divider-top-1618066111 svg{
+        height: 110px;
+        margin-top:-1.2em;
+        padding: 0px;
+    }
+    .headingtext{
+        font-size: 1.8rem;
+        margin-top: 12rem;
+        margin-left: 2em;
+        margin-right: 0.2em;
+        padding-top: 0px;  
+    }
+
+    .headingtext span{
+        font-size:1.8rem;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .homeimage{
+        
+        height: 300px;
+    width: 270px;
+    margin-top: -33rem;
+    margin-left: 11rem;
+    
+       }
+    #textquote{
+      
+        font-size: 0.8em;
+        margin-left:5em;
+        margin-top: 1.3rem;
+        padding: 0.2rem;
+        line-height: 2.2rem;
+        margin-right: 1.8em;
+       
+    }
+
+    .maintext{
+        display: flex;
+        flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
 }
+
+
+    .btn{
+        width: 200px;
+        margin-left: 5rem;
+        margin-top: 1rem;
+        margin-right: 4rem;
+        padding: 0.5rem;
+        font-size:1.2rem;
+        color:rgb(47, 47, 179);
+    }
+    .btn:hover{
+        width: 205px;
+        height: 55px;
+        transition:width 0.1s,height 0.1s;
+        
+    }
+       .navbar ul{
+        display: block;
+        z-index:1;
+        margin-top:4rem;
+        position: absolute;
+        width: 90vw;
+        height: 91vh;
+        background-color:whitesmoke;
+        border-radius:  0rem 0rem 1.5rem 1.5rem;
+text-align: center;
+left: -120%;
+transition: all 0.5s;
+    
+    }
+    .navbar  ul li  a{
+        text-decoration: none;
+        font-size: 1.7em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        color:dodgerblue;
+        border:none;
+      
+        
+    
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    .navbar  ul li  a:hover{    
+        font-size: 1.8em;
+        font-family: 'New Tegomin', serif;
+        font-weight: bolder;
+        cursor: pointer;
+        color:rgb(7, 91, 175);
+        background-color: whitesmoke;
+        border-radius: 2rem;
+        
+    }
+    .navbar  ul li  {
+        list-style: none;
+        margin:3rem;  
+    }
+    
+    label #btn,
+    label #cancel{
+        display: block;
+        z-index: 1;
+    }
+}
+
+

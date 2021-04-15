@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Exam Portal|Homepage</title>
     <link rel="stylesheet" href="../Css_Sheets/homepage.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +18,13 @@
             <div class="navbar">
                 <div> <img src="../Homepageimages/logo.png" alt="Image not Found" class="navimage">
                     <p class="qoute">"Don't Stop<br> Until you're ProuD" </p>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="material-icons" id="btn">&#xe5d2;</i>
+                        <!-- <i class=material-icons" id="cancel">&#xe5cd;</i> -->
+                     </label> 
                     <ul>
+                        <!-- navigation bar -->
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT US </a></li>
@@ -62,11 +68,8 @@
 <script>
 
 
-// setTimeout('document.getElementById("textquote").innerHTML += "How ";', 2000);
-        // setTimeout('document.getElementById("textquote").innerHTML += "are ";', 4000);
-        // setTimeout('document.getElementById("textquote").innerHTML += "you";', 6000);
-        // setTimeout('document.getElementById("textquote").innerHTML += "?";', 8000);
-// 
+
+
 
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();
@@ -74,13 +77,24 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
 //updateQuotes
 function updateQuotes() {
-	var myQuotes =["It's not over when you Loose<br>It's over When you Quit !!! " ,
-                    "next qoutes A",
-                    "next qoutes B"];  //quotes
+	var myQuotes =["'It's not over when you Loose<br>It's over When you Quit !!! '" ,
+                    "'Sucess is the sum of SMALL EFFORTS <br> Repeated DAILY IN & DAILY OUT'",
+                    "'Be ready to 'CAUSE only than <br>You are ready to SUCCEED '",
+"'Do the best you can until you know better<br> Then when you know better, do BETTER'" ,
+"'Never do tommorrow what you can do Today<br>Procrastination is the theif of TIME' " , 
+"'Nothing is IMPOSSIBLE <br> The word itself says 'I'M  POSSIBLE'",
+"'Stay POSTIVIE  work Hard <br> Make it HAPPEN'",
+"'FAILURE is simply the opportunity to begin again,<br> this time more intelligently.'",
+"'Don't let what you cannot DO<br> interfere with what you can DO'",
+"'A JUDGE  is a LAW student<br> who marks his own examination Paper'",
+"'If you  focus on RESULTS, you will never CHANGE<br> If you focus on CHANGE, you will get RESULTS'",
+"'Dont say I WISH, say I WILL'",
+"'Exams test your Memory.. Life test your Learning;<br> other will test your patience.'"  
+           ];  //quotes
 	document.getElementById("textquote").innerHTML=myQuotes[Math.floor(Math.random() * myQuotes.length)];
         }
 	updateQuotes();
-	setInterval(updateQuotes,1000);
+	setInterval(updateQuotes,7000);
 
 
 </script>
