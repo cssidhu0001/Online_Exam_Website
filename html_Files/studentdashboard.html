@@ -92,45 +92,155 @@
                 </div>
             </div>
             <div class="resultdetail">
-                <table >
+                <table>
                     <tr>
                         <th><span>Exam Name </span>
-                            <span>Exam Exam Code </span> </th>
+                            <span>Exam Exam Code </span>
+                        </th>
 
                         <th><span>Questions </span>
-                            <span>Marks</span></th>
+                            <span>Marks</span>
+                        </th>
 
                         <th><span>Exam Date </span>
-                            <span>Exam Day </span></th>
+                            <span>Exam Day </span>
+                        </th>
 
                         <th><span>Exam Timings </span>
                             <span> Starting Time </span>
                             <span> Ending Time </span>
-                            <span>Total Time Taken </span></th>
+                            <span>Total Time Taken </span>
+                        </th>
 
                         <th>Percentage </th>
                         <th>Grade</th>
                         <th> Final Results </th>
                     </tr>
                     <tr>
-                        <td ><span class="Ecode">IPS-101</span> <span class="Ename">Mathmatics</span> </td>
+                        <td><span class="Ecode">IPS-101</span> <span class="Ename">Mathmatics</span> </td>
                         <td><span class="Noofquestion">50</span> <span class="Markrsscored">44</span></td>
                         <td><span class="examdate"> 10-02-2021</span> <span class="Examday">Monday</span> </td>
-                        <td><span class="examtimings"> 10:43:22 Am</span> <span class="Startingtime">9:00 AM</span><span class="endingtime"> 10:02:20 AM</span> <span class="totaltimetaken">2:30 Min</span></td>
-                        <td><span class="percentage">  70%</span> </td>
+                        <td><span class="examtimings"> 10:43:22 Am</span> <span class="Startingtime">9:00 AM</span><span
+                                class="endingtime"> 10:02:20 AM</span> <span class="totaltimetaken">2:30 Min</span></td>
+                        <td><span class="percentage"> 70%</span> </td>
                         <td class="grade"> A</td>
-                        <td ><span class="FinalResult">PASS</span></td>
+                        <td><span class="FinalResult">PASS</span></td>
                     </tr>
                 </table>
-
             </div>
-        </div>
 
+            <div class="resultanalysis">
+                <div class="tabbuttons">
+                    <button class="tablink"  onclick="resultanalysisbar('studentdetailchart', this, 'lavender')" id="studdetails">Student<br>
+                        Details</button>
+                    <button class="tablink"  onclick="resultanalysisbar('summarydetailchart', this, 'rgb(233, 250, 250)')" id="summaryid">Summary</button>
+                    <button class="tablink"  onclick="resultanalysisbar('scoredetailchart', this, 'rgb(250, 200, 200)')" id="Scoreid">Score Card</button>
+                    <button class="tablink" onclick="resultanalysisbar('topicanachart', this, 'rgb(240, 220, 248)')" id="topicanaysisid"> Topic <br>
+                        Analysis</button>
+                    <button class="tablink" " onclick="resultanalysisbar('quesanachart', this, 'rgb(248, 245, 203)')" id="Questionsanalysisid">Question
+                        <br>Analysis</button>
+                    <button class="tablink" onclick="resultanalysisbar('diffcultylevelchart', this, 'rgb(192, 241, 214)')"
+                        id="Difficultylevelid">Difficulty<br>Level</button>
+                    <button class="tablink"  onclick="resultanalysisbar('Reportcard', this, 'rgb(164, 210, 240)')" id="resultsid">Results</button>
+                </div>
+            <div class="maindiv">
+                <div id="studentdetailchart" class="tabcontent">
+                    <div is="studdiv">
+
+                        <span id="h1studdetail"> Sutdent Name:<span id="Studentnameh1"> vjvsjvjbfbjvjbffbo</span></span>
+                        <table>
+                            <tr>
+                                <td> Class</td>
+                                <td> I<Sup>st</Sup></td>
+
+                            </tr>
+                            <tr>
+                                <td> Roll No:</td>
+                                <td> 32095970352</td>
+                            </tr>
+                            <tr>
+                                <td> Student Id:</td>
+                                <td> 32095970352</td>
+                            </tr>
+                            <tr>
+                                <td> Session</td>
+                                <td> 2021-22</td>
+                            </tr>
+                            <tr>
+                                <td> Age</td>
+                                <td> 21yrs</td>
+                            </tr>
+                            <tr>
+                                <td> School</td>
+                                <td> fbsbd</td>
+                            </tr>
+                            <tr>
+                                <td> Address</td>
+                                <td> esbns </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            
+                <div id="summarydetailchart" class="tabcontent">
+                <div id="summdiv">
+                    <span class="summarytext"> Welcome to your summary<br> <span class="errorMsg">Soon we will have summary Panel
+                            for you <br> Thanks For your Patience</span></span>
+                </div>
+             </div>
+                <div id="scoredetailchart" class="tabcontent">
+                    <div id="scorediv">
+                        <span class="summarytext"> Welcome to your Score Card <br><span class="errorMsg">Soon we will have Score Card Panel
+                                for you <br> Thanks For your Patience</span></span>
+                    </div></div>
+                <div id="topicanachart" class="tabcontent">
+                    <div id="topicanadiv">
+                        <span class="summarytext"> Welcome to your Topic Analysis <br><span class="errorMsg">Soon we will have Topic Analysis Panel
+                                for you <br> Thanks For your Patience</span></span>
+                    </div></div>
+                <div id="quesanachart" class="tabcontent">
+                    <div id="quesanadiv">
+                        <span class="summarytext"> Welcome to your Questions Analysis<br> <span class="errorMsg">Soon we will have Question Analysis Panel
+                                for you <br> Thanks For your Patience</span></span>
+                    </div></div>
+                <div id="diffcultylevelchart" class="tabcontent">
+                    <div id="diffcultyleveldiv">
+                        <span class="summarytext"> Welcome to your Diffculty Level<br> <span class="errorMsg">Soon we will have Diffculty Level Panel
+                                for you <br> Thanks For your Patience</span></span>
+                    </div></div>
+                <div id="Reportcard" class="tabcontent">
+                    <div id="reportcarddiv">
+                        <span class="summarytext"> Welcome to your Report<br> <span class="errorMsg">Soon we will have Report Card Panel
+                                for you <br> Thanks For your Patience</span></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 
     </section>
 
-</body>
-<script>
-</script>
+    <script>
+        function resultanalysisbar(studentreport,elmnt,color) {
+            var i, tabcontent, tablink;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablink = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablink.length; i++) {
+                tablink[i].style.backgroundColor = "";
+            }
+            document.getElementById(resultanalysisbar).style.display = "block";
+            elmnt.style.backgroundColor = color;
+            
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("studdetails").click();
+        </script>
+        </body>
 
 </html>

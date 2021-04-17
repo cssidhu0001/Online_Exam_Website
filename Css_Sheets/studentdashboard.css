@@ -310,7 +310,7 @@ background-color: rgb(91, 165, 250);
 }
 .resultdetail table th{
     font-size: 1.2em;   
-    font-family: 'Saira Condensed', sans-serif;
+        
     font-weight: bold;
     background-color: rgb(212, 212, 212);
 
@@ -406,4 +406,108 @@ label #barbtn{
     transition:0.4s all ease;
     width: 79.5%;
    
+}
+
+.tabbuttons{
+    margin-top: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.tablink{
+    width:10rem;
+    height: 4rem;
+    border: none;
+    font-family: 'Comfortaa', cursive; 
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.1rem;
+    text-shadow: 2px -1px 5px rgba(162,162,162,0.81);
+}
+.tablink:hover{
+    background-color: rgb(196, 195, 195);
+}
+
+#studdiv{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#h1studdetail{
+    font-size: 2.3em;
+    margin-top: 2rem;
+    font-family: 'Comfortaa', cursive; 
+}
+
+#studentdetailchart table {
+    display: flex;
+    border: none;
+    justify-content: space-between;
+}
+#studentdetailchart table tr {
+    border: none;
+    
+}
+#studentdetailchart table tr td{
+    border: none;
+    font-weight: bold;
+    padding: 1rem;
+    padding-left: 5rem;
+    font-family: 'Antic Slab', serif;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+.tabcontent{display: flex;
+    display: none;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-left: 13rem;
+}
+#studentdetailchart{
+    background-color: lavender; 
+}
+
+#summarydetailchart{
+    background-color: rgb(233, 250, 250);
+}
+#scoredetailchart{
+    background-color: rgb(250, 200, 200);
+}
+#topicanachart{
+    background-color: rgb(240, 220, 248);
+}
+#quesanachart{  
+    background-color: rgb(248, 245, 203);
+}
+#diffcultylevelchart{
+     background-color: rgb(192, 241, 214);
+}
+#Reportcard{
+    background-color: rgb(164, 210, 240);
+}
+.maindiv{
+    
+    justify-content: center;
+    align-items: center;
+}
+span .summarytext{
+    margin-top: 5rem;
+}
+.summarytext{
+    font-size: 2em;
+font-weight: bold;
+margin-top: 8rem;
+text-align: center;
+color:rgb(3, 97, 3);
+    font-family: 'Antic Slab', serif;
+}
+.errorMsg{
+    font-size: 1.5em;
+font-weight: bold;
+text-align: center;
+    font-family: 'Antic Slab', serif;
 }
