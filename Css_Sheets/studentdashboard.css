@@ -409,7 +409,7 @@ label #barbtn{
 }
 
 .tabbuttons{
-    margin-top: 30rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -459,7 +459,7 @@ label #barbtn{
     justify-content: space-between;
     font-size: 1.3em;
 }
-.tabcontent{display: flex;
+.tabcontent{
     display: none;
     width: 70%;
     justify-content: center;
