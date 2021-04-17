@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Fredoka+One&family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Zen+Dots&display=swap');
+/* Resetting the default margin and padding of the page to 0px */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Header of the page contaiting the logo dashboard text andd name and gmail details of the student  */
+.headertop{
+    position: fixed;
+   width: 100%;
+    height: 5rem;    
+    background-color: rgb(11, 105, 212);
+
+}
+/* Display settings of the dashbaord div with image */
+#dashboard{
+    display: flex;
+    flex-direction: row;
+}
+/* image in the dasbaord heading and coanting the logo of the website */
+#dashboard span img{
+    flex: 1;
+    margin: 0.3rem;
+    padding:0.5rem;
+    height: 70px;
+    filter: invert(90%);
+    width: 70px;
+}
+/* Main text written is dashbaord for the student to know that its the dasboard contaning all the nesscary and resluts performance detials of the student */
+#dashtext {
+    flex: 1;
+    margin-top:0.7rem;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.stdDetail{
+    flex: 3;
+    justify-content: flex-end;
+    display:flex;
+    margin-right: 2.3rem;
+    margin-top: 0.3rem;
+    
+}
+
+
+.stdDetail p img{
+    padding:0.5rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 4px solid whitesmoke;
+    vertical-align: middle;
+}
+
+.studentdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#welmsg{
+    margin-top: 0.2rem;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Syncopate', sans-serif;
+    color:rgb(233, 223, 223);
+    
+}
+.studentname{
+    font-size: 1em;
+    font-family: 'Asap', sans-serif;
+    color:rgb(230, 230, 230);
+    text-transform: uppercase;
+    margin-left: 6px;
+    margin-top: 4px;
+    
+}
+
+.studentgmail{
+    font-size: 0.8em;
+    font-family: 'Asap', sans-serif;
+    color:rgb(230, 230, 230);
+    margin-left: 8px;
+    text-transform: lowercase;
+    
+}
+
+.leftcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8.5em;
+    float: left;
+    background-color: rgb(238, 238, 238);
+    height: 200%;
+    width: 20vw;
+    z-index: -1;
+    left: -500px;      
+    align-items: center;
+    transition: 0.7s all ease;
+    position:absolute;
+    
+}
+.leftheader{
+    justify-content: center;
+    padding-top: 0.8rem;
+    padding-left: 0.5rem;
+    height: 60px;
+    font-family: 'Zen Dots', cursive;
+    width:20vw;
+    color:rgb(245, 242, 236);
+    background-color: darkgray;
+    font-size: 1.7em;
+    line-height: 40px;
+}
+.btnleftcon{
+    margin: 0.5rem;
+    height: 30px;
+    width: 40px;
+}
+
+.Dashststudentdetail{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Imagestudent img{
+    margin: 1rem;
+height: 150px;
+width: 140px;
+border: 0.5rem solid rgb(221, 221, 221);
+-webkit-box-shadow: 3px 9px 16px 5px rgba(140,139,139,0.92); 
+box-shadow: 3px 9px 16px 5px rgba(140,139,139,0.92);    
+justify-content: center;
+align-items: center;
+
+}
+.Studentname{
+    text-transform: uppercase;
+    background-color: rgb(104, 164, 224);
+    padding: 0.8rem;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+    font-family: 'Syncopate', sans-serif;
+    display: block;
+    border-radius: 2rem;
+    color:snow;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #7c7c7c;
+}
+.Studentid{
+    text-transform: uppercase;
+    background-color: rgb(194, 194, 194);
+    padding: 0.8rem;
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    font-family: 'Acme', sans-serif;
+    display: block;
+  justify-content:space-evenly ;
+    color:snow;
+    -webkit-box-shadow: 9px 9px 6px -2px rgba(0,0,0,0.83); 
+box-shadow: 9px 9px 6px -2px rgba(0,0,0,0.83);
+    margin-bottom: 1rem;
+}
+#stdId{
+    color:steelblue;
+    margin-left: 3rem;
+}
+hr{
+    size: 4px;
+    width: 100%;
+    color: gainsboro;
+}
+
+
+.leftconlinks ul {
+    display: block;
+    list-style: none;
+    justify-content:left;
+    align-items:left    ;
+    border-bottom: 2px solid black;
+}
+.leftconlinks ul li{
+    display: block;  
+    list-style: none;
+
+    border-top: 1px solid rgb(153, 153, 153);
+    width: 20vw;
+}
+.material-icons{
+    font-size: 1.2em; 
+    padding-top: 1.5rem;
+    margin-right: 0.8rem;
+    line-height: 1rem;
+}
+
+.leftconlinks ul li a{
+    font-family: 'Comfortaa', cursive; 
+    font-size: 1.7em;
+    padding-left: 1.5rem;
+    padding-bottom: 1.1rem;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+}
+.leftconlinks ul li:hover a{
+    padding-left: 1.9rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid black;
+    background-color: rgb(190, 190, 190);
+}
+.fa fa-times-circle{
+    font-size: 1.2em; 
+    padding:0.5rem;
+   
+    margin-right: 0rem;
+    line-height: 0rem;
+}
+.fa fa-times-circle:hover{
+    cursor: pointer;
+    color: rgba(56, 55, 55, 0.92);
+}
+
+li a.active {
+    background-color:lightgray;
+    color: white;
+}
+.rightconatiner{
+    margin-top: 5rem;
+    float: right;
+    background-color: rgb(231, 231, 231);
+    height:10vh;
+    width:100%;
+    position: fixed;
+   
+} 
+#check{
+ display:none;
+}
+
+
+
+  
+label #barbtn, label #cancelbtn{
+    position:absolute;
+    cursor: pointer;
+    background: rgb(151, 151, 151);
+    border-radius: 3px;
+}
+
+label #barbtn{
+    left: 20px;
+    margin-top:3.4rem;
+    top: 2.3rem;
+    z-index: +1;
+    font-size: 30px;
+    color: white;
+    padding: 6px 12px;
+    position: fixed;
+}
+
+#check:checked ~  section .leftcontainer{
+    left: 0;
+}

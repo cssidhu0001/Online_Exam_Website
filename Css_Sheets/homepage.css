@@ -249,7 +249,7 @@
     font-size:1.5 rem;
     float:right;
     display: inline-block;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding:0.3rem;
     margin-right: 1rem;
     color: white;
@@ -735,7 +735,7 @@ when the screen is max to 1800px  mainly for the big screens */
          border-radius:  0rem 0rem 1.5rem 1.5rem;
         left: 0;
         width: 100%;
-      height: 148   vh;
+      height: 148vh;
       padding: 0px;
     }
     .custom-shape-divider-top-1618066111 svg{
@@ -894,9 +894,9 @@ label #cancel{
       
         font-size: 1em;
         margin-left:4em;
-        margin-top: 1.3rem;
+        margin-top: 1.5rem;
         padding: 0.2rem;
-        line-height: 2.2rem;
+        line-height: 2rem;
         margin-right: 1.8em;
        
     }
@@ -916,8 +916,8 @@ label #cancel{
         margin-left: 5rem;
         margin-top: 1rem;
         margin-right: 4rem;
-        padding: 0.5rem;
-        font-size:1.5rem;
+        padding: 0.7rem;
+        font-size:1.7rem;
         color:rgb(47, 47, 179);
     }
     .btn:hover{
@@ -1058,9 +1058,9 @@ label #cancel{
       
         font-size: 0.8em;
         margin-left:5em;
-        margin-top: 1.3rem;
+        margin-top: 1.4rem;
         padding: 0.2rem;
-        line-height: 2.2rem;
+        line-height: 2rem;
         margin-right: 1.8em;
        
     }
@@ -1080,13 +1080,13 @@ label #cancel{
         margin-left: 5rem;
         margin-top: 1rem;
         margin-right: 4rem;
-        padding: 0.5rem;
-        font-size:1.2rem;
+        padding: 0.7rem;
+        font-size:1.4rem;
         color:rgb(47, 47, 179);
     }
     .btn:hover{
         width: 205px;
-        height: 55px;
+        height: 60px;
         transition:width 0.1s,height 0.1s;
         
     }
