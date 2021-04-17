@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Fredoka+One&family=Syncopate:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300&display=swap');
 /* Resetting the default margin and padding of the page to 0px */
 *{
     margin: 0px;
@@ -11,13 +13,15 @@
 .headertop{
     position: fixed;
    width: 100%;
-    height: 5rem;    
+    height: 5rem; 
+    z-index: 1111;   
     background-color: rgb(11, 105, 212);
 
 }
 /* Display settings of the dashbaord div with image */
 #dashboard{
     display: flex;
+    
     flex-direction: row;
 }
 /* image in the dasbaord heading and coanting the logo of the website */
@@ -101,7 +105,7 @@
     background-color: rgb(238, 238, 238);
     height: 200%;
     width: 20vw;
-    z-index: -1;
+    /* z-index: -1; */
     left: -500px;      
     align-items: center;
     transition: 0.7s all ease;
@@ -214,7 +218,7 @@ hr{
 }
 .leftconlinks ul li:hover a{
     padding-left: 1.9rem;
-    transition: 0.2s ease;
+    transition: 0.4s ease;
     cursor: pointer;
     color: white;
     border-bottom: 2px solid black;
@@ -245,20 +249,143 @@ li a.active {
     position: fixed;
    
 } 
-#check{
- display:none;
+
+.maincontainer{
+width: 100%;
+margin-top: 9.5rem;
+float: right;
+transition:all  0.4s ease ;
+background-color: rgb(91, 165, 250);
+  height: 220vh;
 }
 
 
+.examdetail{
+    display: flex;justify-content: space-between;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+.PerformaExamdetail{
+    font-size: 1.6em;
+    color:whitesmoke; 
+    font-weight: bold;  
+}
+#sname{
+    font-size: 0.7em;
+    color:whitesmoke; 
+    font-family: 'Antic Slab', serif;
+    font-weight: normal; 
+    color: rgb(7, 241, 218);
+}
+.Ename{
+    font-size: 0.7em;
+    color:whitesmoke; 
+    font-family: 'Antic Slab', serif;
+    font-weight: normal; 
+    color: rgb(7, 241, 218);
+}
+.Ecode{
+    font-size: 0.7em;
+    color:whitesmoke; 
+    font-family: 'Antic Slab', serif;
+    font-weight: normal; 
+    color: rgb(7, 241, 218);
+}
 
-  
+.resultdetail{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.resultdetail table, th, td{
+    border:2px solid black;
+    border-collapse:collapse;
+}
+.resultdetail table{
+    width: 100%;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    border-collapse:collapse;
+}
+.resultdetail table th{
+    font-size: 1.2em;   
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    background-color: rgb(212, 212, 212);
+
+}
+.resultdetail table tr span{
+display: block;
+
+}
+.resultdetail table   td {
+  text-align: center;
+  font-family: 'Antic Slab', serif;
+font-size: 1em;  
+font-weight: bold;
+background-color:whitesmoke;
+}
+
+.resultdetail table th span{
+    display: block;
+}
+
+
+ table tr  td span.Ename{
+  font-family: 'Antic Slab', serif;
+font-size: 1.2em;  
+font-weight: bold;
+color:blue;
+
+}
+ table tr  td span.Noofquestion{
+color:blue;
+}
+ table tr  td span.Markrsscored{
+color:rgb(85, 141, 0);
+font-size: 1.3rem;
+}
+table tr  td span.Ecode{
+    font-family: 'Antic Slab', serif;
+font-size: 1.2em;  
+font-weight: bold;
+color:blue;
+}
+table tr  td span.examdate{
+    color:rgb(15, 132, 136);
+    }
+    table tr  td span.examtimings{
+        color:rgb(38, 86, 219);
+        }
+    table tr  td span.Startingtime{
+        color:rgb(135, 219, 38);
+        }
+    table tr  td span.endingtime{
+        color:rgb(253, 56, 56);
+        }
+    table tr  td span.totaltimetaken{
+        color:rgb(85, 136, 248);
+        }
+    table tr  td span.percentage, .grade{
+        color:rgb(6, 80, 240);
+        font-size: 1.2rem;
+        }
+    table tr td span.FinalResult{
+        color:rgb(3, 160, 42);
+        font-size:1.2rem;
+        }
+
+
+#check{
+ display:none;
+}
 label #barbtn, label #cancelbtn{
     position:absolute;
     cursor: pointer;
     background: rgb(151, 151, 151);
     border-radius: 3px;
 }
-
 label #barbtn{
     left: 20px;
     margin-top:3.4rem;
@@ -272,4 +399,11 @@ label #barbtn{
 
 #check:checked ~  section .leftcontainer{
     left: 0;
+    transition:0.4s all ease;
+   
+}
+#check:checked ~  section .maincontainer{
+    transition:0.4s all ease;
+    width: 79.5%;
+   
 }
