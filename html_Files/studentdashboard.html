@@ -8,11 +8,12 @@
     <title>Student Dashboard|Online Exam Portal </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Css_Sheets/studentdashboard.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css_Sheets/studentdashboard.css">
+    
 </head>
-
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <body>
     <header>
         <div class="headertop">
@@ -131,115 +132,192 @@
 
             <div class="resultanalysis">
                 <div class="tabbuttons">
-                    <button class="tablink"  onclick="studentdashbaordcall('studentdetailchart', this, 'lavender')" id="studdetails">Student<br>
+                    <button class="tablink" onclick="studentdashbaordcall('studentdetailchart', this, 'lavender')"
+                        id="studdetails">Student<br>
                         Details</button>
-                    <button class="tablink"  onclick="studentdashbaordcall('summarydetailchart', this, 'rgb(233, 250, 250)')" id="summaryid">Summary</button>
-                    <button class="tablink"  onclick="studentdashbaordcall('scoredetailchart', this, 'rgb(250, 200, 200)')" id="Scoreid">Score Card</button>
-                    <button class="tablink" onclick=" studentdashbaordcall('topicanachart', this, 'rgb(240, 220, 248)')" id="topicanaysisid"> Topic <br>
+                    <button class="tablink"
+                        onclick="studentdashbaordcall('summarydetailchart', this, 'rgb(233, 250, 250)')"
+                        id="summaryid">Summary</button>
+                    <button class="tablink"
+                        onclick="studentdashbaordcall('scoredetailchart', this, 'rgb(250, 200, 200)')"
+                        id="Scoreid">Score Card</button>
+                    <button class="tablink" onclick=" studentdashbaordcall('topicanachart', this, 'rgb(240, 220, 248)')"
+                        id="topicanaysisid"> Topic <br>
                         Analysis</button>
-                    <button class="tablink" " onclick="studentdashbaordcall('quesanachart', this, 'rgb(248, 245, 203)')" id="Questionsanalysisid">Question
+                    <button class="tablink" " onclick=" studentdashbaordcall('quesanachart', this, 'rgb(248, 245, 203)'
+                        )" id="Questionsanalysisid">Question
                         <br>Analysis</button>
-                    <button class="tablink" onclick="studentdashbaordcall('diffcultylevelchart', this, 'rgb(192, 241, 214)')"
+                    <button class="tablink"
+                        onclick="studentdashbaordcall('diffcultylevelchart', this, 'rgb(192, 241, 214)')"
                         id="Difficultylevelid">Difficulty<br>Level</button>
-                    <button class="tablink"  onclick=" studentdashbaordcall('Reportcard', this, 'rgb(164, 210, 240)')" id="resultsid">Results</button>
+                    <button class="tablink" onclick=" studentdashbaordcall('Reportcard', this, 'rgb(164, 210, 240)')"
+                        id="resultsid">Results</button>
                 </div>
-            <div class="maindiv">
-                <div id="studentdetailchart" class="tabcontent">
-                   <div class="studiv   ">
+                <div class="maindiv">
+                    <div id="studentdetailchart" class="tabcontent">
+                        <div class="studiv">
 
-                        <span id="h1studdetail"> Sutdent Name:<span id="Studentnameh1"> vjvsjvjbfbjvjbffbo</span></span>
-                        <table>
-                            <tr>
-                                <td> Class</td>
-                                <td> I<Sup>st</Sup></td>
+                            <span id="h1studdetail"> Sutdent Name:<span id="Studentnameh1">
+                                    vjvsjvjbfbjvjbffbo</span></span>
+                            <table>
+                                <tr>
+                                    <td> Class</td>
+                                    <td> I<Sup>st</Sup></td>
 
-                            </tr>
-                            <tr>
-                                <td> Roll No:</td>
-                                <td> 32095970352</td>
-                            </tr>
-                            <tr>
-                                <td> Student Id:</td>
-                                <td> 32095970352</td>
-                            </tr>
-                            <tr>
-                                <td> Session</td>
-                                <td> 2021-22</td>   
-                            </tr>
-                            <tr>
-                                <td> Age</td>
-                                <td> 21yrs</td>
-                            </tr>
-                            <tr>
-                                <td> School</td>
-                                <td> fbsbd</td>
-                            </tr>
-                            <tr>
-                                <td> Address</td>
-                                <td> esbns </td>
-                            </tr>
+                                </tr>
+                                <tr>
+                                    <td> Roll No:</td>
+                                    <td> 32095970352</td>
+                                </tr>
+                                <tr>
+                                    <td> Student Id:</td>
+                                    <td> 32095970352</td>
+                                </tr>
+                                <tr>
+                                    <td> Session</td>
+                                    <td> 2021-22</td>
+                                </tr>
+                                <tr>
+                                    <td> Age</td>
+                                    <td> 21yrs</td>
+                                </tr>
+                                <tr>
+                                    <td> School</td>
+                                    <td> fbsbd</td>
+                                </tr>
+                                <tr>
+                                    <td> Address</td>
+                                    <td> esbns </td>
+                                </tr>
 
-                        </table>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div id="summarydetailchart" class="tabcontent">
+                        <div id="summarydiv" class="contentdiv">
+                            <span class="summarytext"> Welcome to your summary<br></span> <span class="errorMsg">Soon we
+                                will have summary Panel
+                                for you <br> Thanks For your Patience</span>
+                        </div>
+                    </div>
+
+                    <div id="scoredetailchart" class="tabcontent">
+                        <div id="scorediv" class="contentdiv">
+                            <span class="summarytext"> Welcome to your Score Card <br></span><span class="errorMsg">Soon
+                                we will have Score Card Panel
+                                for you <br> Thanks For your Patience</span>
+                        </div>
+                    </div>
+                    <div id="topicanachart" class="tabcontent">
+                        <div id="topicdiv" class="contentdiv">
+                            <span class="summarytext"> Welcome to your Topic Analysis </span><br><span
+                                class="errorMsg">Soon we will have Topic Analysis Panel
+                                for you <br> Thanks For your Patience</span>
+                        </div>
+                    </div>
+                    <div id="quesanachart" class="tabcontent">
+                        <div id="quesdiv" class="contentdiv">
+                            <span class="summarytext"> Welcome to your Questions Analysis<br> </span><span
+                                class="errorMsg">Soon we will have Question Analysis Panel
+                                for you <br> Thanks For your Patience</span>
+                        </div>
+                    </div>
+                    <div id="diffcultylevelchart" class="tabcontent">
+                        <div id="diffcultydiv" class="contentdiv">
+                            <span class="summarytext"> Welcome to your Diffculty Level<br> </span><span
+                                class="errorMsg">Soon we will have Diffculty Level Panel
+                                for you <br> Thanks For your Patience</span>
+                        </div>
+                    </div>
+                    <div id="Reportcard" class="tabcontent">
+                        <div id="reportdiv" class="contentdiv">
+                            <span class="summarytext"> Welcome to your Report<br> </span><span class="errorMsg">Soon we
+                                will have Report Card Panel
+                                for you <br> Thanks For your Patience</span>
+                        </div>
                     </div>
 
                 </div>
-            
-                <div id="summarydetailchart" class="tabcontent">
-                <div class="summarydiv">
-                    <span class="summarytext"> Welcome to your summary<br> <span class="errorMsg">Soon we will have summary Panel
-                            for you <br> Thanks For your Patience</span></span>
-                </div></div>
-             
-                <div id="scoredetailchart" class="tabcontent">
-                    <div class="scorediv">
-                        <span class="summarytext"> Welcome to your Score Card <br><span class="errorMsg">Soon we will have Score Card Panel
-                                for you <br> Thanks For your Patience</span></span>
-                    </div></div>
-                <div id="topicanachart" class="tabcontent">
-                    <div class="topicdiv">
-                        <span class="summarytext"> Welcome to your Topic Analysis <br><span class="errorMsg">Soon we will have Topic Analysis Panel
-                                for you <br> Thanks For your Patience</span></span>
-                    </div></div>
-                <div id="quesanachart" class="tabcontent">
-                    <div class="quesdiv">
-                        <span class="summarytext"> Welcome to your Questions Analysis<br> <span class="errorMsg">Soon we will have Question Analysis Panel
-                                for you <br> Thanks For your Patience</span></span>
-                    </div></div>
-                <div id="diffcultylevelchart" class="tabcontent">
-                    <div class="diffcultydiv"></div>
-                        <span class="summarytext"> Welcome to your Diffculty Level<br> <span class="errorMsg">Soon we will have Diffculty Level Panel
-                                for you <br> Thanks For your Patience</span></span>
-                    </div></div>
-                <div id="Reportcard" class="tabcontent">
-                    <div class="reportdiv">
-                        <span class="summarytext"> Welcome to your Report<br> <span class="errorMsg">Soon we will have Report Card Panel
-                                for you <br> Thanks For your Patience</span></span>
-                    </div></div>
-                
+
+
             </div>
 
+            <div class="footer">
 
-        </div>
+                <div class="footercontent">
+                    <div class="aboutdesigner">
+                        <span id="desingername">TheStartUp </span><Span id="desingername1">DESIGNERS</Span>
+                        <p class="aboutpara">We have started our journey with designingg various websites in our projects.
+                            We aim to give our best in every project we are assigned with . Hope you will like our work
+                            and provide us with good feeback which will give us the Motivation to do our best in our
+                            upcomming projects.
+                        </p>
+                        <p class="phone"><i class="fa">&#xf095;</i><a href="tel:8433024414">+91-8433024414</a></a></p><p class="phone"><i class="fa">&#xf095;</i><a href="tel:9368736361">+91-9368736361</a></p> <p class="phone"><i class="fa">&#xf095;</i><a href="tel:7409830173">+91-7409830173</a></p>
+                        <p class="phone1"><i style='font-size:24px' class='fas'>&#xf674;</i><a href="mailto:officialcharanjeetsinghsidhu@gmail.com">officialcharanjeetsinghsidhu@gmail.com</a></p>
+                        <div class="sociallinksfooter">
+                        <ul>
+                            <li><a href="#"><i class='fab' id="facebook">&#xf09a;</i></a></li>
+                            <li><a href="#"><i class='fab' id="Instagram">&#xf16d;</i></a></li>
+                            <li><a href="#"><i class='fab' id="twitter">&#xf081;</i></a></li>
+                            <li><a href="#"><i class='fab' id="youtube">&#xf431;</i></a></li>
+                            <li><a href="#"><i class='fab' id="linkedin">&#xf08c;</i></a></li>
+                        </ul></div>
+                    </div>
+                    <div class="footerlinks">
+                    <div class="mainfooterlinks">
+                    <div class="quicklinktext"> QUICK LINKS</div>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Write for Us</a></li>
+                            <li><a href="#">Reach US    </a></li>
+                            <li><a href="#">Mentors</a></li>
+                            <li><a href="#">Privacy Policies</a></li>
+                            <li><a href="#">Support & Help</a></li>
+                            <li><a href="#">About Designers</a></li>
+                            <li><a href="#">Terms and Conditons     </a></li>
+                        </ul>
+                    </div></div>
+                    <div class="contactusm">
+                        <div class="contactusform"> 
+                            <div id="formhead"> Contact Us:</div>
+                            <input type="email" id="useremail" placeholder="Your Email Address">
+                            <textarea name="ContactMessage" id="contactmessagetextarea" cols="30" rows="4" placeholder="Your message to us"></textarea>
+                            <button id="sendmessage" ><i class="material-icons">&#xe163;</i>Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="resverdmanaged"> <i class="material-icons">&#174;</i> Online Exam Portal |Designed &
+                        Managed By: TheStartUp Designers
+                    </p>
+                </div>
 
+            </div>
     </section>
-<script>
-    function studentdashbaordcall(studentreport,elmnt,color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+    <script >
+        function studentdashbaordcall(studentreport, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(studentreport).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
         }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(studentreport).style.display = "block";
-        elmnt.style.backgroundColor = color;
-      
-      }
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-      </script>
-        </body>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("studdetails").click();
+
+
+
+    </script>
+</body>
 
 </html>

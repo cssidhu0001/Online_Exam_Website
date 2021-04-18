@@ -1,0 +1,14 @@
+*{margin: 0px;
+    padding: 0px;
+}
+
+
+.footer{
+    
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(136, 136, 136);
+}
+.mainfooterlinks{
+    margin-top: 1rem;
+}

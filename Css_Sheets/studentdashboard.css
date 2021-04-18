@@ -1,14 +1,20 @@
+
+/* Import statements of various fonts which are used in the website */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Fredoka+One&family=Syncopate:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+
 /* Resetting the default margin and padding of the page to 0px */
-*{
-    margin: 0px;
+*{  margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 /* Header of the page contaiting the logo dashboard text andd name and gmail details of the student  */
 .headertop{
     position: fixed;
@@ -103,7 +109,7 @@
     margin-top: 8.5em;
     float: left;
     background-color: rgb(238, 238, 238);
-    height: 200%;
+    height: 170%;
     width: 20vw;
     /* z-index: -1; */
     left: -500px;      
@@ -429,23 +435,31 @@ label #barbtn{
     background-color: rgb(185, 184, 184);
 }
 
-#studdiv{
+.studiv{
+    padding: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
-#h1studdetail{
-    font-size: 2.3em;
+  #h1studdetail{
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive; 
+}
+   #Studentnameh1{
+    font-weight: bold;
+    font-size: 1.2em;
     font-family: 'Comfortaa', cursive; 
 }
 
-#studentdetailchart table {
-    display: flex;
+table {
+    margin-top: 2rem;
     border: none;
-    justify-content: space-between;
+    margin-left: 13rem;
 }
 #studentdetailchart table tr {
     border: none;
+    text-align: left;
     
 }
 #studentdetailchart table tr td{
@@ -454,7 +468,6 @@ label #barbtn{
     padding: 1rem;
     padding-left: 5rem;
     font-family: 'Antic Slab', serif;
-    justify-content: space-between;
     font-size: 1.3em;
 }
 .tabcontent{
@@ -463,10 +476,12 @@ label #barbtn{
     justify-content: center;
     align-items: center;
     height: 80vh;
+    transition: 0.4s all ease;
     margin-left: 12.5rem;
 }
 #check:checked ~  section .tabcontent{
     width:92.7%;
+    transition: 0.4s all ease;
     margin-left: 2.75rem;
 }
 #studentdetailchart{
@@ -500,16 +515,315 @@ span .summarytext{
     margin-top: 5rem;
 }
 .summarytext{
-    font-size: 2em;
+    margin: 7rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
 font-weight: bold;
-margin-top: 8rem;
+color:crimson;
 text-align: center;
-color:rgb(3, 97, 3);
+justify-content: center;
+align-items: center;
     font-family: 'Antic Slab', serif;
+}
+.summarytext:hover{
+    
+color:rgb(245, 139, 160);
+
 }
 .errorMsg{
-    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
 font-weight: bold;
 text-align: center;
+justify-content: center;
+align-items: center;
+line-height: 3.5rem;
+color:darkblue;
     font-family: 'Antic Slab', serif;
 }
+.contentdiv{
+    display: flex;
+    flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer{
+  
+    height: 43vh;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    margin-top: 21rem;
+}
+.resverdmanaged{
+    
+   position: relative;
+display: block;
+padding:0.8rem;
+text-align: center;
+background-color: rgb(112, 112, 112);
+font-size: 1.2em;
+font-weight: bold;
+color:whitesmoke;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutdesigner{
+flex: 2;
+margin-top: 1rem;
+}
+#desingername{
+    font-size: 2em;
+    font-family: 'Coiny', cursive;
+    color:white;
+    text-shadow: 5px 4px 5px rgba(0,0,0,0.89);
+    margin:1rem 0rem 1rem 1rem;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+}
+#desingername:hover{
+    
+    color:rgb(218, 218, 218);
+}
+#desingername1:hover{
+    
+    color:rgb(77, 246, 252);
+    
+}
+#desingername1{
+    font-size: 2em;
+    font-family: 'Coiny', cursive;
+    color:rgb(2, 225, 233);
+    text-shadow: 3px 1px 2px rgba(246, 251, 252, 0.89);
+    margin:1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem 0.5rem 0rem;
+}
+.aboutpara{
+    font-size: 1.1em;
+    width: 35rem;
+    padding-left: 1.7rem;
+    color:whitesmoke;
+    padding-bottom: 0.3rem;
+}
+.fa{
+    z-index: index -1;
+    transform: rotate(90deg);
+    color:whitesmoke;
+}
+.phone a{
+    text-decoration: none;
+    font-size: 1em;
+    padding-left:0.5rem;
+    color:whitesmoke;
+
+}
+.phone1 a{
+    text-decoration: none;
+    font-size: 1em;
+    padding-left:0.5rem;
+    color:whitesmoke;
+
+}
+.phone1 a:hover, .phone a:hover{
+    font-size: 1.04em;
+    color:rgb(2, 225, 233);
+}
+.phone {
+    padding-top: 0.3rem;
+    text-decoration: none;
+    font-size: 1em;
+    padding-left:5rem;
+    color:whitesmoke;
+}
+
+.phone1 {
+    display: flex;
+    margin-top: -3rem;
+    text-decoration: none;
+    font-size: 1em;
+    padding-left:15rem;
+    color:whitesmoke;
+}
+.fab{
+color:white;
+    padding:0rem 1rem 1rem 1rem;
+    font-size: 3rem;
+}
+#facebook:hover{
+color:rgb(54, 54, 228);
+}
+#Instagram:hover{
+    color:yellow;
+}
+#twitter:hover{
+    color:rgb(26, 171, 228);
+}
+#youtube:hover{
+    color:red;
+}
+#linkedin:hover{
+    color:rgb(164, 210, 240);
+}
+.sociallinksfooter ul{
+    display: flex;
+    margin-left: 4rem;
+}
+.sociallinksfooter ul { 
+  margin-top: 2rem;
+}
+.sociallinksfooter ul li { 
+  list-style: none;
+}
+.footerlinks{
+flex: 1;
+}
+.mainfooterlinks{
+    margin-top: 1.5rem;
+}
+.quicklinktext, #formhead{
+    font-size: 1.5em;
+    font-family: 'Fredoka One', cursive;
+    color: whitesmoke;
+    text-shadow: 5px 4px 5px rgba(0,0,0,0.89);
+}
+
+.mainfooterlinks ul li {
+    line-height: 1.5rem;
+    color: white;
+    
+}
+
+.mainfooterlinks ul li a{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding:1rem;
+    
+    font-family: 'Antic Slab', serif;
+    color: whitesmoke;
+}
+.mainfooterlinks ul li a:hover{
+    padding-left: 1.3rem;
+    color:rgb(2, 225, 233);
+}
+
+.contactusm{
+    flex: 1;
+    margin-top: 1.5rem;
+}
+.contactusform{
+    display: flex;
+    flex-direction: column;
+}
+.contactusform input{
+    font-family: 'Antic Slab', serif;
+    font-weight: bold;
+    color: white;
+    width: 290px;
+    margin:1rem 0rem 0.5rem 0rem;
+    padding: 0.5rem;
+   font-size: 1.1em;
+   background-color: rgb(92, 92, 92);
+   border:2px solid rgb(94, 93, 93);
+   border-radius: 5px;
+}
+ #contactmessagetextarea{
+    font-family: 'Antic Slab', serif;
+    font-weight: bold;
+    color: white;
+    width: 290px;
+    margin:0.1rem 0rem 0.5rem 0rem;
+    padding: 0.5rem;
+   font-size: 1.1em;
+   background-color: rgb(92, 92, 92);
+   border:2px solid rgb(94, 93, 93);
+   border-radius: 5px;
+}
+.contactusform input:focus, #contactmessagetextarea:focus{
+   border:none;}
+.contactusform input:hover, #contactmessagetextarea:hover{
+   border:none;
+}
+.contactusform input::placeholder, #contactmessagetextarea::placeholder { 
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    opacity: 1; /* Firefox */
+  }
+  
+  .contactusform input :-ms-input-placeholder, #contactmessagetextarea::placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  .contactusform input ::-ms-input-placeholder, #contactmessagetextarea::placeholder { /* Microsoft Edge */
+    color: white;   
+  }
+
+#sendmessage{
+    width: 290px;
+    font-weight: bold;
+    border:none;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 8px;
+    font-size: 1.5em;
+    color: white;
+    box-shadow: 2px 2px 4px rgb(1, 99, 102);
+    padding: 0.2rem;
+    background-color: rgb(4, 230, 230);
+    
+}
+#sendmessage:hover{
+   background-color: rgb(134, 243, 247);
+    font-size: 1.6em;
+}
+#sendmessage .material-icons{
+    margin-top: 0rem;
+    font-size: 1.5em;
+    
+            padding-top: 1.3rem;
+            margin-right: 0rem;
+            line-height: 0rem;
+}
+#sendmessage .material-icons:hover{
+  font-size: 1.7em;
+}
+p .material-icons{
+    font-size: 1.3em;
+font-family: 'Ubuntu', sans-serif;
+        padding-top: 0rem;
+        margin-right: 0rem;
+        line-height: 0rem;
+    }
+    .contactusform button .material-icons {
+        transform: rotate(-45deg);
+    }
+    
+    
