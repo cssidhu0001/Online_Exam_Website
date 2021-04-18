@@ -405,11 +405,11 @@ label #barbtn{
 #check:checked ~  section .maincontainer{
     transition:0.4s all ease;
     width: 79.5%;
-   
+    
 }
 
 .tabbuttons{
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -423,11 +423,10 @@ label #barbtn{
     font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
-    margin: 0.1rem;
     text-shadow: 2px -1px 5px rgba(162,162,162,0.81);
 }
 .tablink:hover{
-    background-color: rgb(196, 195, 195);
+    background-color: rgb(185, 184, 184);
 }
 
 #studdiv{
@@ -437,7 +436,6 @@ label #barbtn{
 }
 #h1studdetail{
     font-size: 2.3em;
-    margin-top: 2rem;
     font-family: 'Comfortaa', cursive; 
 }
 
@@ -461,11 +459,15 @@ label #barbtn{
 }
 .tabcontent{
     display: none;
-    width: 70%;
+    width: 73.7%;
     justify-content: center;
     align-items: center;
-    margin-top: 0.1rem;
-    margin-left: 13rem;
+    height: 80vh;
+    margin-left: 12.5rem;
+}
+#check:checked ~  section .tabcontent{
+    width:92.7%;
+    margin-left: 2.75rem;
 }
 #studentdetailchart{
     background-color: lavender; 
