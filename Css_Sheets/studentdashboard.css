@@ -248,6 +248,7 @@ li a.active {
     color: white;
 }
 .rightconatiner{
+    
     margin-top: 5rem;
     float: right;
     background-color: rgb(231, 231, 231);
@@ -551,15 +552,20 @@ justify-content: center;
 align-items: center;
 text-align: center;
 }
+.rightconatiner .material-icons{
+    margin-left: 18%;
+    font-size: 2.5em;
+}
 
 #changebytab{
     font-size: 1.5em;
     font-weight: bold;
+    float: left;
     font-family: 'Antic Slab', serif;
     /* background-size: auto auto; */
     width: 100%;
-    margin-top: 0.5em;
-    margin-left:20% ;
+padding-left: 1rem;
+    margin-top: -2.1rem;
     height: inherit;
 }
 
