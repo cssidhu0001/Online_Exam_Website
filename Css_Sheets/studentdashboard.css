@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 
 
+
 /* Resetting the default margin and padding of the page to 0px */
 *{  margin: 0px;
     padding: 0px;
@@ -252,8 +253,7 @@ li a.active {
     background-color: rgb(231, 231, 231);
     height:10vh;
     width:100%;
-    position: fixed;
-   
+    position: fixed; 
 } 
 
 .maincontainer{
@@ -827,3 +827,13 @@ font-family: 'Ubuntu', sans-serif;
     }
     
     
+
+#changebytab{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Antic Slab', serif;
+    /* background-size: auto auto; */
+    width: 100%;
+    margin-left:20% ;
+    height: inherit;
+}
