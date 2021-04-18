@@ -246,8 +246,7 @@ li a.active {
     background-color: rgb(231, 231, 231);
     height:10vh;
     width:100%;
-    position: fixed;
-   
+    position: fixed; 
 } 
 
 .maincontainer{
@@ -512,4 +511,14 @@ color:rgb(3, 97, 3);
 font-weight: bold;
 text-align: center;
     font-family: 'Antic Slab', serif;
+}
+
+#changebytab{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Antic Slab', serif;
+    /* background-size: auto auto; */
+    width: 100%;
+    margin-left:20% ;
+    height: inherit;
 }
