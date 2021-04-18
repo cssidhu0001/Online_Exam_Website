@@ -84,7 +84,7 @@
         <div class="rightconatiner">
             <i class="material-icons">&#xe88a;</i> 
             <div id="changebytab"> <!-- change div by clicking tab -->
-            Student Dashboard
+            <!-- Student Dashboard > Profile -->
             </div>
         </div>
         <div class="maincontainer">
@@ -136,27 +136,30 @@
 
             <div class="resultanalysis">
                 <div class="tabbuttons">
-                    <button class="tablink" onclick="studentdashbaordcall('studentdetailchart', this, 'lavender')"
+                    <button class="tablink" onclick="studentdashbaordcall('studentdetailchart','Student Details',this, 'lavender')"
                         id="studdetails">Student<br>
                         Details</button>
                     <button class="tablink"
-                        onclick="studentdashbaordcall('summarydetailchart', this, 'rgb(233, 250, 250)')"
+                        onclick="studentdashbaordcall('summarydetailchart', 'Summary',this, 'rgb(233, 250, 250)')"
                         id="summaryid">Summary</button>
                     <button class="tablink"
-                        onclick="studentdashbaordcall('scoredetailchart', this, 'rgb(250, 200, 200)')"
+                        onclick="studentdashbaordcall('scoredetailchart','Score Card', this, 'rgb(250, 200, 200)')"
                         id="Scoreid">Score Card</button>
-                    <button class="tablink" onclick=" studentdashbaordcall('topicanachart', this, 'rgb(240, 220, 248)')"
+                    <button class="tablink" onclick=" studentdashbaordcall('topicanachart', 'Topic', this, 'rgb(240, 220, 248)')"
                         id="topicanaysisid"> Topic <br>
                         Analysis</button>
-                    <button class="tablink" " onclick=" studentdashbaordcall('quesanachart', this, 'rgb(248, 245, 203)'
+                    <button class="tablink" " onclick=" studentdashbaordcall('quesanachart','Ouestion Analysis' ,this, 'rgb(248, 245, 203)'
                         )" id="Questionsanalysisid">Question
                         <br>Analysis</button>
                     <button class="tablink"
-                        onclick="studentdashbaordcall('diffcultylevelchart', this, 'rgb(192, 241, 214)')"
-                        id="Difficultylevelid">Difficulty<br>Level</button>
-                    <button class="tablink" onclick=" studentdashbaordcall('Reportcard', this, 'rgb(164, 210, 240)')"
-                        id="resultsid">Results</button>
+                        onclick="studentdashbaordcall('diffcultylevelchart', 'Difficulty Level',this, 'rgb(192, 241, 214)')"
+                        id="Difficultylevelid">Difficulty
+                        <br>Level</button>
+                    <button class="tablink" onclick=" studentdashbaordcall('Reportcard','Results', this, 'rgb(164, 210, 240)')"
+                        id="resultsid">Results
+                    </button>
                 </div>
+
                 <div class="maindiv">
                     <div id="studentdetailchart" class="tabcontent">
                         <div class="studiv">
@@ -301,9 +304,12 @@
             </div>
     </section>
     <script >
-        function studentdashbaordcall(studentreport, elmnt, color) {
+        function studentdashbaordcall(studentreport,  thiscontent ,elmnt, color) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
+
+            document.getElementById("changebytab").textContent='Student Dashboard'+' '+'>'+' '+'Profile'+' '+'>'+' '+thiscontent;
+            
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
