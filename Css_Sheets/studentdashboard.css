@@ -251,7 +251,7 @@ li a.active {
     
     margin-top: 5rem;
     float: right;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(238, 238, 238);
     height:10vh;
     width:100%;
     position: fixed; 
@@ -262,7 +262,7 @@ width: 100%;
 margin-top: 9.5rem;
 float: right;
 transition:all  0.4s ease ;
-background-color: rgb(91, 165, 250);
+background-color: rgba(190, 190, 190, 0.938);
   height: 220vh;
 }
 
@@ -564,7 +564,7 @@ text-align: center;
     font-family: 'Antic Slab', serif;
     /* background-size: auto auto; */
     width: 100%;
-padding-left: 1rem;
+padding-left: 1 rem;
     margin-top: -2.1rem;
     height: inherit;
 }
