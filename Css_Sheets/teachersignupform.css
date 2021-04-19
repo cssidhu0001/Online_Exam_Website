@@ -1,0 +1,93 @@
+/* Import statements of various fonts which are used in the website */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Fredoka+One&family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+
+
+/* Resetting the default margin and padding of the page to 0px */
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(243, 242, 242);
+}
+
+/* Header of the page contaiting the logo dashboard text andd name and gmail details of the student  */
+.headertop{
+    position: fixed;
+   width: 100%;
+    height: 5rem; 
+    z-index: 1111;   
+    background-color: rgb(11, 105, 212);
+
+}
+/* Display settings of the dashbaord div with image */
+#head{
+    display: flex;
+    flex-direction: row;
+}
+/* image in the dasbaord heading and coanting the logo of the website */
+#head span img{
+    flex: 1;
+    margin: 0.3rem;
+    padding:0.5rem;
+    height: 70px;
+    filter: invert(90%);
+    width: 70px;
+}
+
+#dashtext {
+    flex: 1;
+    margin-top:1.1rem;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 2.3em;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.teacherDetail{
+    flex: 3;
+    justify-content: flex-end;
+    display:flex;
+    margin-right: 2.3rem;
+    margin-top: 0.3rem;
+    
+}
+
+
+.teacherDetail p img{
+    padding:0.5rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 4px solid whitesmoke;
+    vertical-align: middle;
+}
+
+.tchrdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#connect{
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Syncopate', sans-serif;
+    color:rgb(233, 223, 223);
+    
+}
+
+section{
+    
+padding-top: 5rem;
+}
