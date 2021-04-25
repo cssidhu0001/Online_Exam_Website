@@ -88,6 +88,155 @@ body{
 }
 
 section{
-    
+    justify-content: center;
+    align-items:center;
 padding-top: 5rem;
 }
+
+
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#registrationtext{
+    margin: 3rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;   
+   color:rgb(87, 85, 85);
+   
+}
+#registrationtext p {
+    margin:0.7rem 0rem 0rem  14.5rem;
+    font-size: 0.8rem;   
+   font-family: sans-serif;
+    color:red;
+    
+}
+
+
+/* css  of personal detials div start form here */
+
+.personal_Details{
+    justify-content: center;
+    align-items: center;
+   
+}
+.details_head{
+   font-weight: bold;
+    margin-left: 20rem;
+    padding: 0.3rem;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    font-family: 'Acme', sans-serif;
+    color:rgb(63, 62, 62);
+    
+}
+.personal_Detailscont{
+    padding: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    background-color: rgb(240, 238, 238);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1rem;
+    flex-direction: column;
+}
+.personal_Detailscont label{
+    font-weight:bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    padding:2rem 0.3rem 0.3rem 0rem;
+    color:rgb(88, 88, 88);
+    
+    
+}
+.personal_Detailscont label span {
+    color:rgb(233, 22, 22);
+    
+    
+}
+.personal_Detailscont input {
+    padding:0.8rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    
+}
+.personal_Detailscont input::placeholder {
+    font-size: 1rem;
+    color: rgb(155, 154, 154);
+    
+}
+.personal_Detailscont input:focus {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(172, 172, 172);
+    outline: none;
+    text-transform: uppercase;
+    
+    
+}
+.genderdiv{
+    
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding:0.8rem;
+}
+
+.genderdiv .gendertextlabel{
+    font-size: 0.9rem;
+    padding:1.2rem 0.5rem 0.5rem 0.5rem;
+}
+.instruction{
+    font-size: 0.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color :rgb(104, 103, 103);
+    padding:0.4rem;
+    margin-left: 12rem;
+}
+
+#photo::-webkit-file-upload-button{
+    background-color: rgb(235, 232, 232);
+    border: 2px solid rgb(209, 208, 208);
+    border-radius: 0.3rem;
+    padding:0.4rem;
+    color: rgb(112, 112, 112);
+    margin:0.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+/* div of personal details end here  */
+
+
+/* starting of the resdential detials div her */
+.residential_Details{
+    justify-content: center;
+    align-items: center;
+   
+}
+
+..personal_Detailscont{
+    padding: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    background-color: rgb(240, 238, 238);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+
