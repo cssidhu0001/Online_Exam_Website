@@ -204,7 +204,7 @@ padding-top: 5rem;
     font-weight: bold;
     color :rgb(104, 103, 103);
     padding:0.4rem;
-    margin-left: 12rem;
+    
 }
 
 #photo::-webkit-file-upload-button{
@@ -277,15 +277,13 @@ padding-top: 5rem;
     
 }
 
-
-
 .instruction{
     font-size: 0.7rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     color :rgb(104, 103, 103);
     padding:0.4rem;
-    margin-left: 12rem;
+    
 }
 
 #photo::-webkit-file-upload-button{
@@ -298,5 +296,27 @@ padding-top: 5rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
+textarea{
+    padding:0.8rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+textarea::placeholder {
+    font-size: 1rem;
+    color: rgb(155, 154, 154);
+    
+}
 
+.textarea input:focus {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(172, 172, 172);
+    outline: none;
+    text-transform: uppercase;
+    
+    
+}
 

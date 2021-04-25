@@ -112,9 +112,17 @@
                         <label for="districtSel">Select District/ City</label>  <select name="district" id="districtSel" size="1">
                             <option value="" selected="selected">Please select State first</option>
                         </select><br>
+
+                        <label for="City">City </label>
+                    <input type="text" id="City" placeholder="Enter your City"  />
+                    <p class="instruction"> Enter your City Manually if not Present in DropDown Menu</p>
+
+                        <label for="zipcode">Zip Code <span>*</span></label>
+                    <input type="text" accept="number" id="zipcode" placeholder="Enter your  City zipcode" required />
                        
                     <label for="address">Address<span>*</span></label>
-                    <textarea name="Add" id="address" cols="30" rows="10"></textarea>
+                    <textarea name="Add" id="address" cols="30" rows="10" placeholder="Your full address here...." required></textarea>
+                    <p class="instruction"> Kindly Provide your full address here, (including all your  nessecary  detials with the address)  </p>
                 </div>
 
 
