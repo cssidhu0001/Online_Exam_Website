@@ -227,7 +227,7 @@ padding-top: 5rem;
    
 }
 
-..personal_Detailscont{
+.residential_Detailscont    {
     padding: 2.5rem;
     box-sizing: border-box;
     display: flex;
@@ -237,6 +237,66 @@ padding-top: 5rem;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 1rem;
     flex-direction: column;
+}
+
+.residential_Detailscont label{
+    font-weight:bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    padding:2rem 0.3rem 0.3rem 0rem;
+    color:rgb(88, 88, 88);
+    
+    
+}
+.residential_Detailscont label span {
+    color:rgb(233, 22, 22);
+    
+    
+}
+.residential_Detailscont input {
+    padding:0.8rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    
+}
+.residential_Detailscont input::placeholder {
+    font-size: 1rem;
+    color: rgb(155, 154, 154);
+    
+}
+.residential_Detailscont input:focus {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(172, 172, 172);
+    outline: none;
+    text-transform: uppercase;
+    
+    
+}
+
+
+
+.instruction{
+    font-size: 0.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color :rgb(104, 103, 103);
+    padding:0.4rem;
+    margin-left: 12rem;
+}
+
+#photo::-webkit-file-upload-button{
+    background-color: rgb(235, 232, 232);
+    border: 2px solid rgb(209, 208, 208);
+    border-radius: 0.3rem;
+    padding:0.4rem;
+    color: rgb(112, 112, 112);
+    margin:0.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 
 
