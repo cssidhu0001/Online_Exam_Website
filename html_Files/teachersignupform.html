@@ -12,11 +12,6 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css_Sheets/teachersignupform.css">
 
-    <!-- country -->
-    
-    <link rel="stylesheet" type="text/css" href="../Css_Sheets/country/dd.css" />
-    <script src="../Js/country/jquery.dd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../Css_Sheets/country/flags.css" />
 </head>
 
 <style>
@@ -25,8 +20,6 @@
     }
 </style>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<!-- contry state District location of Js file  -->
-<script src="../Js/Country+State+District-City-Data.js"></script>
 
 <body onload="generate()">
     <header>
@@ -98,7 +91,6 @@
                     <div class="details_head">Residential Detials</div>
                     
                     <div class="residential_Detailscont">
-                    <form name="myform" id="myForm">
                        <label for="countySel">Select Country: <span>*</span></label> <select name="state" id="countySel" size="1">
                             <option value="" selected="selected">Select Country</option>
                         </select>
@@ -112,7 +104,6 @@
                         <label for="districtSel">Select District/ City</label>  <select name="district" id="districtSel" size="1">
                             <option value="" selected="selected">Please select State first</option>
                         </select><br>
-                       
                     <label for="address">Address<span>*</span></label>
                     <textarea name="Add" id="address" cols="30" rows="10"></textarea>
                 </div>
@@ -261,6 +252,9 @@
     </section>
 </body>
 
+<!-- contry state District location of Js file  -->
+<script src="../Js/Country+State+District-City-Data.js"></script>
+
 <script>
 
     //captcha
@@ -309,8 +303,6 @@
     if(document.getElementById("State").value==""){
         
     }
-
-
 
    
 </script>
