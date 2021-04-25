@@ -310,13 +310,12 @@ textarea::placeholder {
     
 }
 
-.textarea input:focus {
+textarea:focus {
     background-color: whitesmoke;
     border-radius: 0.5rem;
     border: 1px solid rgb(172, 172, 172);
     outline: none;
-    text-transform: uppercase;
-    
+
     
 }
 
