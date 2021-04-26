@@ -255,15 +255,13 @@
                             
                         </div></div>
                     </div></div>
-                </div>
+            
 
 
                 <div class="submit_Details">
-
-                    <div class="details_head">Submission </div>
+                <div class="details_head">Submission </div>
                     <!-- <div class="residential_Detailscont"> -->
                     <div class="personal_Detailscont">
-
                     <label for="pass"> Password<span>*</span></label>
                     <input type="password" name="password" id="pass" required>
                     <label for="conpass">  Confirm Password<span>*</span></label>
@@ -272,7 +270,7 @@
 
                         <div>
 
-                            <label>CAPTCHA  VALUE *</label>
+                            <label>Captcha Value </label>
                               <input  class="captchainput" type="text" readonly id="generated-captcha"/>
                             </div>
                             <div>
@@ -282,9 +280,11 @@
                                   onclick="generate()" 
                                   id="gen"/>
                                 </div>
+                                <p class="instruction">Captcha can be <br>regenerated from here. </p>
                             </div>
 
-                              <label>ENTER CAPTCHA <span>*</span></label>
+                            
+                              <label>Enter Captcha value <span>*</span></label>
                               <input type="text" 
                               id="entered-captcha" 
                               name="captchacode"
@@ -292,15 +292,75 @@
                               title="Enter captcha here" 
                               required/>
                               <h6 id="capterror" class="invalid">
-                                  Entered Captcha must be same as <b>generated-captcha</b></h6>                    
-                       
+                                  <p class="instruction">Kindly provide the captcha values same as in the <b>Captcha Image</b> <br> Else you will be considered as a BOT, and your from Registration
+                                will not be processed futher.    </p>
+                                  
+                       <div class="buttonsdiv">
 
-                    <button type="submit" id="submitform"> Get Registered</button>
-                    <input type="button" id="resetform" value=" Reset Form" onclick="resetfunction()"/>
-                    <input type="button" value="Login" id="login" />
+                           <button type="submit" id="submitform" class="btn"> Get Registered</button>
+                           <input type="button" id="resetform" class="btn" value=" Reset Form" onclick="resetfunction()"/>
+                           <input type="button" value="Login" class="btn" id="login" />
+                       </div>
+
                 </div></div>
             </form>
         </div>
+<hr>
+
+        <div class="footer">
+
+            <div class="footercontent">
+                <div class="aboutdesigner">
+                    <span id="desingername">TheStartUp </span><Span id="desingername1">DESIGNERS</Span>
+                    <p class="aboutpara">We have started our journey with designing various websites in our projects.
+                        We aim to give our best in every project we are assigned with . Hope you will like our work
+                        and provide us with good feeback which will give us the Motivation to do our best in our
+                        upcomming projects.
+                    </p>
+                    <p class="phone"><i class="fa">&#xf095;</i><a href="tel:8433024414">+91-8433024414</a></a></p><p class="phone"><i class="fa">&#xf095;</i><a href="tel:9368736361">+91-9368736361</a></p> <p class="phone"><i class="fa">&#xf095;</i><a href="tel:7409830173">+91-7409830173</a></p>
+                    <p class="phone1"><i style='font-size:24px' class='fas'>&#xf674;</i><a href="mailto:officialcharanjeetsinghsidhu@gmail.com">officialcharanjeetsinghsidhu@gmail.com</a></p>
+                    <div class="sociallinksfooter">
+                    <ul>
+                        <li><a href="#"><i class='fab' id="facebook">&#xf09a;</i></a></li>
+                        <li><a href="#"><i class='fab' id="Instagram">&#xf16d;</i></a></li>
+                        <li><a href="#"><i class='fab' id="twitter">&#xf081;</i></a></li>
+                        <li><a href="#"><i class='fab' id="youtube">&#xf431;</i></a></li>
+                        <li><a href="#"><i class='fab' id="linkedin">&#xf08c;</i></a></li>
+                    </ul></div>
+                </div>
+                <div class="footerlinks">
+                <div class="mainfooterlinks">
+                <div class="quicklinktext"> QUICK LINKS</div>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Write for Us</a></li>
+                        <li><a href="#">Reach US    </a></li>
+                        <li><a href="#">Mentors</a></li>
+                        <li><a href="#">Privacy Policies</a></li>
+                        <li><a href="#">Support & Help</a></li>
+                        <li><a href="#">About Designers</a></li>
+                        <li><a href="#">Terms and Conditons     </a></li>
+                    </ul>
+                </div></div>
+                <div class="contactusm">
+                    <div class="contactusform"> 
+                        <div id="formhead"> Contact Us:</div>
+                        <input type="email" id="useremail" placeholder="Your Email Address">
+                        <textarea name="ContactMessage" id="contactmessagetextarea" cols="30" rows="4git " placeholder="Your message to us"></textarea>
+                        <button id="sendmessage" ><i class="material-icons">&#xe163;</i>Send</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="resverdmanaged"> <i class="material-icons">&#174;</i> Online Exam Portal |Designed &
+                    Managed By: TheStartUp Designers
+                </p>
+            </div>
+
+        </div>
+
+
     </section>
 </body>
 
