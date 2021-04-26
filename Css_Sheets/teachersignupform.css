@@ -217,6 +217,15 @@ padding-top: 5rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
+
+#photo::-webkit-file-upload-button:hover{
+    background-color: rgb(207, 207, 207);
+    border: 2px solid rgb(145, 145, 145);
+   
+    padding:0.5rem;
+    color: rgb(112, 112, 112);
+    
+}
 /* div of personal details end here  */
 
 
@@ -269,22 +278,16 @@ padding-top: 5rem;
 }
 .residential_Detailscont input:focus {
     background-color: whitesmoke;
-    border-radius: 0.5rem;
     border: 1px solid rgb(172, 172, 172);
-    outline: none;
+      border-radius: 0.5rem;
+  outline: none;
     text-transform: uppercase;
     
     
 }
 
-.instruction{
-    font-size: 0.7rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color :rgb(104, 103, 103);
-    padding:0.4rem;
-    
-}
+
+
 
 #photo::-webkit-file-upload-button{
     background-color: rgb(235, 232, 232);
@@ -296,7 +299,8 @@ padding-top: 5rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
-textarea{
+
+.countrydropdown{
     padding:0.8rem;
     color:rgb(126, 126, 126);
     background-color: rgb(235, 232, 232);
@@ -304,18 +308,151 @@ textarea{
     border-radius: 0.5rem;
     font-size: 1.1rem;
 }
+.countrydropdown  select{
+    padding:0.8rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(221, 141, 141);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+textarea{
+    padding:0.8rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+
 textarea::placeholder {
     font-size: 1rem;
     color: rgb(155, 154, 154);
     
 }
-
 textarea:focus {
     background-color: whitesmoke;
-    border-radius: 0.5rem;
     border: 1px solid rgb(172, 172, 172);
-    outline: none;
-
+      border-radius: 0.5rem;
+  outline: none;
     
 }
 
+
+/* end of  resdential details div here  */
+
+/* starting of the contact div form here */
+
+.residential_Detailscont .email:focus{
+    background-color: whitesmoke;
+    border: 1px solid rgb(172, 172, 172);
+      border-radius: 0.5rem;
+      text-transform: lowercase;
+  outline: none;
+}
+
+.verifyenailbtn{
+    padding:0.8rem;
+    color:rgb(78, 77, 77);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.verifyenailbtn:hover{
+    padding:0.9rem;
+    color:rgb(78, 77, 77);
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(126, 124, 124);
+
+  
+    font-size: 1.4rem;
+}
+
+/* end of  Contact details div here  */
+#schoolid::-webkit-file-upload-button{
+    background-color: rgb(235, 232, 232);
+    border: 2px solid rgb(209, 208, 208);
+    border-radius: 0.3rem;
+    padding:0.4rem;
+    color: rgb(112, 112, 112);
+    margin:0.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+#schoolid::-webkit-file-upload-button:hover{
+    background-color: rgb(207, 207, 207);
+    border: 2px solid rgb(145, 145, 145);
+   
+    padding:0.5rem;
+    color: rgb(112, 112, 112);
+    
+}
+
+.subject_teach{
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+
+}
+.subject_teach label{
+    padding: 0px;
+    
+}
+
+.subject_teach1{
+    flex: 1;
+   
+}
+
+.subject_teach1 label {
+    flex: 1;
+  
+   
+}
+.subject_teach2{
+    flex: 1;
+  
+}
+.subcodes{
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+
+
+ .subcodes2  input {
+    padding:0.5rem;
+margin:0.5rem;
+
+    color:rgb(126, 126, 126);
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* starting of the Teaching Details  div form here */
