@@ -138,7 +138,7 @@
 
                 <div class="teaching_Details">
                     <div class="details_head">Teaching Detials</div>
-                    <div class="residential_Detailscont">
+                    <div class="personal_Detailscont">
                     <label for="school">School<span>*</span></label>
                     <input type="text" id="school" placeholder="Your School" required>
                     <label for="schoolcode">School Code<span>*</span></label>
@@ -256,34 +256,49 @@
                         </div></div>
                     </div></div>
                 </div>
+
+
                 <div class="submit_Details">
+
                     <div class="details_head">Submission </div>
-                    <label for="pass"> Password</label>
+                    <!-- <div class="residential_Detailscont"> -->
+                    <div class="personal_Detailscont">
+
+                    <label for="pass"> Password<span>*</span></label>
                     <input type="password" name="password" id="pass" required>
-                    <label for="conpass">  Confirm Password</label>
+                    <label for="conpass">  Confirm Password<span>*</span></label>
                     <input type="password" name="conpassword" id="conpass" required>    
-                    
-                    <label> CAPTCHA*</label>
-                    <input type="text" readonly id="generated-captcha"/>
-                    <img src=""
-                      alt="Generate new" 
-                      title="click here to regenerate captcha" 
-                      onclick="generate()" 
-                      id="gen"/>
-                    <label>ENTER CAPTCHA *</label>
-                    <input type="text" 
-                        id="entered-captcha" 
-                        name="captchacode"
-                        placeholder="Enter the captcha..."
-                        title="Enter captcha here" 
-                        required/>
-                    <h6 id="capterror" class="invalid">
-                        Entered Captcha must be same as <b>generated-captcha</b></h6>                    
+                    <div class="captachdiv">
+
+                        <div>
+
+                            <label>CAPTCHA  VALUE *</label>
+                              <input  class="captchainput" type="text" readonly id="generated-captcha"/>
+                            </div>
+                            <div>
+                                <img src="../Icons/recaptchaicon.png"
+                                  alt="Generate new" 
+                                  title="click here to regenerate captcha" 
+                                  onclick="generate()" 
+                                  id="gen"/>
+                                </div>
+                            </div>
+
+                              <label>ENTER CAPTCHA <span>*</span></label>
+                              <input type="text" 
+                              id="entered-captcha" 
+                              name="captchacode"
+                              placeholder="Enter the captcha..."
+                              title="Enter captcha here" 
+                              required/>
+                              <h6 id="capterror" class="invalid">
+                                  Entered Captcha must be same as <b>generated-captcha</b></h6>                    
+                       
 
                     <button type="submit" id="submitform"> Get Registered</button>
                     <input type="button" id="resetform" value=" Reset Form" onclick="resetfunction()"/>
                     <input type="button" value="Login" id="login" />
-                </div>
+                </div></div>
             </form>
         </div>
     </section>

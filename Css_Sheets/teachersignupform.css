@@ -455,4 +455,21 @@ margin:0.5rem;
 
 
 
-/* starting of the Teaching Details  div form here */
+/* Ending of the Teaching Details  div form here */
+
+
+
+/* Starting of the form Submisssion  div form here */
+    .captachdiv img{
+        height: 50px;
+        width: 70px;
+        padding-left: 1rem;
+        /* padding-top: 1.5rem; */
+        filter: invert();
+    }
+
+    .captachdiv{
+        display: flex;
+        margin-top: 2rem;
+    }
+
