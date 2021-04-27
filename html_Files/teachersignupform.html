@@ -50,16 +50,16 @@
                     
                     <div class="personal_Detailscont">
                     <label for="fname">First Name <span>*</span></label>
-                    <input type="text" id="fname" placeholder="Enter your  first name" required/>
+                    <input type="text" id="fname" placeholder="Enter your  first name" required/><p id="fname_error"></p>
 
                     <label for="mname">Middle  Name </label>
                     <input type="text" id="mname" placeholder="Enter your Middle name" />
 
                     <label for="lname">Last  Name <span>*</span></label>
-                    <input type="text" id="lname" placeholder="Enter your  Last name" required/>
+                    <input type="text" id="lname" placeholder="Enter your  Last name" required/><p id="lname_error"></p>
 
                     <label for="fathername">Father  Name <span>*</span></label>
-                    <input type="text" id="fathername" placeholder="Enter your  Father name" required/>
+                    <input type="text" id="fathername" placeholder="Enter your  Father name" required/><p id="fathname_error"></p>
 
                     <label for="Dob">Date of Birth <span>*</span></label>
                     <input type="date" name="dob" id="Dob" placeholder="Enter your D.O.B"/>
@@ -123,11 +123,11 @@
                     <div class="details_head">Contact Details</div>
                     <div class="residential_Detailscont">
                         <label for="Mobile">Mobile Number<span>*</span></label>
-                        <input type="text" id="mobile" placeholder="Enter your  Mobile Number" required>
+                        <input type="text" id="mobile" placeholder="Enter your  Mobile Number" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
                         <p class="instruction">Kindly provide your Whatsapp number here.</p>
                         
                     <label for="altMobile">Alternate Number</label>
-                    <input type="text" id="altmobile" placeholder="Enter your  Alternate  Number" >
+                    <input type="text" id="altmobile" placeholder="Enter your  Alternate  Number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
                     <label for="email">E-mail<span>*</span></label>
                     <input type="email" id="email" placeholder="Enter your  Email Id"  class="email">
                     <p class="instruction">Kindly verify your Email before proceeding futher in the form</p>
@@ -300,12 +300,43 @@
                            <button type="submit" id="submitform" class="btn"> Get Registered</button>
                            <input type="button" id="resetform" class="btn" value=" Reset Form" onclick="resetfunction()"/>
                            <input type="button" value="Login" class="btn" id="login" />
-                       </div>
+                        </div>
 
-                </div></div>
-            </form>
-        </div>
-<hr>
+                    </div></div>
+                </form>
+            </div>
+            <hr>
+            <!-- //Email Verification Dailog box -->
+            <div id="emailcenter">
+                <div id="emailverify" class="verifyemailid">
+                  
+                    <div class="Verifyemailcontent">
+                      
+                      <div class="maincontaineremail">
+                          <div  class="insidecontaineremail">
+                              <span id="emailhead"> Online Exam Portal</span>
+                              <span id="teacherreg"> Teacher Registration</span>
+                              <p> Verify your Email Address</p>
+                              <p> Verifiation Email sent</p>
+            
+                        <p> We sent a Confirmation code on your provided Email address. Enter your Confirmation code below.</p>
+                        <span>Verifiation Code sent on : <span> Email Address</span></span>
+                        <label for="emailcodeverify">Confirmation Code:</label>
+                        <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
+                        <button id="verifyemailadd"> Verify</button>
+                        <button id="resendcode"> Re-send </button>
+                        <button id="Cancelreg"> Cancel</button>
+            
+                          </div>
+                      </div>
+                    </div></div>
+                  
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
 
         <div class="footer">
 
@@ -362,6 +393,8 @@
 
 
     </section>
+
+
 </body>
 
 <!-- contry state District location of Js file  -->
@@ -416,6 +449,9 @@
         
     }
 
-   
+
+
+
+
 </script>
 </html>

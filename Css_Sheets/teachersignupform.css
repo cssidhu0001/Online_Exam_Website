@@ -797,3 +797,66 @@ font-family: 'Ubuntu', sans-serif;
     margin-left:20% ;
     height: inherit;
 }
+
+
+
+
+
+
+
+
+
+/* email verification Box */
+#emailcenter{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.verifyemailid{
+    display: flex;
+    flex-direction: column;
+  box-sizing: border-box;
+    width: 50vw;
+    margin-top: 1rem;
+    height: 60vh;
+    background-color: rgb(223, 223, 223);
+    z-index: 1;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Verifyemailcontent{
+    width:40vw;
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+
+.insidecontaineremail{
+    display: flex;
+    flex-direction: column   ;
+}
+
+.insidecontaineremail #emailhead{
+    font-size: 1.7rem;
+    background-color:rgb(11, 105, 212) ;
+    height:2.5rem;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color:white;
+    padding-top: 0.5rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    text-indent: 2px;
+    
+}
+.insidecontaineremail #teacherreg{
+font-family: 'Fredoka One', cursive;
+font-size: 1.2rem;   
+color:rgb(87, 85, 85);
+margin:0.5rem 0.5rem 0.5rem 1.5rem;
+}
