@@ -69,10 +69,10 @@
             getbranch.style.display="none";
     }
     forselect();
-
+    
     //subject
-    var subjKG = [ "Maths", "English", "General_Awareness", "Environmental_Science", "Hindi"]
-    var subjlowerprimarycls = [ "Maths", "Moral_Science", "English", "Hindi", "Computer_Science", "General_Knowledge", "Environmental_Studies", "Science"]
+    var subjKG = [ "Maths", "English", "General_Awareness", "Environmental_Science", "Hindi","Language Arts", "Math", "Science","Social Studies","Character Building","Art","Practical Life","PE",]
+    var subjlowerprimarycls = [ "Maths", "Moral_Science", "English", "Hindi", "Computer", "General_Knowledge", "Environmental_Studies", "Science"]
     var subjhigherprimarycls = [ "Maths", "Moral_Science", "Social_Science", "English", "Hindi", "Computer_Science", "General_Knowledge", "Environmental_Studies"]
     var subjlowersecoundarycls = [ "Maths", "Moral_Science", "Social_Science", "English", "Hindi", "Sanskit", "French", "German", "Computer_Science", "General_Knowledge", "Environmental_Studies"]
     var subjhighcls = [ "Science", "Hindi", "English", "Computer_Science", "Social_Science", "Biology", "Chemistry", "Physics"]
@@ -129,3 +129,27 @@
             text.style.display = "none";
         }
     } 
+
+
+
+
+
+    // email popup
+    // gitting the value of the emailbuttn
+var emailverify = document.getElementById("emailverify");
+
+// Get the button that opens
+var btn = document.getElementById("verifyemail");
+
+// Get the <span> element that closes the memail diloag box
+var span = document.getElementsByClassName("Cancelreg")[0];
+
+// When the user clicks on the button, open the email dilog box
+btn.onclick = function() {
+  emailverify.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the close
+span.onclick = function() {
+  emailverify.style.display = "none";
+}

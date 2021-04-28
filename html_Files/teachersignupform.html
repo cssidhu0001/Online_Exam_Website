@@ -138,6 +138,15 @@
                         <label for="specailsubject">Specialization Subject<span>*</span></label>
                         <input type="text" id="specailsubject" placeholder="Your Specialization" required>
                         
+                        <label for="board">School Board<span>*</span></label>
+                        <select name="board" id="boardselect"  class="countrydropdown" required>
+                            <option value="CBSE">CBSE: Central Board of Secondary Education</option>
+                                <option value="ICSE">ICSE: The Indian Certificate of Secondary Education</option>
+                                <option value="IB">IB: International Baccalaureate</option>
+                                <option value="IGCSE">IGCSE: International General Certificate of Secondary Education (IGCSE) Cambridge University</option>
+                                <option value="State_Board">State Board: State Government Recognized Board.</option>
+                            
+                        </select>
                         <label for="classteach">Classes Teach<span>*</span></label>
                         <select name="classesteach" id="classteach" onclick="forselect();forselectsubj();" class="countrydropdown" required>
                             <option value="Pre-KG">Pre-KG</option>
@@ -254,16 +263,19 @@
                         <div  class="insidecontaineremail">
                             <span id="emailhead"> Online Exam Portal</span>
                             <span id="teacherreg"> Teacher Registration</span>
-                            <p> Verify your Email Address</p>
-                            <p> Verifiation Email sent</p>
-                            <p> We sent a Confirmation code on your provided Email address. Enter your Confirmation code below.</p>
-                            <span>Verifiation Code sent on : <span> Email Address</span></span>
-                            <label for="emailcodeverify">Confirmation Code:</label>
+                            <p class="verifyemailtext">  Hi..&nbsp;<span id="verifyemailtextspan">username</span> kindly verify your email address!!!</p>
+                            <p class="verifyemailtext1"> Verifiation Email sent</p>
+                            <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
+                            <span class="verifyemailtext3">Verifiation code sent on : <span> Email Address</span></span>
+                            <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
                             <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
-                            <button id="verifyemailadd"> Verify</button>
-                            <button id="resendcode"> Re-send </button>
-                            <button id="Cancelreg"> Cancel</button>
-                        </div>
+                            <div class="emailverifybuttondiv">
+                                <button id="verifyemailadd" class="emailverifybtn"> Verify </button>
+                                <button id="resendcode" class="emailverifybtn"> Re-send </button>
+                                <button id="Cancelreg" class="emailverifybtn"> Cancel</button>
+                            </div>
+                            
+                        </div>  
                     </div>
                 </div>
             </div>  

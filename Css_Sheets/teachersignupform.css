@@ -776,7 +776,7 @@ flex: 1;
             line-height: 0rem;
 }
 #sendmessage .material-icons:hover{
-  font-size: 1.7em;
+    font-size: 1.7em;
 }
 p .material-icons{
     font-size: 1.3em;
@@ -790,7 +790,7 @@ font-family: 'Ubuntu', sans-serif;
     }
     
     
-
+    
 #changebytab{
     font-size: 1.5em;
     font-weight: bold;
@@ -802,6 +802,23 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 
+
+.eye{
+    width: 100%;
+    display: grid;
+    justify-items: right;
+}
+
+.far{
+    font-family: "Font Awesome 5 Free";
+    padding: 0.8rem;
+    font-size: 1.3rem; 
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 0.5rem;
+    width:3.1rem;
+    margin-top: -3.1rem;
+}
 
 
 
@@ -818,7 +835,7 @@ font-family: 'Ubuntu', sans-serif;
     align-items: center;
 }
 .verifyemailid{
-    display: flex;
+    display: none;
     flex-direction: column;
   box-sizing: border-box;
     width: 50vw;
@@ -864,21 +881,108 @@ color:rgb(87, 85, 85);
 margin:0.5rem 0.5rem 0.5rem 1.5rem;
 }
 
+.verifyemailtext{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+   
+}
+#verifyemailtextspan{
+    
+    font-size: 1.3rem;
+    
+    font-weight: bold;
+    color:rgb(11, 105, 212);
+}
+.verifyemailtext1{
+    padding-top: 0.4rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Antic Slab', serif;
+    color:green;
+    font-weight: bold;
+}
+.text1{
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0.7rem 2rem 0.7rem 2rem;
+    /* font-weight: bold; */
 
-
-.eye{
-    width: 100%;
-    display: grid;
-    justify-items: right;
+}.verifyemailtext3{
+    padding-top: 0.2rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-family: 'Antic Slab', serif;
+    color:rgb(87, 85, 85);
+    font-weight: bold;
 }
 
-.far{
-    font-family: "Font Awesome 5 Free";
-    padding: 0.8rem;
-    font-size: 1.3rem; 
-    background-color: rgb(235, 232, 232);
-    border: 1px solid rgb(209, 208, 208);
-    border-radius: 0.5rem;
-    width:3.1rem;
-    margin-top: -3.1rem;
+.insidecontaineremail input{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    border-radius: 0.6rem;
+    border:1px solid grey;
+    color:rgb(90, 90, 90);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.insidecontaineremail input::placeholder {
+    font-size: 1rem;
+    color: rgb(155, 154, 154);
+    
+}
+.insidecontaineremail input:focus {
+    background-color: whitesmoke;
+    border: 1px solid rgb(172, 172, 172);
+      border-radius: 0.5rem;
+  outline: none;
+}
+.insidecontaineremail input:hover {
+    background-color: rgb(196, 223, 248);
+    border: 2px solid rgb(87, 86, 86);
+    
+}
+    
+    
+.emailverifybuttondiv{
+    display: flex;
+  
+}
+#verifyemailadd{
+    flex: 1;
+  
+}
+#resendcode{
+    flex: 1;
+ 
+}
+#Cancelreg{
+    flex: 1;
+}
+.emailverifybuttondiv button{
+margin-left: 2rem;
+margin-right: 2rem;
+margin-top: 0.5rem;
+padding: 0.5rem;
+font-size: 1.2rem;
+border-radius: 0.6rem;
+border:1px solid grey;
+color:rgb(255, 253, 253);
+background-color: rgb(15, 115, 230);
+font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
+}
+.emailverifybuttondiv button:hover{
+
+padding: 0.6rem;
+font-size: 1.4rem;
+
+border:none;
+color:rgba(3, 49, 148, 0.945);
+background-color: rgb(228, 234, 241);
+
 }
