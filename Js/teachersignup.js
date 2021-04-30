@@ -194,6 +194,12 @@
 
 
 
+    //emil pop
+    function emailverify(){
+        console.log("kbhh");
+        alert("jvhvh");
+    }
+
     // email popup
     // getting the value of the emailbuttn
     var emailverify = document.getElementById("emailverify");

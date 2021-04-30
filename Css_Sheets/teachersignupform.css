@@ -366,7 +366,7 @@ textarea:focus {
   outline: none;
 }
 
-.verifyenailbtn{
+.verifyemailbtn{
     padding:0.8rem;
     color:rgb(78, 77, 77);
     background-color: rgb(235, 232, 232);
@@ -377,13 +377,11 @@ textarea:focus {
     font-weight: bold;
     font-size: 1.3rem;
 }
-.verifyenailbtn:hover{
+.verifyemailbtn:hover{
     padding:0.9rem;
     color:rgb(78, 77, 77);
     background-color: rgb(226, 226, 226);
     border: 1px solid rgb(126, 124, 124);
-
-  
     font-size: 1.4rem;
 }
 
@@ -976,6 +974,7 @@ margin:0.5rem 0.5rem 0.5rem 1.5rem;
 #Cancelreg{
     flex: 1;
 }
+
 .emailverifybuttondiv button{
 margin-left: 2rem;
 margin-right: 2rem;
