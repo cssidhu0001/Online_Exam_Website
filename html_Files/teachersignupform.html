@@ -182,25 +182,14 @@
                             <div class="subject_teach1" id="teachsubj"></div>
                         </div>
                         
-                        <label for="otherspecify">Specify Other</label>
-                        <input type="text" id="otherspecify" placeholder="Specify other subject not in list">
+                        <div id="extrasubj">
+                            <label for="otherspecify">Not in list? Specify others subject?</label><br/>
+                            <input type="button" id="otherspecify" value="Click here to add it!" onclick="onclickadd()"/>
+                        </div>        
                         
                         <div class="subjectcodes">  </div>
-                        <label for="subcode">Subject Code</label>
-                        <div class="subcodes">
-                            <div class="subcodes2">
-                                <label class="subcodelabel" id='subjectname1'> Subject Name</label>
-                                <input type="text"  id="subjectcode1" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname2'> Subject Name</label>
-                                <input type="text"  id="subjectcode2" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname3'> Subject Name</label>
-                                <input type="text"  id="subjectcode3" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname4'> Subject Name</label>
-                                <input type="text"  id="subjectcode4" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname5'> Subject Name</label>
-                                <input type="text"  id="subjectcode5" placeholder=" Your Subject code"><br>                            
-                            </div>
-                        </div>
+                        <label id="showsubj_title">Subject Code</label>
+                        <div class="subcodes" id="showsubj"></div>
                     </div>
                 </div>
             
@@ -234,12 +223,7 @@
                 </div>
             
                 <label>Enter Captcha value <span>*</span></label>
-                  <input type="text" 
-                  id="entered-captcha" 
-                  name="captchacode"
-                  placeholder="Enter the captcha..."
-                  title="Enter captcha here" 
-                  required/>
+                  <input type="text" id="entered-captcha"  name="captchacode" placeholder="Enter the captcha..." title="Enter captcha here"  required/>
                   <h6 id="capterror" class="invalid">
                       <p class="instruction">Kindly provide the captcha values same as in the <b>Captcha Image</b> <br> Else you will be considered as a BOT, and your from Registration
                     will not be processed futher.    </p> </h6>                                 
