@@ -196,13 +196,13 @@
 
     //emil pop
     function emailverify(){
-        console.log("kbhh");
-        alert("jvhvh");
+        
+        
     }
 
     // email popup
     // getting the value of the emailbuttn
-    var emailverify = document.getElementById("emailverify");
+    // var emailverify = document.getElementById("emailverify");
 
     // Get the button that opens
     var btn = document.getElementById("verifyemail");
@@ -211,9 +211,9 @@
     var span = document.getElementsByClassName("Cancelreg")[0];
 
     // When the user clicks on the button, open the email dilog box
-    btn.onclick = function() {
-      emailverify.style.display = "block";
-    }
+    // btn.onclick = function() {
+    //   emailverify.style.display = "block";
+    // }
 
     // When the user clicks on <span> (x), close the close
     // span.onclick = function() {
