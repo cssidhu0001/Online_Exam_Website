@@ -193,24 +193,23 @@
     forselectsubj();
 
 
-/*
+
     // email popup
-    // gitting the value of the emailbuttn
-var emailverify = document.getElementById("emailverify");
+    // getting the value of the emailbuttn
+    var emailverify = document.getElementById("emailverify");
 
-// Get the button that opens
-var btn = document.getElementById("verifyemail");
+    // Get the button that opens
+    var btn = document.getElementById("verifyemail");
 
-// Get the <span> element that closes the memail diloag box
-var span = document.getElementsByClassName("Cancelreg")[0];
+    // Get the <span> element that closes the memail diloag box
+    var span = document.getElementsByClassName("Cancelreg")[0];
 
-// When the user clicks on the button, open the email dilog box
-btn.onclick = function() {
-  emailverify.style.display = "block";
-}
+    // When the user clicks on the button, open the email dilog box
+    btn.onclick = function() {
+      emailverify.style.display = "block";
+    }
 
-// When the user clicks on <span> (x), close the close
-span.onclick = function() {
-  emailverify.style.display = "none";
-}
-*/
+    // When the user clicks on <span> (x), close the close
+    // span.onclick = function() {
+    //   emailverify.style.display = "none";
+    // }
