@@ -67,8 +67,8 @@
                         </div>
                     
                         <label > Passport Photo <span>*</span></label>
-                        <input type="file" name="passportphoto" id="photo" accept=".png, .jpg, .jpeg"  />
-                        <p class="instruction">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
+                        <input type="file" name="passportphoto" id="photo" accept=".png, .jpg, .jpeg" onchange="Uploadfile('photo','note1')"/>
+                        <p class="instruction" id="note1" >(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
                         </select>
                         <br>
                         <br>
-                        <label for="districtSel">Select District/ City</label>  <select  class="countrydropdown" name="district" id="districtSel" size="1">
+                        <label for="districtSel">Select District/ City</label>  <select  class="countrydropdown" name="district" id="districtSel" size="1" onchange="forcity()">
                             <option value="" selected="selected">Please select State first</option>
                         </select><br>
 
@@ -116,7 +116,7 @@
                         <label for="altMobile">Alternate Number</label>
                         <input type="text" id="altmobile" placeholder="Enter your  Alternate  Number" >
                         <label for="email">E-mail<span>*</span></label>
-                        <input type="email" id="email" placeholder="Enter your  Email Id"  class="email">
+                        <input type="email" id="usremail" placeholder="Enter your  Email Id"  class="email">
                         <p class="instruction">Kindly verify your Email before proceeding futher in the form</p>
                         <input type="button" id="verifyemail" class="verifyemailbtn" onclick="emailverify()" value="Verify Email">
                     </div>
@@ -130,8 +130,8 @@
                         <input type="text" id="schoolcode" placeholder="Your School code" required>
                         
                         <label for="schoolid"> School Id Card Photo <span>*</span></label>
-                        <input type="file" name="schoolid" id="schoolid" accept=".png, .jpg, .jpeg" />
-                        <p class="instruction">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB)</p>
+                        <input type="file" name="schoolid" id="schoolid" accept=".png, .jpg, .jpeg" onchange="Uploadfile('schoolid','note2')"/>
+                        <p class="instruction" id="note2">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB)</p>
 
                         <label for="specailsubject">Specialization Subject<span>*</span></label>
                         <input type="text" id="specailsubject" placeholder="Your Specialization" required>
@@ -243,18 +243,17 @@
                         <div  class="insidecontaineremail">
                             <span id="emailhead"> Online Exam Portal</span>
                             <span id="teacherreg"> Teacher Registration</span>
-                            <p class="verifyemailtext">  Hi..&nbsp;<span id="verifyemailtextspan">username</span> kindly verify your email address!!!</p>
+                            <div id="introduction"></div>
                             <p class="verifyemailtext1"> Verifiation Email sent</p>
                             <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
-                            <span class="verifyemailtext3">Verifiation code sent on : <span> Email Address</span></span>
+                            <span id="verifyemailtext2"></span>
                             <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
                             <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
                             <div class="emailverifybuttondiv">
                                 <button id="verifyemailadd" class="emailverifybtn"> Verify </button>
                                 <button id="resendcode" class="emailverifybtn"> Re-send </button>
                                 <button id="Cancelreg" class="emailverifybtn"> Cancel</button>
-                            </div>
-                            
+                            </div>   
                         </div>  
                     </div>
                 </div>

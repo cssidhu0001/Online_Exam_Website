@@ -187,35 +187,48 @@
         }
     }    
 
+    //files upload
+    function Uploadfile(fileid,note) {
+        var fileUpload = document.getElementById(fileid);
+        var notice = document.getElementById(note);
+        if (typeof (fileUpload.files) != "undefined") {
+            var size = fileUpload.files[0].size;
+			if(size < 3145728){
+            	notice.style.display = "none" ;
+            }
+			else {
+                notice.style.color="red";
+            	notice.style.display = "block" ;
+			}
+        } 
+    }
+
     //always run at beginning
     generate();
     forselect();
     forselectsubj();
 
 
-
-    //emil pop
-    function emailverify(){
-        
-        
+    function forcity(){
+        document.getElementById("city").value=document.getElementById("districtSel").value=document.getElementById("districtSel").value;
     }
 
-    // email popup
-    // getting the value of the emailbuttn
-    // var emailverify = document.getElementById("emailverify");
-
-    // Get the button that opens
-    var btn = document.getElementById("verifyemail");
-
-    // Get the <span> element that closes the memail diloag box
-    var span = document.getElementsByClassName("Cancelreg")[0];
-
-    // When the user clicks on the button, open the email dilog box
-    // btn.onclick = function() {
-    //   emailverify.style.display = "block";
-    // }
-
-    // When the user clicks on <span> (x), close the close
-    // span.onclick = function() {
-    //   emailverify.style.display = "none";
-    // }
+    //email pop
+    function emailverify(){
+        var displayemailverify=document.getElementById("emailcenter");
+        var username = document.getElementById("fname").value;
+        var useremail = document.getElementById("usremail").value;
+        var intro = document.getElementById("introduction");
+        if (username!="" && useremail!=""){
+            displayemailverify.style.display="flex";
+            var introstr = `<span style="text-align:center;font-family:ubuntu;font-size:1.2rem">Hi.. <span style="font-size:1.4rem;color:rgb(11, 105, 212);weight:bold">${username}</span> kindly verify your email address!!! </div>`;
+            var email=`<span style="padding-top: 0.2rem;margin-left: 2rem;font-size: 1rem;font-family: 'Antic Slab', serif;color:rgb(87, 85, 85);font-weight: bold;">Verification code sent on : ${useremail}</span>`;
+            intro.style.textAlign="center";
+            $("#introduction").empty();
+            $("#introduction").append($(introstr));
+            $("#verifyemailtext2").append($(email));
+        } else {
+            //username required
+            console.log("log");
+        }  
+    }
