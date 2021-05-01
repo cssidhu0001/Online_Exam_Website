@@ -124,19 +124,77 @@ padding-top: 5rem;
     color: rgb(66, 65, 65);
     text-align: center;
     border-radius: 6px;
-    padding:1rem;
-  font-size: 1.2rem;
+    padding:0.4rem;
+  font-size: 0.8rem;
   font-family: 'Ubuntu', sans-serif;
-    /* Position the tooltip */
-    position: absolute;
-    margin-top: 0.4rem;
+    
+   
+    margin-top: 0.1rem;
+    z-index: 1;
+    
+  }
+.tooltiptext1 {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:0.4rem;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu', sans-serif;
+    
+   
+    margin-top: 0.1rem;
+    z-index: 1;
+    
+  }
+.tooltiptext2 {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:0.4rem;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu', sans-serif;
+    
+   
+    margin-top: 0.1rem;
+    z-index: 1;
+    
+  }
+.tooltiptext3 {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:0.4rem;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu', sans-serif;
+    
+   
+    margin-top: 0.1rem;
     z-index: 1;
     
   }
 
-  .Contact_Details .email:hover .tooltiptext {
-    display: block;
-   
+   .email:hover ~ .tooltiptext{
+   /* background-color: #ffffff; */
+   display: block;
+  }
+   #submitform:hover ~ .tooltiptext1{
+       cursor: pointer;
+   /* background-color: #ffffff; */
+   display: block;
+  }
+   #resetform:hover ~ .tooltiptext2{
+   /* background-color: #ffffff; */
+   display: block;
+  }
+  #login:hover ~ .tooltiptext3{
+   /* background-color: #ffffff; */
+   display: block;
   }
 /* css  of personal detials div start form here */
 
