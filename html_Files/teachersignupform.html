@@ -67,8 +67,8 @@
                         </div>
                     
                         <label > Passport Photo <span>*</span></label>
-                        <input type="file" name="passportphoto" id="photo" accept=".png, .jpg, .jpeg"  />
-                        <p class="instruction">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
+                        <input type="file" name="passportphoto" id="photo" accept=".png, .jpg, .jpeg" onchange="Uploadfile('photo','note1')"/>
+                        <p class="instruction" id="note1" >(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
                         </select>
                         <br>
                         <br>
-                        <label for="districtSel">Select District/ City</label>  <select  class="countrydropdown" name="district" id="districtSel" size="1">
+                        <label for="districtSel">Select District/ City</label>  <select  class="countrydropdown" name="district" id="districtSel" size="1" onchange="forcity()">
                             <option value="" selected="selected">Please select State first</option>
                         </select><br>
 
@@ -105,24 +105,22 @@
                         <textarea name="Add" id="address" cols="30" rows="10"></textarea>
                         <p class="instruction">Kindly provide your full address in the address box.</p>
                     </div>
-                
-                    <div class="Contact_Details">
-                        <div class="details_head">Contact Details</div>
-                        <div class="residential_Detailscont">
-                            <label for="Mobile">Mobile Number<span>*</span></label>
-                            <input type="text" id="mobile" placeholder="Enter your  Mobile Number" required>
-                            <p class="instruction">Kindly provide your Whatsapp number here.</p>
-                        
-                            <label for="altMobile">Alternate Number</label>
-                            <input type="text" id="altmobile" placeholder="Enter your  Alternate  Number" >
-                            <label for="email">E-mail<span>*</span></label>
-                            <input type="email" id="email" placeholder="Enter your  Email Id"  class="email">
-                            <p class="instruction">Kindly verify your Email before proceeding futher in the form</p>
-                            <button id="verifyemail" class="verifyenailbtn" >Verify Email</button>
-                        </div>
+                </div>
+                <div class="Contact_Details">
+                    <div class="details_head">Contact Details</div>
+                    <div class="residential_Detailscont">
+                        <label for="Mobile">Mobile Number<span>*</span></label>
+                        <input type="text" id="mobile" placeholder="Enter your  Mobile Number" required>
+                        <p class="instruction">Kindly provide your Whatsapp number here.</p>
+                    
+                        <label for="altMobile">Alternate Number</label>
+                        <input type="text" id="altmobile" placeholder="Enter your  Alternate  Number" >
+                        <label for="email">E-mail<span>*</span></label>
+                        <input type="email" id="usremail" placeholder="Enter your  Email Id"  class="email">
+                        <p class="instruction">Kindly verify your Email before proceeding futher in the form</p>
+                        <input type="button" id="verifyemail" class="verifyemailbtn" onclick="emailverify()" value="Verify Email">
                     </div>
                 </div>
-
                 <div class="teaching_Details">
                     <div class="details_head">Teaching Details</div>
                     <div class="personal_Detailscont">
@@ -132,8 +130,8 @@
                         <input type="text" id="schoolcode" placeholder="Your School code" required>
                         
                         <label for="schoolid"> School Id Card Photo <span>*</span></label>
-                        <input type="file" name="schoolid" id="schoolid" accept=".png, .jpg, .jpeg" />
-                        <p class="instruction">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB)</p>
+                        <input type="file" name="schoolid" id="schoolid" accept=".png, .jpg, .jpeg" onchange="Uploadfile('schoolid','note2')"/>
+                        <p class="instruction" id="note2">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB)</p>
 
                         <label for="specailsubject">Specialization Subject<span>*</span></label>
                         <input type="text" id="specailsubject" placeholder="Your Specialization" required>
@@ -182,25 +180,14 @@
                             <div class="subject_teach1" id="teachsubj"></div>
                         </div>
                         
-                        <label for="otherspecify">Specify Other</label>
-                        <input type="text" id="otherspecify" placeholder="Specify other subject not in list">
+                        <div id="extrasubj">
+                            <label for="otherspecify">Not in list? Specify others subject?</label><br/>
+                            <input type="button" id="otherspecify" value="Click here to add it!" onclick="onclickadd()"/>
+                        </div>        
                         
                         <div class="subjectcodes">  </div>
-                        <label for="subcode">Subject Code</label>
-                        <div class="subcodes">
-                            <div class="subcodes2">
-                                <label class="subcodelabel" id='subjectname1'> Subject Name</label>
-                                <input type="text"  id="subjectcode1" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname2'> Subject Name</label>
-                                <input type="text"  id="subjectcode2" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname3'> Subject Name</label>
-                                <input type="text"  id="subjectcode3" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname4'> Subject Name</label>
-                                <input type="text"  id="subjectcode4" placeholder=" Your Subject code"><br>
-                                <label class="subcodelabel" id='subjectname5'> Subject Name</label>
-                                <input type="text"  id="subjectcode5" placeholder=" Your Subject code"><br>                            
-                            </div>
-                        </div>
+                        <label id="showsubj_title">Subject Code</label>
+                        <div class="subcodes" id="showsubj"></div>
                     </div>
                 </div>
             
@@ -234,12 +221,7 @@
                 </div>
             
                 <label>Enter Captcha value <span>*</span></label>
-                  <input type="text" 
-                  id="entered-captcha" 
-                  name="captchacode"
-                  placeholder="Enter the captcha..."
-                  title="Enter captcha here" 
-                  required/>
+                  <input type="text" id="entered-captcha"  name="captchacode" placeholder="Enter the captcha..." title="Enter captcha here"  required/>
                   <h6 id="capterror" class="invalid">
                       <p class="instruction">Kindly provide the captcha values same as in the <b>Captcha Image</b> <br> Else you will be considered as a BOT, and your from Registration
                     will not be processed futher.    </p> </h6>                                 
@@ -256,25 +238,22 @@
         <!-- //Email Verification Dailog box -->
         <div id="emailcenter">
             <div id="emailverify" class="verifyemailid">
-              
-                <div class="Verifyemailcontent">
-                  
+                <div class="Verifyemailcontent">  
                     <div class="maincontaineremail">
                         <div  class="insidecontaineremail">
                             <span id="emailhead"> Online Exam Portal</span>
                             <span id="teacherreg"> Teacher Registration</span>
-                            <p class="verifyemailtext">  Hi..&nbsp;<span id="verifyemailtextspan">username</span> kindly verify your email address!!!</p>
+                            <div id="introduction"></div>
                             <p class="verifyemailtext1"> Verifiation Email sent</p>
                             <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
-                            <span class="verifyemailtext3">Verifiation code sent on : <span> Email Address</span></span>
+                            <span id="verifyemailtext2"></span>
                             <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
                             <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
                             <div class="emailverifybuttondiv">
                                 <button id="verifyemailadd" class="emailverifybtn"> Verify </button>
                                 <button id="resendcode" class="emailverifybtn"> Re-send </button>
                                 <button id="Cancelreg" class="emailverifybtn"> Cancel</button>
-                            </div>
-                            
+                            </div>   
                         </div>  
                     </div>
                 </div>

@@ -366,7 +366,7 @@ textarea:focus {
   outline: none;
 }
 
-.verifyenailbtn{
+.verifyemailbtn{
     padding:0.8rem;
     color:rgb(78, 77, 77);
     background-color: rgb(235, 232, 232);
@@ -377,13 +377,11 @@ textarea:focus {
     font-weight: bold;
     font-size: 1.3rem;
 }
-.verifyenailbtn:hover{
+.verifyemailbtn:hover{
     padding:0.9rem;
     color:rgb(78, 77, 77);
     background-color: rgb(226, 226, 226);
     border: 1px solid rgb(126, 124, 124);
-
-  
     font-size: 1.4rem;
 }
 
@@ -821,23 +819,34 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 
+#extrasubj{
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+    padding-top:0rem;
+    padding-bottom: 0rem;
+}
+#extrasubj label{
+    padding:0.5rem;
+}
 
+#showsubj, #showsubj_title{
+display: none;
+}
 
 
 
 
 /* email verification Box */
 #emailcenter{
-    display: flex;
-    flex-direction: column;
+    display:none;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
 .verifyemailid{
-    display: none;
     flex-direction: column;
-  box-sizing: border-box;
+    box-sizing: border-box;
     width: 50vw;
     margin-top: 1rem;
     height: 60vh;
@@ -881,20 +890,6 @@ color:rgb(87, 85, 85);
 margin:0.5rem 0.5rem 0.5rem 1.5rem;
 }
 
-.verifyemailtext{
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-   
-}
-#verifyemailtextspan{
-    
-    font-size: 1.3rem;
-    
-    font-weight: bold;
-    color:rgb(11, 105, 212);
-}
 .verifyemailtext1{
     padding-top: 0.4rem;
     text-align: center;
@@ -963,6 +958,7 @@ margin:0.5rem 0.5rem 0.5rem 1.5rem;
 #Cancelreg{
     flex: 1;
 }
+
 .emailverifybuttondiv button{
 margin-left: 2rem;
 margin-right: 2rem;
