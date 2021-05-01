@@ -229,14 +229,6 @@ padding-top: 5rem;
     font-size: 0.9rem;
     padding:1.2rem 0.5rem 0.5rem 0.5rem;
 }
-.instruction{
-    font-size: 0.7rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color :rgb(104, 103, 103);
-    padding:0.4rem;
-    
-}
 
 #photo::-webkit-file-upload-button{
     background-color: rgb(235, 232, 232);
@@ -529,6 +521,7 @@ textarea:focus {
         padding:0.5rem;
         font-weight: bold;
         width: 200px;
+        text-transform: none;
         
     }
     .buttonsdiv{
@@ -873,6 +866,25 @@ font-family: 'Ubuntu', sans-serif;
 #showsubj, #showsubj_title{
 display: none;
 }
+
+.invalid {
+    color: red;
+  }
+
+.valid {
+    color:  green;
+  }
+
+#message , #cmessage{
+    display:none;
+    background: #85ffdb;
+    padding: 5px;
+    border-radius: 2mm;
+    width: 100%;
+    height: auto;
+  }
+
+
 
 
 
