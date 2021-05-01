@@ -201,11 +201,28 @@
                             <div class="eye">
                                 <i class="far fa-eye" id="togglePassword"></i>
                             </div>
+
+                            <!-- message-1 -->
+                            <div id="message">
+                                <h6>Password must contain the following:</h6>
+                                <h6 id="letter" class="invalid">A <b>lowercase</b> letter</h6>
+                                <h6 id="capital" class="invalid">A <b>capital (uppercase)</b> letter</h6>
+                                <h6 id="number" class="invalid">A <b>number</b></h6>
+                                <h6 id="length" class="invalid">Minimum <b>8 characters</b></h6>
+                                <h6 id="schar" class="invalid">A <b>special character</b></h6>
+                            </div> 
+
                             <label for="conpass">  Confirm Password<span>*</span></label>
                             <input type="password" name="conpassword" id="conpass" required autocomplete="off"> 
                             <div class="eye">
                                 <i class="far fa-eye" id="togglecPassword"></i>
                             </div>
+
+                            <!-- message-2 -->
+                            <div id="cmessage">
+                                <h6 id="cerror" class="invalid">confirm password must be same as <b>password</b></h6>
+                            </div>
+
                         <div class="captachdiv">
                             <div>
                             <label>Captcha Value </label>
@@ -222,11 +239,12 @@
                 </div>
             
                 <label>Enter Captcha value <span>*</span></label>
-                  <input type="text" id="entered-captcha"  name="captchacode" placeholder="Enter the captcha..." title="Enter captcha here"  required/>
-                  <h6 id="capterror" class="invalid" autocomplete="off">
-                      <p class="instruction">Kindly provide the captcha values same as in the <b>Captcha Image</b> <br> Else you will be considered as a BOT, and your from Registration
-                    will not be processed futher.    </p> </h6>                                 
-                       <div class="buttonsdiv">
+                  <input type="text" id="entered-captcha"  name="captchacode" placeholder="Enter the captcha..." title="Enter captcha here"  autocomplete="off" required/>
+                  <div id="captmessage">
+                    <h6 id="capterror" class="invalid">Kindly provide the captcha values same as in the <b>Captcha Image</b>, Ellse you will be considered as a BOT, and your from Registration
+                        will not be processed futher.</h6>
+                    </div>
+                   <div class="buttonsdiv">
                            <button type="submit" id="submitform" class="btn"> Get Registered</button>
                            <input type="button" id="resetform" class="btn" value=" Reset Form" onclick="resetfunction()" autocomplete="off"/>
                            <input type="button" value="Login" class="btn" id="login" autocomplete="off" />
