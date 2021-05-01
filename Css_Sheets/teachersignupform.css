@@ -118,8 +118,26 @@ padding-top: 5rem;
     color:red;
     
 }
+.tooltiptext {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:1rem;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+    /* Position the tooltip */
+    position: absolute;
+    margin-top: 0.4rem;
+    z-index: 1;
+    
+  }
 
-
+  .Contact_Details .email:hover .tooltiptext {
+    display: block;
+   
+  }
 /* css  of personal detials div start form here */
 
 .personal_Details{
@@ -177,11 +195,12 @@ padding-top: 5rem;
     border: 1px solid rgb(209, 208, 208);
     border-radius: 0.5rem;
     font-size: 1.1rem;
-    
+    text-transform: uppercase;
 }
 .personal_Detailscont input::placeholder {
     font-size: 1rem;
     color: rgb(155, 154, 154);
+    text-transform: none;
     
 }
 .personal_Detailscont input:focus {
@@ -189,8 +208,12 @@ padding-top: 5rem;
     border-radius: 0.5rem;
     border: 1px solid rgb(172, 172, 172);
     outline: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     
+    
+}
+.personal_Detailscont input:hover {
+ cursor: pointer;
     
 }
 .genderdiv{
@@ -293,6 +316,23 @@ padding-top: 5rem;
     
     
 }
+.residential_Detailscont input:hover {
+    cursor: pointer;   
+}
+
+.personal_Detailscont #pass {
+    text-transform: none;
+}
+.personal_Detailscont #conpass {
+    text-transform: none;
+}
+.personal_Detailscont #pass:focus {
+    text-transform: none;
+}
+.personal_Detailscont #conpass:focus {
+    text-transform: none;
+}
+
 
 
 
