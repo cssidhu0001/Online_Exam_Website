@@ -30,6 +30,31 @@
             </div>
         </div>
     </header>
+    <!-- //Email Verification Dailog box -->
+    <div id="emailcenter">
+        <div id="emailverify" class="verifyemailid">
+            <div class="Verifyemailcontent">
+                <span class="close"></span>
+                <span id="emailhead"> Online Exam Portal</span>
+            </div>
+            <div class="maincontaineremail">
+                <div  class="insidecontaineremail">
+                    <span id="teacherreg"> Teacher Registration</span>
+                    <div id="introduction"></div>
+                    <p class="verifyemailtext1"> Verifiation Email sent</p>
+                    <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
+                    <span id="verifyemailtext2"></span>
+                    <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
+                    <input type="text" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
+                    <div class="emailverifybuttondiv">
+                        <input type="button" id="verifyemailadd" class="emailverifybtn" value="Verify"> </button>
+                        <input type="button" id="resendcode" class="emailverifybtn" value="Re-send"> </button>
+                        <input type="button" id="Cancelreg" class="emailverifybtn" onclick="cancelverification()" value="Cancel"></button>
+                    </div>       
+                </div>
+            </div>
+        </div>  
+    </div>
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>  
@@ -76,30 +101,6 @@
                     </div>
                 </div>
 
-                <!-- //Email Verification Dailog box -->
-                <div id="emailcenter">
-                    <div id="emailverify" class="verifyemailid">
-                        <div class="Verifyemailcontent">  
-                            <div class="maincontaineremail">
-                                <div  class="insidecontaineremail">
-                                    <span id="emailhead"> Online Exam Portal</span>
-                                    <span id="teacherreg"> Teacher Registration</span>
-                                    <div id="introduction"></div>
-                                    <p class="verifyemailtext1"> Verifiation Email sent</p>
-                                    <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
-                                    <span id="verifyemailtext2"></span>
-                                    <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
-                                    <input type="text" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
-                                    <div class="emailverifybuttondiv">
-                                        <button id="verifyemailadd" class="emailverifybtn"> Verify </button>
-                                        <button id="resendcode" class="emailverifybtn"> Re-send </button>
-                                        <button id="Cancelreg" class="emailverifybtn"   onclick="cancelverification()"> Cancel</button>
-                                    </div>   
-                                </div>  
-                            </div>
-                        </div>
-                    </div>  
-                </div>
 <!-- End of personal details div here -->
 
 <!-- starting of resedential details div here for the purpose of address -->
