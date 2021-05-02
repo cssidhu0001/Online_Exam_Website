@@ -19,12 +19,14 @@
     enteredcaptcha.onkeyup = function() {
     if (enteredcaptcha.value==gencaptcha.value){
         capterror.classList.remove("invalid");
+        
         capterror.classList.add("valid");
         } else {
         capterror.classList.remove("valid");
         capterror.classList.add("invalid");
             }
         }
+        
 
     function resetfunction(){
         document.getElementById("signupform").reset();
@@ -221,6 +223,8 @@
         var intro = document.getElementById("introduction");
         if (username!="" && useremail!=""){
             displayemailverify.style.display="flex";
+            displayemailverify.style.top="2400px";
+
             var introstr = `<span style="text-align:center;font-family:ubuntu;font-size:1.2rem">Hi.. <span style="font-size:1.4rem;color:rgb(11, 105, 212);weight:bold">${username}</span> kindly verify your email address!!! </div>`;
             var email=`<span style="padding-top: 0.2rem;margin-left: 2rem;font-size: 1rem;font-family: 'Antic Slab', serif;color:rgb(87, 85, 85);font-weight: bold;">Verification code sent on : ${useremail}</span>`;
             intro.style.textAlign="center";
@@ -234,6 +238,22 @@
         }  
     }
 
+
+
+    // Get the <span> element that cancel the email verification
+
+var cancel = document.getElementsByClassName("emailcenter")[0];
+// // When the user clicks on <span> (x), cancel and close the email verification box
+function cancelverification() {
+    cancel.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the emailbox, close it
+window.onclick = function(event) {
+    if (event.target == cancel) {
+        cancel.style.display = "none";
+    }
+  }
 
     //password validation
     var myInput = document.getElementById("pass");

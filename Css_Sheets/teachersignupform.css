@@ -124,19 +124,86 @@ padding-top: 5rem;
     color: rgb(66, 65, 65);
     text-align: center;
     border-radius: 6px;
-    padding:1rem;
-  font-size: 1.2rem;
+    padding:0.4rem;
+  font-size: 0.8rem;
   font-family: 'Ubuntu', sans-serif;
-    /* Position the tooltip */
-    position: absolute;
-    margin-top: 0.4rem;
+    
+   
+    margin-top: 0.1rem;
     z-index: 1;
     
   }
-
-  .Contact_Details .email:hover .tooltiptext {
-    display: block;
+.tooltiptext1 {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:0.4rem;
    
+  font-size: 0.8rem;
+  font-family: 'Ubuntu', sans-serif;
+    
+   
+    margin-top: 0.1rem;
+    z-index: 1;
+    
+  }
+.tooltiptext2 {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:0.4rem;
+  font-size: 0.8rem;
+  font-family: 'Ubuntu', sans-serif;
+    
+    
+    margin-top: 0.1rem;
+    z-index: 1;
+    
+  }
+.tooltiptext3 {
+    display: none;
+    background-color: rgb(167, 164, 164);
+    color: rgb(66, 65, 65);
+    text-align: center;
+    border-radius: 6px;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+    margin-top: 0.1rem;
+    z-index: 1;
+    
+}
+
+.instructiontext{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(134, 130, 130);
+    
+  }
+
+   .email:hover ~ .tooltiptext{
+   /* background-color: #ffffff; */
+   display: block;
+  }
+   #submitform:hover ~ .tooltiptext1{
+       cursor: pointer;
+   /* background-color: #ffffff; */
+   display: block;
+  }
+   #resetform:hover ~ .tooltiptext2{
+   /* background-color: #ffffff; */
+   display: block;
+  }
+  #login:hover ~ .tooltiptext3{
+   /* background-color: #ffffff; */
+   display: block;
   }
 /* css  of personal detials div start form here */
 
@@ -552,8 +619,7 @@ textarea:focus {
 }
 hr{
     margin-top: 1rem;
-    height: 1rem;
-    color: black;
+    color: rgb(124, 122, 122);
 }
 
 
@@ -573,7 +639,7 @@ hr{
  
 }
 .resverdmanaged{
-    
+    margin-top: 3rem;
    position: relative;
 display: block;
 padding:0.8rem;
@@ -867,17 +933,26 @@ font-family: 'Ubuntu', sans-serif;
 display: none;
 }
 
-.invalid {
-    color: red;
+
+ .invalid {
+   font-size: 0.8rem;
+   font-weight: bold;
+   font-family: 'Ubuntu', sans-serif;   
+    color:red
   }
 
 .valid {
     color:  green;
-  }
+    font-size: 0.8rem;
+   font-weight: bold;
+   font-family: 'Ubuntu', sans-serif;   
+}
 
 #message , #cmessage{
+    margin-top: 0.2rem;
+    font-family: 'Ubuntu', sans-serif;   
     display:none;
-    background: #85ffdb;
+    background: #b5b6b6;
     padding: 5px;
     border-radius: 2mm;
     width: 100%;
@@ -891,18 +966,26 @@ display: none;
 
 /* email verification Box */
 #emailcenter{
-    display:none;
+    margin-left: 20.5rem;
+    position: absolute;
+    top:-600px;
+    display: flex;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+   transition: 0.5s all ease;
 }
+
 .verifyemailid{
+
+    display: flex;
     flex-direction: column;
     box-sizing: border-box;
     width: 50vw;
     margin-top: 1rem;
     height: 60vh;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(82, 123, 235);
     z-index: 1;
     border-radius: 1rem;
     justify-content: center;
@@ -925,7 +1008,7 @@ display: none;
 
 .insidecontaineremail #emailhead{
     font-size: 1.7rem;
-    background-color:rgb(11, 105, 212) ;
+    background-color:rgb(0, 63, 134) ;
     height:2.5rem;
     text-align: center;
     font-family: 'Fredoka One', cursive;
