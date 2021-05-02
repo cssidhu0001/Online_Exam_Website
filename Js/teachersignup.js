@@ -1,4 +1,17 @@
-    //captcha
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+
+
+//captcha
     let captcha;
     let alphabets = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
     var gencaptcha=document.getElementById("generated-captcha");
@@ -204,7 +217,7 @@ function forcity(){
         document.getElementById("code").value="(+"+document.getElementById("countrycodedropdown").value+")";
     }
 // getting the value of country code form the country code dropdown and printing it into the mobile number code  
-    function alternateconutrycode(){
+    function alternateconutrycode(){``
         document.getElementById("codealternate").value="(+"+document.getElementById("alternatecountrycodedropdown").value+")";
     }
 
