@@ -195,9 +195,17 @@
     forselect();
     forselectsubj();
 
-
-    function forcity(){
-        document.getElementById("city").value=document.getElementById("districtSel").value;
+// getting the value of city and printing it into the city coloumn in below
+function forcity(){
+    document.getElementById("city").value=document.getElementById("districtSel").value;
+}
+// getting the value of country code form the country code dropdown and printing it into the mobile number code  
+    function conutrycode(){
+        document.getElementById("code").value="(+"+document.getElementById("countrycodedropdown").value+")";
+    }
+// getting the value of country code form the country code dropdown and printing it into the mobile number code  
+    function alternateconutrycode(){
+        document.getElementById("codealternate").value="(+"+document.getElementById("alternatecountrycodedropdown").value+")";
     }
 
     //email pop

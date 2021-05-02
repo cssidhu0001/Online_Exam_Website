@@ -427,6 +427,38 @@ padding-top: 5rem;
     outline: none;
 }
 
+.countrycode .countrydropdown{
+    width: 200px;
+    margin-right: 1rem;
+}
+.countrycode .codebox{
+    
+    width: 100px;
+    margin-right: 0px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    border-right: 3px solid rgb(209, 208, 208);
+}
+.countrycode .codebox:focus{
+    width: 70px;
+    margin-right: 0px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    border-right: 3px solid rgb(209, 208, 208);
+    background-color: rgb(235, 232, 232);
+    text-transform: none;
+
+}
+.countrycode #mobile{
+    margin-left: 0px;
+    border-left: 3px solid rgb(209, 208, 208);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    width: 40rem;
+}
+.countrycode #alternatenumber{
+    margin-left: 0px;
+    border-left: 3px solid rgb(209, 208, 208);
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    width: 40rem;
+}
 
 textarea{
     padding:0.8rem;
