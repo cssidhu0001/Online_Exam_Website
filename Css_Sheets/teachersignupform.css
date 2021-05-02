@@ -1013,15 +1013,23 @@ display: none;
 
 /* email verification Box */
 #emailcenter{
-    margin-left: 20.5rem;
-    position: absolute;
-    top:-600px;
-    display: flex;
+    top:0px;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
     overflow: auto;
-   transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .verifyemailid{
@@ -1040,10 +1048,8 @@ display: none;
 }
 
 .Verifyemailcontent{
-    width:40vw;
     display: flex;
     flex-direction: column;
-    height: 48vh;
     border-radius: 1rem;
     background-color: #ffffff;
 }
@@ -1055,7 +1061,7 @@ display: none;
 
 .insidecontaineremail #emailhead{
     font-size: 1.7rem;
-    background-color:rgb(0, 63, 134) ;
+    background-color:rgb(255, 255, 255) ;
     height:2.5rem;
     text-align: center;
     font-family: 'Fredoka One', cursive;
@@ -1063,8 +1069,8 @@ display: none;
     padding-top: 0.5rem;
     border-radius: 1rem 1rem 0rem 0rem;
     text-indent: 2px;
-    
 }
+
 .insidecontaineremail #teacherreg{
 font-family: 'Fredoka One', cursive;
 font-size: 1.2rem;   
@@ -1125,6 +1131,7 @@ margin:0.5rem 0.5rem 0.5rem 1.5rem;
 }
     
     
+
 .emailverifybuttondiv{
     display: flex;
   
@@ -1141,26 +1148,27 @@ margin:0.5rem 0.5rem 0.5rem 1.5rem;
     flex: 1;
 }
 
-.emailverifybuttondiv button{
-margin-left: 2rem;
-margin-right: 2rem;
-margin-top: 0.5rem;
-padding: 0.5rem;
-font-size: 1.2rem;
-border-radius: 0.6rem;
-border:1px solid grey;
-color:rgb(255, 253, 253);
-background-color: rgb(15, 115, 230);
-font-family: 'Ubuntu', sans-serif;
-font-weight: bold;
+.emailverifybuttondiv input{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.6rem;
+    border:1px solid grey;
+    color:rgb(255, 253, 253);
+    background-color: rgb(15, 115, 230);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
-.emailverifybuttondiv button:hover{
 
-padding: 0.6rem;
-font-size: 1.4rem;
-
-border:none;
-color:rgba(3, 49, 148, 0.945);
-background-color: rgb(228, 234, 241);
-
+.emailverifybuttondiv input:hover{
+    
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    
+    border:none;
+    color:rgba(3, 49, 148, 0.945);
+    background-color: rgb(228, 234, 241);
+    
 }

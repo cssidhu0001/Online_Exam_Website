@@ -11,7 +11,7 @@ function myFunction() {
 
 
 
-//captcha
+    //captcha
     let captcha;
     let alphabets = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
     var gencaptcha=document.getElementById("generated-captcha");
@@ -228,9 +228,11 @@ function forcity(){
         var useremail = document.getElementById("usremail").value;
         var intro = document.getElementById("introduction");
         if (username!="" && useremail!=""){
+            displayemailverify.style.display="block";
             displayemailverify.style.display="flex";
-            displayemailverify.style.top="2400px";
-
+            displayemailverify.style.paddingTop="95px";
+            displayemailverify.style.justifyContent="center";
+            displayemailverify.style.alignItems="center";
             var introstr = `<span style="text-align:center;font-family:ubuntu;font-size:1.2rem">Hi.. <span style="font-size:1.4rem;color:rgb(11, 105, 212);weight:bold">${username}</span> kindly verify your email address!!! </div>`;
             var email=`<span style="padding-top: 0.2rem;margin-left: 2rem;font-size: 1rem;font-family: 'Antic Slab', serif;color:rgb(87, 85, 85);font-weight: bold;">Verification code sent on : ${useremail}</span>`;
             intro.style.textAlign="center";
@@ -244,22 +246,37 @@ function forcity(){
         }  
     }
 
-
-
     // Get the <span> element that cancel the email verification
+    var displayemailverify=document.getElementById("emailcenter");
+    // When the user clicks on <span> (x), cancel and close the email verification box
+    function cancelverification() {
+        displayemailverify.style.display = "none";
+    }
 
-var cancel = document.getElementsByClassName("emailcenter")[0];
-// // When the user clicks on <span> (x), cancel and close the email verification box
-function cancelverification() {
-    cancel.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the emailbox, close it
-window.onclick = function(event) {
+    var spancancel = document.getElementsByClassName("close")[0];
+    // When the user clicks anywhere outside of the emailbox, close it
+    window.onclick = function(event) {
     if (event.target == cancel) {
-        cancel.style.display = "none";
+        spancancel.style.display = "none";
     }
   }
+
+    var modal = document.getElementById("emailcenter");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 
 
   var myInput = document.getElementById("pass");
