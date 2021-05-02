@@ -16,18 +16,6 @@
         enteredcaptcha.value = '';
     }
 
-    enteredcaptcha.onkeyup = function() {
-    if (enteredcaptcha.value==gencaptcha.value){
-        capterror.classList.remove("invalid");
-        
-        capterror.classList.add("valid");
-        } else {
-        capterror.classList.remove("valid");
-        capterror.classList.add("invalid");
-            }
-        }
-        
-
     function resetfunction(){
         document.getElementById("signupform").reset();
         //then
@@ -45,14 +33,11 @@
     });
 
     //Jquery to show the confirm password
-    const togglecPassword = document.querySelector('#togglecPassword');
-    const cpassword = document.querySelector('#conpass');
-
-    togglecPassword.addEventListener('click', function (e) {
+    function tooglecpwd() {
+        const cpassword = document.querySelector('#conpass'); 
         const ctype = cpassword.getAttribute('type') === 'password' ? 'text' : 'password';
         cpassword.setAttribute('type', ctype);
-        this.classList.toggle('fa-eye-slash');
-    });
+    }
 
     //for xi and xii hide-unhide    
     var getbranch = document.getElementById('for_xi_xii');
@@ -212,7 +197,7 @@
 
 
     function forcity(){
-        document.getElementById("city").value=document.getElementById("districtSel").value=document.getElementById("districtSel").value;
+        document.getElementById("city").value=document.getElementById("districtSel").value;
     }
 
     //email pop
@@ -255,96 +240,150 @@ window.onclick = function(event) {
     }
   }
 
-    //password validation
-    var myInput = document.getElementById("pass");
 
-    var letter = document.getElementById("letter");
-    var capital = document.getElementById("capital");
-    var number = document.getElementById("number");
-    var length = document.getElementById("length");
-    var schar = document.getElementById("schar");
+  var myInput = document.getElementById("pass");
+  var letter = document.getElementById("letter");
+  var capital = document.getElementById("capital");
+  var number = document.getElementById("number");
+  var length = document.getElementById("length");
+  var schar = document.getElementById("schar");
+  var message = document.getElementById("message");
 
-    // When the user clicks on the password field, show the message box
-    myInput.onfocus = function() {
-      document.getElementById("message").style.display = "block";
+  var passwdconfirm = document.getElementById("conpass");
+  var cerror = document.getElementById("cerror");
+  var cmessage = document.getElementById("cmessage");
+
+  //password validation
+  // When the user clicks on the password field, show the message box
+  myInput.onfocus = function() {
+      message.style.display = "block";
+  }
+
+  // When the user clicks outside of the password field, hide the message box
+  myInput.onblur = function() {
+      message.style.display = "none";
+  }
+
+  // When the user starts to type something inside the password field
+  myInput.onkeyup = function() {
+    // Validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(myInput.value.match(lowerCaseLetters)) {
+      letter.classList.remove("invalid");
+      letter.classList.add("valid");
+    } else {
+      letter.classList.remove("valid");
+      letter.classList.add("invalid");
+  }
+
+    // Validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(myInput.value.match(upperCaseLetters)) {
+      capital.classList.remove("invalid");
+      capital.classList.add("valid");
+    } else {
+      capital.classList.remove("valid");
+      capital.classList.add("invalid");
     }
 
-    // When the user clicks outside of the password field, hide the message box
-    myInput.onblur = function() {
-      document.getElementById("message").style.display = "none";
+    // Validate numbers
+    var numbers = /[0-9]/g;
+    if(myInput.value.match(numbers)) {
+      number.classList.remove("invalid");
+      number.classList.add("valid");
+    } else {
+      number.classList.remove("valid");
+      number.classList.add("invalid");
     }
 
-    // When the user starts to type something inside the password field
-    myInput.onkeyup = function() {
-      // Validate lowercase letters
-      var lowerCaseLetters = /[a-z]/g;
-      if(myInput.value.match(lowerCaseLetters)) {
-        letter.classList.remove("invalid");
-        letter.classList.add("valid");
+    // Validate length
+    if(myInput.value.length >= 8) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+
+    // Validate Special char
+    if(myInput.value.match(/[!@#$%^&*+`~'.=,*?\|\]\{\}\[\(\)\\\-<>/]/g)) {
+      schar.classList.remove("invalid");
+      schar.classList.add("valid");
+    } else {
+      schar.classList.remove("valid");
+      schar.classList.add("invalid");
+    }
+      if ((schar.classList.value=="valid") && (length.classList.value=="valid") && (number.classList.value=="valid") && (capital.classList.value=="valid") && (letter.classList.value=="valid")){
+          message.style.display = "none";
+          document.getElementById("conpasslabel").style.display="block";
+          document.getElementById("eyepass").style.display="block";
+          var visibleElement = `<div class="eye" id="eyepass"><i class="far fa-eye" id="togglecPassword" onclick="tooglecpwd()"></i></div>`;
+          $("#eyepass").empty();
+          $("#eyepass").append($(visibleElement));
+          passwdconfirm.style.display = "block";
       } else {
-        letter.classList.remove("valid");
-        letter.classList.add("invalid");
-    }
+          message.style.display = "block";
+          document.getElementById("conpasslabel").style.display="none";
+          document.getElementById("eyepass").style.display="none";
+          passwdconfirm.style.display = "none";
+      }
+  }
 
-      // Validate capital letters
-      var upperCaseLetters = /[A-Z]/g;
-      if(myInput.value.match(upperCaseLetters)) {
-        capital.classList.remove("invalid");
-        capital.classList.add("valid");
+  //css css css css css
+  document.getElementById("conpasslabel").style.display="none";
+  document.getElementById("eyepass").style.display="none";
+  passwdconfirm.style.display = "none";
+  document.getElementById("captachdiv").style.display="none";
+  document.getElementById("captchalabel").style.display="none";
+  document.getElementById("entered-captcha").style.display="none";
+  document.getElementById("captmessage").style.display="none";
+  document.getElementById("submitform").style.display="none";
+  
+  //confirm password validation
+  // When the user clicks on the password field, show the message box
+  passwdconfirm.onfocus = function() {
+      cmessage.style.display = "block";
+  }
+
+  // When the user clicks outside of the password field, hide the message box
+  passwdconfirm.onblur = function() {
+      cmessage.style.display = "none";
+  }
+
+  passwdconfirm.onkeyup = function() {
+      if (myInput.value==passwdconfirm.value){
+          cerror.classList.remove("invalid");
+          cerror.classList.add("valid");
       } else {
-        capital.classList.remove("valid");
-        capital.classList.add("invalid");
+          cerror.classList.remove("valid");
+          cerror.classList.add("invalid");
+    }
+      if (cerror.classList.value=="valid"){
+          cmessage.style.display = "none";
+          document.getElementById("captachdiv").style.display="flex";
+          document.getElementById("captchalabel").style.display="block";
+          document.getElementById("entered-captcha").style.display="block";
+          } else {
+          cmessage.style.display = "block";
+          document.getElementById("captachdiv").style.display="none";
+          document.getElementById("captchalabel").style.display="none";
+          document.getElementById("entered-captcha").style.display="none";
       }
+  }
 
-      // Validate numbers
-      var numbers = /[0-9]/g;
-      if(myInput.value.match(numbers)) {
-        number.classList.remove("invalid");
-        number.classList.add("valid");
+  enteredcaptcha.onkeyup = function() {
+      if (enteredcaptcha.value==gencaptcha.value){
+          capterror.classList.remove("invalid");
+          capterror.classList.add("valid");
       } else {
-        number.classList.remove("valid");
-        number.classList.add("invalid");
+          capterror.classList.remove("valid");
+          capterror.classList.add("invalid");
       }
-
-      // Validate length
-      if(myInput.value.length >= 8) {
-        length.classList.remove("invalid");
-        length.classList.add("valid");
-      } else {
-        length.classList.remove("valid");
-        length.classList.add("invalid");
-      }
-
-      // Validate Special char
-      if(myInput.value.match(/[!@#$%^&*+`~'.=,*?\|\]\{\}\[\(\)\\\-<>/]/g)) {
-        schar.classList.remove("invalid");
-        schar.classList.add("valid");
-      } else {
-        schar.classList.remove("valid");
-        schar.classList.add("invalid");
-      }
-    }
-
-    //confirm password validation
-    var passwdconfirm = document.getElementById("conpass");
-    var cerror = document.getElementById("cerror");
-
-    // When the user clicks on the password field, show the message box
-    passwdconfirm.onfocus = function() {
-      document.getElementById("cmessage").style.display = "block";
-    }
-
-    // When the user clicks outside of the password field, hide the message box
-    passwdconfirm.onblur = function() {
-      document.getElementById("cmessage").style.display = "none";
-    }
-
-    passwdconfirm.onkeyup = function() {
-        if (myInput.value==passwdconfirm.value){
-            cerror.classList.remove("invalid");
-            cerror.classList.add("valid");
-        } else {
-            cerror.classList.remove("valid");
-            cerror.classList.add("invalid");
-      }
-    }
+       if(capterror.classList.value=="valid"){
+          document.getElementById("captmessage").style.display="none";        
+          document.getElementById("submitform").style.display="block";
+       }else{
+          document.getElementById("captmessage").style.display="block";
+          document.getElementById("submitform").style.display="none";
+       }
+  }
