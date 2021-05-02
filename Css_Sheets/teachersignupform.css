@@ -140,6 +140,7 @@ padding-top: 5rem;
     text-align: center;
     border-radius: 6px;
     padding:0.4rem;
+   
   font-size: 0.8rem;
   font-family: 'Ubuntu', sans-serif;
     
@@ -158,7 +159,7 @@ padding-top: 5rem;
   font-size: 0.8rem;
   font-family: 'Ubuntu', sans-serif;
     
-   
+    
     margin-top: 0.1rem;
     z-index: 1;
     
@@ -170,12 +171,20 @@ padding-top: 5rem;
     text-align: center;
     border-radius: 6px;
     padding:0.4rem;
-  font-size: 0.8rem;
-  font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
     
-   
+    
     margin-top: 0.1rem;
     z-index: 1;
+    
+}
+
+.instructiontext{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(134, 130, 130);
     
   }
 
@@ -610,8 +619,7 @@ textarea:focus {
 }
 hr{
     margin-top: 1rem;
-    height: 1rem;
-    color: black;
+    color: rgb(124, 122, 122);
 }
 
 
@@ -631,7 +639,7 @@ hr{
  
 }
 .resverdmanaged{
-    
+    margin-top: 3rem;
    position: relative;
 display: block;
 padding:0.8rem;
@@ -925,17 +933,26 @@ font-family: 'Ubuntu', sans-serif;
 display: none;
 }
 
-.invalid {
-    color: red;
+
+ .invalid {
+   font-size: 0.8rem;
+   font-weight: bold;
+   font-family: 'Ubuntu', sans-serif;   
+    color:red
   }
 
 .valid {
     color:  green;
-  }
+    font-size: 0.8rem;
+   font-weight: bold;
+   font-family: 'Ubuntu', sans-serif;   
+}
 
 #message , #cmessage{
+    margin-top: 0.2rem;
+    font-family: 'Ubuntu', sans-serif;   
     display:none;
-    background: #85ffdb;
+    background: #b5b6b6;
     padding: 5px;
     border-radius: 2mm;
     width: 100%;

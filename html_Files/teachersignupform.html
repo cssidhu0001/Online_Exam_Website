@@ -54,7 +54,7 @@
 
                         <label for="Dob">Date of Birth <span>*</span></label>
                         <input type="date" name="dob" id="Dob" placeholder="Enter your D.O.B" autocomplete="off" />
-                        <!-- <p class="instruction">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p> -->
+                        <p class="instructiontext">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
                         <label for="male"> I am <span>*</span></label>
                         <div class="genderdiv">
                         
@@ -68,7 +68,7 @@
                     
                         <label > Passport Photo <span>*</span></label>
                         <input type="file" name="passportphoto" id="photo" accept=".png, .jpg, .jpeg" onchange="Uploadfile('photo','note1')"/>
-                        <p class="instruction" id="note1" autocomplete="off" >(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
+                        <p class="instructiontext" id="note1" autocomplete="off" >(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB) Uploaded photograph  should be latest (Not older than 2 months)</p>
                     </div>
                 </div>
 
@@ -96,14 +96,14 @@
 
                         <label for="City">City <span>*</span> </label>
                         <input type="text" id="city" placeholder="Your City" autocomplete="off"/>
-                        <p class="instruction">Kindly provide your city if you dont find the City in the Drop Down Menu.</p>
+                        <p class="instructiontext">Kindly provide your city if you dont find the City in the Drop Down Menu.</p>
                         
                         <label for="zipcode">Zip Code <span>*</span></label>
                         <input type="text"  accpect="Number"id="zipcode" placeholder="Enter your Zip code " required autocomplete="off"/>
 
                         <label for="address">Address<span>*</span></label>
                         <textarea name="Add" id="address" cols="30" rows="10" autocomplete="off" ></textarea>
-                        <p class="instruction">Kindly provide your full address in the address box.</p>
+                        <p class="instructiontext">Kindly provide your full address in the address box.</p>
                     </div>
                 </div>
                 <div class="Contact_Details">
@@ -111,14 +111,14 @@
                     <div class="residential_Detailscont">
                         <label for="Mobile">Mobile Number<span>*</span></label>
                         <input type="text" id="mobile" placeholder="Enter your  Mobile Number" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
-                        <p class="instruction">Kindly provide your Whatsapp number here & specify your country code with your contact number</p>
+                        <p class="instructiontext">Kindly provide your Whatsapp number here & specify your country code with your contact number</p>
                        <label for="altMobile">Alternate Number</label>
                         <input type="text" id="altmobile" placeholder="Enter your  Alternate  Number"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" autocomplete="off" >
-                        <p class="instruction">  Kindly specify your country code with your Alternate contact number</p>
+                        <p class="instructiontext">  Kindly specify your country code with your Alternate contact number</p>
                         <label for="email">E-mail<span>*</span></label>
                         <input type="email" id="usremail" placeholder="Enter your  Email Id"  class="email" autocomplete="off">
                         <span class="tooltiptext">Kindly specify that before verifying your  Email-Id<br>You have filled your Name, Contact and Email-ID correctly in the specified input Box.</span>
-                        <p class="instruction">Kindly verify your Email before proceeding futher in the form</p>
+                        <p class="instructiontext">Kindly verify your Email before proceeding futher in the form</p>
                         <input type="button" id="verifyemail" class="verifyemailbtn" onclick="emailverify()" value="Verify Email"  autocomplete="off">
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                         
                         <label for="schoolid"> School Id Card Photo <span>*</span></label>
                         <input type="file" name="schoolid" id="schoolid" accept=".png, .jpg, .jpeg" onchange="Uploadfile('schoolid','note2')"autocomplete="off"/>
-                        <p class="instruction" id="note2">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB)</p>
+                        <p class="instructiontext" id="note2">(Supported Format: .jpg, .jpeg, .png ; Max size: 3 MB)</p>
 
                         <label for="specailsubject">Specialization Subject<span>*</span></label>
                         <input type="text" id="specailsubject" placeholder="Your Specialization" autocomplete="off" required>
@@ -204,12 +204,13 @@
 
                             <!-- message-1 -->
                             <div id="message">
-                                <h6>Password must contain the following:</h6>
+                                <h5>Password must contain the following:</h5>
                                 <h6 id="letter" class="invalid">A <b>lowercase</b> letter</h6>
                                 <h6 id="capital" class="invalid">A <b>capital (uppercase)</b> letter</h6>
                                 <h6 id="number" class="invalid">A <b>number</b></h6>
                                 <h6 id="length" class="invalid">Minimum <b>8 characters</b></h6>
                                 <h6 id="schar" class="invalid">A <b>special character</b></h6>
+                                
                             </div> 
 
                             <label for="conpass">  Confirm Password<span>*</span></label>
@@ -220,13 +221,14 @@
 
                             <!-- message-2 -->
                             <div id="cmessage">
-                                <h6 id="cerror" class="invalid">confirm password must be same as <b>password</b></h6>
+                                <h6 id="cerror" class="invalid">Confirm password must be same as <b>Password</b></h6>
                             </div>
 
                         <div class="captachdiv">
                             <div>
                             <label>Captcha Value </label>
                             <input  class="captchainput" type="text" readonly id="generated-captcha"autocomplete="off"/>
+                   
                     </div>
                     <div>
                         <img src="../Icons/recaptchaicon.png"
@@ -235,13 +237,13 @@
                           onclick="generate()" 
                           id="gen"/>
                     </div>
-                    <p class="instruction">Captcha can be <br>regenerated from here. </p>
+                    <p class="instructiontext">Captcha can be <br>regenerated from here. </p>
                 </div>
             
                 <label>Enter Captcha value <span>*</span></label>
                   <input type="text" id="entered-captcha"  name="captchacode" placeholder="Enter the captcha..." title="Enter captcha here"  autocomplete="off" required/>
-                  <div id="captmessage">
-                    <h6 id="capterror" class="invalid">Kindly provide the captcha values same as in the <b>Captcha Image</b>, Ellse you will be considered as a BOT, and your from Registration
+                  <div id="captmessage" >
+                    <h6 id="capterror" class="invalid">Kindly provide the captcha values same as in the <b>Captcha Image</b>, Else you will be considered as a BOT, and your from Registration
                         will not be processed futher.</h6>
                     </div>
                    <div class="buttonsdiv">

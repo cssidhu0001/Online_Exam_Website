@@ -19,12 +19,14 @@
     enteredcaptcha.onkeyup = function() {
     if (enteredcaptcha.value==gencaptcha.value){
         capterror.classList.remove("invalid");
+        
         capterror.classList.add("valid");
         } else {
         capterror.classList.remove("valid");
         capterror.classList.add("invalid");
             }
         }
+        
 
     function resetfunction(){
         document.getElementById("signupform").reset();
