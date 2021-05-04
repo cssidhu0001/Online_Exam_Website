@@ -1,4 +1,5 @@
 /* Import statements of various fonts which are used in the website */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Fredoka+One&family=Syncopate:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
@@ -15,6 +16,8 @@
     box-sizing: border-box;
 }
 body{
+    justify-content: center;
+    align-items: center;
     background-color: rgb(243, 242, 242);
 }
 
@@ -104,6 +107,104 @@ body{
     background: #0fb1da;
     width: 0%;
   }
+
+/* Page for form instruction  to fill the form */
+
+.instructions_of_form{
+    display: flex;
+    flex-direction: column;
+   z-index: 1;
+    position: absolute;
+    width: 70%;
+    height: 300%;
+    background-color: #d6d6d6;
+    box-sizing: border-box;
+    margin-top: 11.5rem;
+    margin-left: 18rem;
+    -webkit-box-shadow: 0px 1px 12px 8px rgba(35,35,35,0.58); 
+box-shadow: 0px 1px 12px 8px rgba(35,35,35,0.58);
+}
+
+.headtextinpage{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-family: 'Sigmar One', cursive;
+    color: #2e2d2d;
+    
+}
+.headtextinpage1{
+    text-decoration: underline;
+    text-decoration-color: rgb(180, 179, 179);
+    text-underline-position: below;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2e2d2d;
+    
+}
+.maincontent{
+    margin:2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+.pagecontent{
+    font-family: 'Ubuntu', sans-serif;
+    padding:1rem;
+    color:black;
+    
+}
+
+.agreetermsandcondtions{
+    margin-left: 7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bold;
+}
+.agreetermsandcondtions input[type="checkbox"]{
+   height: 1.2rem;
+   width: 1.2rem;
+}
+.agreetermsandcondtions input[type="checkbox"]:hover{
+   height: 1.3rem;
+   width: 1.3rem;
+   transition: all 2ms ease;
+}
+.pagebuttons{
+    display: flex;
+    justify-content:center;
+margin-top: 1rem;
+}
+.pagebtn{
+    margin: 2.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(153, 152, 152);
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.pagebtn:hover{
+ 
+
+    border-radius: 1rem;
+    background-color: rgb(94, 94, 243);
+    border: 2px solid rgba(36, 36, 235, 0.877);
+    color: white;
+    font-size: 1.8rem;
+    width: 20.5rem;
+cursor: pointer;
+outline: none;
+   
+}
+
 
 section{
     justify-content: center;
