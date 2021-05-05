@@ -132,7 +132,7 @@ body{
     background-color: #d6d6d6;
     box-sizing: border-box;
     margin-top: 11.5rem;
-    margin-left: 12.8rem;
+    margin-left: 18rem;
     -webkit-box-shadow: 0px 1px 12px 8px rgba(35,35,35,0.58); 
     box-shadow: 0px 1px 12px 8px rgba(35,35,35,0.58);
 }
@@ -191,11 +191,8 @@ body{
 .pagebuttons{
     display: flex;
     justify-content:center;
-margin-top: 1rem;
-}
-
-#proceed{
     background-color: #d6d6d6;
+margin-top: 1rem;
 }
 
 .pagebtn{
@@ -208,18 +205,41 @@ margin-top: 1rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
+#proceed{
+    background-color: #d6d6d6;
+}
+#cancel{
+    background-color: #d6d6d6;
+}
+#home{
+    background-color: #d6d6d6;
+}
 
-.pagebtn:hover{
-    border-radius: 1rem;
-    background-color: rgb(94, 94, 243);
-    border: 2px solid rgba(36, 36, 235, 0.877);
-    color: white;
+#proceed:hover{
+
+    background-color: #585858;
+    color: #ffffff;
     font-size: 1.8rem;
-    width: 20.5rem;
-cursor: pointer;
-outline: none;
+    border:2px solid black;
+}
+#cancel:hover{
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #585858;
+    border:2px solid black;
+    
+}
+#home:hover{
+    border:2px solid black;
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #585858;
    
 }
+
+
+
+
 
 
 section{
@@ -230,8 +250,8 @@ padding-top: 5rem;
 
 
 
-.maincontainer{
-    display: flex;
+#maincontainer{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -798,11 +818,12 @@ hr{
 
 
 /* FOOTER */
-.footer{
+#footer{
   position: sticky;
     height: 43vh;
     width: 100%;
     background-color: rgb(128, 128, 128);
+    display: none;
  
 }
 .resverdmanaged{

@@ -8,21 +8,20 @@
       document.getElementById("myBar").style.width = scrolled + "%";
     }
 
-    function onmouse_over(){
-        document.getElementById("proceed").style.backgroundColor="rgb(94, 94, 243)";
-    }
+   
 
     function instrcheckBox(){
         if (document.getElementById("agreetermsandcon").checked == true){
-            document.getElementById("proceed").style.backgroundColor="white";
+            
         }
-        else
-            document.getElementById("proceed").style.backgroundColor="#d6d6d6";
+        
     }
 
     function proceed(){
         if (document.getElementById("agreetermsandcon").checked == true){
             document.getElementById("instructionForm").style.display="none";
+            document.getElementById("maincontainer").style.display="flex";
+            document.getElementById("footer").style.display="block";
         }
     }
 
