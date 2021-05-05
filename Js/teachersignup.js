@@ -1,15 +1,40 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
+    function onmouse_over(){
+        document.getElementById("proceed").style.backgroundColor="rgb(94, 94, 243)";
+    }
 
+    function instrcheckBox(){
+        if (document.getElementById("agreetermsandcon").checked == true){
+            document.getElementById("proceed").style.backgroundColor="white";
+        }
+        else
+            document.getElementById("proceed").style.backgroundColor="#d6d6d6";
+    }
 
+    function proceed(){
+        if (document.getElementById("agreetermsandcon").checked == true){
+            document.getElementById("instructionForm").style.display="none";
+        }
+    }
 
+    function cancelproceed(){
+        if (window.confirm("Do you really want to leave?")) {
+            window.location.href = "homepage.html";
+        }
+    }
+
+    function home(){
+        window.location.href = "homepage.html";
+    }
 
     //captcha
     let captcha;
