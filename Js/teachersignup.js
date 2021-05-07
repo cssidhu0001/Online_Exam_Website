@@ -92,7 +92,8 @@
         var username = document.getElementById("fname").value;
         var useremail = document.getElementById("usremail").value;
         var intro = document.getElementById("introduction");
-        if (username!="" && useremail!=""){
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (username!="" && re.test(String(useremail).toLowerCase())){
             displayemailverify.style.display="block";
             displayemailverify.style.display="flex";
             displayemailverify.style.paddingTop="95px";
@@ -105,10 +106,8 @@
             $("#introduction").append($(introstr));
             $("#verifyemailtext2").empty();
             $("#verifyemailtext2").append($(email));
-        } else {
-            //username required
-            console.log("log");
-        }  
+        } else 
+            alert("Please entered an user-name or a valid email address!");    //The pop up alert for an invalid email address
     }
 
     // Get the <span> element that cancel the email verification
