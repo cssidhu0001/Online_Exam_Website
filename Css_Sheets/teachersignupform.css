@@ -389,27 +389,30 @@ padding-top: 5rem;
     flex-direction: column;
 }
 
-#for_xi_xii{
+.for_xi_xii{
     box-sizing: border-box;
     display: flex;
     background-color: rgb(240, 238, 238);
     flex-direction: column;  
 }
 
-.personal_Detailscont label{
+.personal_Detailscont label,  .addClassHere label{
     font-weight:bold;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
     padding:2rem 0.3rem 0.3rem 0rem;
     color:rgb(88, 88, 88);
-    
-    
 }
-.personal_Detailscont label span {
+
+.personal_Detailscont label span ,.addClassHere label span{
     color:rgb(233, 22, 22);
-    
-    
 }
+
+.addClassHere{
+    display: flex;
+    flex-direction: column;
+}
+
 .personal_Detailscont input {
     padding:0.8rem;
     color:rgb(126, 126, 126);
@@ -702,21 +705,21 @@ textarea:focus {
     font-size: 1.1rem;
 
 }
-.subject_teach label{
+.Subject_teach label{
     padding: 0px;
     
 }
 
-.subject_teach1{
+.subjectteach{
     flex: 1;
    
 }
 
-.subject_teach1 label {
+.subjectteach label {
     flex: 1;  
 }
 
-.subcodes{
+.showsubj{
     justify-content: center;
     align-items: stretch;
     display: flex;
@@ -732,7 +735,7 @@ textarea:focus {
 
 
 
-.subcodes2  input {
+/* .subcodes2  input {
     padding:0.5rem;
     margin:0.5rem;
 
@@ -741,7 +744,9 @@ textarea:focus {
     border: 1px solid rgb(209, 208, 208);
     border-radius: 0.5rem;
     font-size: 1.2rem;
-}
+} */
+
+
 
 
 
@@ -1105,29 +1110,33 @@ font-family: 'Ubuntu', sans-serif;
     margin-top: -3.1rem;
 }
 
-
-#extrasubj{
+.extrasubj, .addclasses{
     display:flex;
     flex-direction: column;
     padding:1rem;
     padding-top:0rem;
     padding-bottom: 0rem;
 }
-#extrasubj label{
+
+.extrasubj label, .addclasses label{
     padding:0.5rem;
 }
 
-#showsubj, #showsubj_title{
+.addclasses {
+    padding:0rem ;
+    padding-top: 0.7rem;
+}
+
+.showsubj, .showsubj_title{
 display: none;
 }
 
-
- .invalid {
+.invalid {
    font-size: 0.8rem;
    font-weight: bold;
    font-family: 'Ubuntu', sans-serif;   
    color: rgb(223, 223, 223);  
-  }
+}
 
 .valid {
     display: none;
