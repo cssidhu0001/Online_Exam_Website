@@ -69,11 +69,11 @@
                 </ol>
             </div>
             <div class="agreetermsandcondtions">
-                <input type="checkbox" name="agreeterms" id="agreetermsandcon" onclick="instrcheckBox()" required>
+                <input type="checkbox" name="agreeterms" id="agreetermsandcon" required>
                 <label for="agreetermsandcon">I have read the instructions carefully & agree with the terms and conditons of the form.</label>
             </div>
             <div class="pagebuttons">
-                <input type="button" value="Proceed Registration" id="proceed" class="pagebtn" onclick="proceed()" onmouseover="onmouse_over()" onmouseout="instrcheckBox()">
+                <input type="button" value="Proceed Registration" id="proceed" class="pagebtn" onclick="proceed()">
                 <input type="button" value="Cancel Registration" id="cancel" class="pagebtn" onclick="cancelproceed()">
                 <input type="button" value="Home" id="home" class="pagebtn" onclick="home()">
             </div>
@@ -670,54 +670,39 @@
                                 <option value="IB">IB: International Baccalaureate</option>
                                 <option value="IGCSE">IGCSE: International General Certificate of Secondary Education (IGCSE) Cambridge University</option>
                                 <option value="State_Board">State Board: State Government Recognized Board.</option>
-                            
                         </select>
-                        <label for="classteach">Classes Teach<span>*</span></label>
-                        <select name="classesteach" id="classteach" onclick="forselect();forselectsubj();" class="countrydropdown"  autocomplete="off" required>
-                            <option value="Pre-KG">Pre-KG</option>
-                            <option value="KG">KG</option>
-                            <option value="UKG">UKG</option>
-                            <option value="I">I</option>
-                            <option value="II">II</option>
-                            <option value="III">III</option>
-                            <option value="IV">IV</option>
-                            <option value="V">V</option>
-                            <option value="VI">VI</option>
-                            <option value="VII">VII</option>
-                            <option value="VIII">VIII</option>
-                            <option value="IX">IX</option>
-                            <option value="X">X</option>
-                            <option value="XI">XI</option>
-                            <option value="XII">XII</option>
+                        <label for="classteach0">Classes Teach<span>*</span></label>
+                        <select name="classesteach0" id="classteach0"  onclick="forselect(0);forselectsubj(0);changeClass(0);"  class="countrydropdown"  autocomplete="off" required>
+                            <option value="Pre-KG">Pre-KG</option><option value="KG">KG</option><option value="UKG">UKG</option><option value="I">I</option>showsubj_title0<option value="II">II</option><option value="III">III</option><option value="IV">IV</option><option value="V">V</option><option value="VI">VI</option><option value="VII">VII</option><option value="VIII">VIII</option><option value="IX">IX</option><option value="X">X</option><option value="XI">XI</option><option value="XII">XII</option>
                         </select>
-
-                        <div id="for_xi_xii">
-                            <label for="streamhigher">Higher Classes Branch</label>
-                            <select name="streamhigher1"  class="countrydropdown" id="streamhigher" onclick="forselectsubj()" autocomplete="off">
-                                <option value="PCM">PCM</option>
-                                <option value="PCB">PCB</option>
-                                <option value="PCMB">PCMB</option>
-                                <option value="Commerce">Commerce</option>
-                                <option value="Humanities">Arts/Humanities</option>
+                        <div class="for_xi_xii" id="for_xi_xii0">
+                            <label for="streamhigher0">Higher Classes Branch</label>
+                            <select name="streamhigher0" id="streamhigher0" class="countrydropdown" onclick="forselectsubj(0);changeClass(0);" autocomplete="off">
+                                <option value="PCM">PCM</option><option value="PCB">PCB</option><option value="PCMB">PCMB</option><option value="Commerce">Commerce</option><option value="Humanities">Arts/Humanities</option>
                             </select>
                         </div>
-                    
-                        <label for="Subjectuteach" required >Subject you Teach<span>*</span></label>
-                        <div class="subject_teach">
-                            <div class="subject_teach1" id="teachsubj"></div>
+                        <label for="Subjectuteach0" required >Subject you Teach<span>*</span></label>
+                        <div class="Subject_teach" id="Subject_teach0">
+                            <div class="subjectteach" id="teachsubj0"></div>
                         </div>
-                        
-                        <div id="extrasubj">
-                            <label for="otherspecify">Not in list? Specify others subject?</label><br/>
-                            <input type="button" id="otherspecify" value="Click here to add it!" onclick="onclickadd()" autocomplete="off"/>
+                        <div class="extrasubj" id="extrasubj0">
+                            <label for="otherspecify0">Not in list? Specify others subject for class <span id='spanclassteachselected0'></span>?</label><br/>
+                            <input type="button" id="otherspecify0" value="Click here to add it!" onclick="onclickadd(0)" autocomplete="off"/>
                         </div>        
-                        
-                        <div class="subjectcodes">  </div>
-                        <label id="showsubj_title">Subject Code</label>
-                        <div class="subcodes" id="showsubj"></div>
+                        <label class="showsubj_title" id="showsubj_title0">Subject Code</label>
+                        <div class="showsubj" id="showsubj0"></div>                        
+                        <label class="showsubj_title" id="extrashowsubj_title0">Extra Subject Code</label>
+                        <div class="showsubj" id="extrashowsubj0"></div>
+                        <div class="addClassHere" id="addClassHere">
+                            <!-- Add extra class here -->
+                        </div>
+                        <div class="addclasses">
+                            <label for="otherclasses">Add one more class? if "yes" the click here!</label><br/>
+                            <input type="button" id="otherclasses" value="Click here to add it!" onclick="addClass()" autocomplete="off"/>
+                        </div>
                     </div>
                 </div>
-            
+        
                 <div class="submit_Details">
                     <div class="details_head">Submission </div>
                     <!-- <div class="residential_Detailscont"> -->
