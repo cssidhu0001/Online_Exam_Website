@@ -80,35 +80,36 @@
         </div>
     </div>
 
-    <!-- //Email Verification Dailog box -->
-    <div id="emailcenter">
-        <div id="emailverify" class="verifyemailid">
-            <div class="Verifyemailcontent">
-                <span class="close"></span>
-                <span id="emailhead"> Online Exam Portal</span>
-            </div>
-            <div class="maincontaineremail">
-                <div  class="insidecontaineremail">
-                    <span id="teacherreg"> Teacher Registration</span>
-                    <div id="introduction"></div>
-                    <p class="verifyemailtext1"> Verifiation Email sent</p>
-                    <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
-                    <span id="verifyemailtext2"></span>
-                    <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
-                    <input type="text" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
-                    <div class="emailverifybuttondiv">
-                        <input type="button" id="verifyemailadd" class="emailverifybtn" value="Verify"> </button>
-                        <input type="button" id="resendcode" class="emailverifybtn" value="Re-send"> </button>
-                        <input type="button" id="Cancelreg" class="emailverifybtn" onclick="cancelverification()" value="Cancel"></button>
-                    </div>       
-                </div>
-            </div>
-        </div>  
-    </div>
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
-      </div>  
-    </div>
+    </div>  
+</div>
+<!-- //Email Verification Dailog box -->
+<div id="emailcenter">
+    <div id="emailverify" class="verifyemailid">
+        <div class="Verifyemailcontent">
+            <span class="close"></span>
+            
+        </div>
+        <div class="maincontaineremail">
+            <span id="emailhead"> Online Exam Portal</span>
+            <div  class="insidecontaineremail">
+                <span id="teacherreg"> Teacher Registration</span>
+                <div id="introduction"></div>
+                <p class="verifyemailtext1"> Verifiation Email sent</p>
+                <p class="text1"> We sent a confirmation code on your provided Email address. Enter your confirmation code below.</p>
+                <span id="verifyemailtext2"></span>
+                <label for="emailcodeverify" class="verifyemailtext3">Confirmation Code:</label>
+                <input type="text" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="emailcode" id="emailcodeverify" placeholder="Verifcation Code here" required>
+                <div class="emailverifybuttondiv">
+                    <input type="button" id="verifyemailadd" class="emailverifybtn" value="Verify"> </button>
+                    <input type="button" id="resendcode" class="emailverifybtn" value="Re-send"> </button>
+                    <input type="button" id="Cancelreg" class="emailverifybtn" onclick="cancelverification()" value="Cancel"></button>
+                </div>       
+            </div>
+        </div>
+    </div>  
+</div>
     <section>
         <div id="maincontainer" >
             <div id="registrationtext"> Teacher Registration Form
@@ -181,7 +182,7 @@
                         <input type="text"  accpect="Number"id="zipcode" placeholder="Enter your Zip code " required autocomplete="off"/>
                         
                         <label for="address">Address<span>*</span></label>
-                        <textarea name="Add" id="address" cols="30" rows="10" autocomplete="off" ></textarea>
+                        <textarea name="Add" id="address" cols="30" rows="10" autocomplete="off"  placeholder="Provide your complete address here....."></textarea>
                         <p class="instructiontext">Kindly provide your full address in the address box.</p>
                     </div>
                 </div>
@@ -682,6 +683,10 @@
                             </select>
                         </div>
                         <label for="Subjectuteach0" required >Subject you Teach<span>*</span></label>
+                        <div class="subject_teach">
+
+                        
+
                         <div class="Subject_teach" id="Subject_teach0">
                             <div class="subjectteach" id="teachsubj0"></div>
                         </div>
@@ -694,14 +699,14 @@
                         <label class="showsubj_title" id="extrashowsubj_title0">Extra Subject Code</label>
                         <div class="showsubj" id="extrashowsubj0"></div>
                         <div class="addClassHere" id="addClassHere">
-                            <!-- Add extra class here -->
+                            <!-- Add extra class here -->   
                         </div>
                         <div class="addclasses">
                             <label for="otherclasses">Add one more class? if "yes" the click here!</label><br/>
                             <input type="button" id="otherclasses" value="Click here to add more classes!" onclick="addClass()" autocomplete="off"/>
                         </div>
-                    </div>
-                </div>
+                    </div></div></div>
+                
         
                 <div class="submit_Details">
                     <div class="details_head">Submission </div>
@@ -715,7 +720,7 @@
 
                             <!-- message-1 -->
                             <div id="message">
-                                <h6>Password must contain the following:</h6>
+                                <h6 id="passhead">Password must contain the following:</h6>
                                 <h6 id="letter" class="invalid">A <b>lowercase</b> letter</h6>
                                 <h6 id="capital" class="invalid">A <b>capital (uppercase)</b> letter</h6>
                                 <h6 id="number" class="invalid">A <b>number</b></h6>
@@ -816,7 +821,7 @@
             </div>
             <div>
                 <p class="resverdmanaged"> <i class="material-icons">&#174;</i> Online Exam Portal | Designed &
-                    Managed By: TheStartUp Designers
+                    Managed By: TheStartUp Designers<br> <br>  Bestviewed in Google Chorme Version 90.0.4430.93 & above </style>
                 </p>
             </div>
         </div>
