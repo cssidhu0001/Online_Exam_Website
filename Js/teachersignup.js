@@ -99,15 +99,15 @@
             displayemailverify.style.paddingTop="95px";
             displayemailverify.style.justifyContent="center";
             displayemailverify.style.alignItems="center";
-            var introstr = `<span style="text-align:center;font-family:ubuntu;font-size:1.2rem">Hi.. <span style="font-size:1.4rem;color:rgb(11, 105, 212);weight:bold">${username}</span> kindly verify your email address!!! </div>`;
-            var email=`<span style="padding-top: 0.2rem;margin-left: 2rem;font-size: 1rem;font-family: 'Antic Slab', serif;color:rgb(87, 85, 85);font-weight: bold;">Verification code sent on : ${useremail}</span>`;
+            var introstr = `<span style="text-align:center;font-family:ubuntu;font-size:1.5rem">Hi.. <span style="font-size:1.5rem;color:rgb(11, 105, 212);weight:bold">${username}</span> kindly verify your email address!!! </div>`;
+            var email=`<span style="padding-top: 0.2rem;margin-left: 2rem; letter-spacing: 2px ;font-size: 1.2rem;font-family: 'Antic Slab', serif;color:#000;font-weight: bold;">Verification code sent on : ${useremail}</span>`;
             intro.style.textAlign="center";
             $("#introduction").empty();
             $("#introduction").append($(introstr));
             $("#verifyemailtext2").empty();
             $("#verifyemailtext2").append($(email));
         } else 
-            alert("Please entered an user-name or a valid email address!");    //The pop up alert for an invalid email address
+            alert("Please Enter a valid First name and Email-Id\n  To proceed for the email verification!");    //The pop up alert for an invalid email address
     }
 
     // Get the <span> element that cancel the email verification
@@ -462,8 +462,8 @@
         extrasubj.style.flexDirection="column";
         extrasubj.style.padding="1rem";  
         addsubj = addsubj+`<label style="padding:0.5rem;"> Subject Name </label><div style="display:flex;flex-direction:row-reverse;">
-                <input type="button" value=" Remove " style="width:8rem;" onclick="removesubjfunc(${addClassCount},'extrasubject${addClassCount}');ifDisplayAdd(${addClassCount});">
-                <input type="button" value=" Add " style="width:4rem;" onclick="addsubjfunc(${addClassCount},'extrasubject${addClassCount}');ifDisplayAdd(${addClassCount});">
+                <input type="button" value=" Remove " style="width:15rem;" onclick="removesubjfunc(${addClassCount},'extrasubject${addClassCount}');ifDisplayAdd(${addClassCount});">
+                <input type="button" value=" Add " style="width:10rem;" onclick="addsubjfunc(${addClassCount},'extrasubject${addClassCount}');ifDisplayAdd(${addClassCount});">
                 <input type="text" id="extrasubject${addClassCount}" name="extrasubject${addClassCount}" placeholder=" Enter Subject Name " style="width:100%;"></div><br>`;
         $(`${"#extrasubj"+addClassCount}`).empty();
         $(`${"#extrasubj"+addClassCount}`).append($(addsubj));
