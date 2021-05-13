@@ -42,50 +42,57 @@
  <input type="button" value="Go to Hompage" class="signinbtn" id="signinbutton3">
 </div>
 <div class="studentsigninform">
-    <img  class="formimage" src="../Icons/s1.png" alt="Image not Found">  
-    <form>
-    <span id="spantext">Student Login</span> 
-    <label for="username">Username<span>*</span></label>
-    <input type="text" name="username" id="username" class="username" required autocomplete="off">
-    <label for="passwrd">Password<span>*</span></label>
-    <input type="password" name="passwrd" id="passwrd" class="passwrd" required autocomplete="off">
+    <img src="../Icons/s1.png" class="formimage"  alt="Image not Found">  
+    <span class="spantexthead"> Student  Login</span> 
+    <form class="mainform">
+    <label for="username" class="formlabel">Username<span>*</span></label>
+    <input type="text" name="username" id="username" class="username" required autocomplete="off"  placeholder="Username">
+    <label for="passwrd" class="formlabel">Password<span>*</span></label>
+    <span><input type="password" name="passwrd" id="passwrd" class="passwrd" required autocomplete="off" placeholder="Password">
+        <i class="far fa-eye" id="togglePassword"></i></span>
+    
     <div class="forgetandremeber">
         <input type="checkbox" name="rememberme" id="rememberme">
-        <label for="rememberme"> Remember me</label>
-        <a href="#">Forget Password ?</a>
+        <label for="rememberme"  class="remem"  > Remember me</label>
+        <a href="#" class="forgetpass">Forget Password ?</a>
     </div>
-    <input type="button" value="Admin" class="signinbtn" id="signinbutton3">
+    <input type="button" value="Login" class="signinbtn" id="signinbutton1">
+   
     </form>
 </div>
 <div class="teachersigninform">
-    <img src="../Icons/s4.png" class="formimage"  alt="Image not Found">  
-    <span id="spantext"> Teacher Login</span> 
-    <form>
-    <label for="username">Username<span>*</span></label>
-    <input type="text" name="username" id="username" class="username" required autocomplete="off">
-    <label for="passwrd">Password<span>*</span></label>
-    <input type="password" name="passwrd" id="passwrd" class="passwrd" required autocomplete="off">
-    <div class="forgetandremeber">
+    <img  src="../Icons/s4.png" class="formimage1"  alt="Image not Found">  
+    <span class="spantexthead"> Teacher Login</span> 
+    <form class="mainform">
+        <label for="username" class="formlabel">Username<span>*</span></label>
+        <input type="text" name="username" id="username" class="username" required autocomplete="off" placeholder="Username">
+        <label for="passwrd" class="formlabel">Password<span>*</span></label>
+   
+        <span><input type="password" name="passwrd" id="passwrd" class="passwrd" required autocomplete="off" placeholder="Password">
+        <i class="far fa-eye" id="togglePassword"></i></span>
+        <div class="forgetandremeber">
         <input type="checkbox" name="rememberme" id="rememberme">
-        <label for="rememberme"> Remember me</label>
-        <a href="#">Forget Password ?</a>
+        <label for="rememberme"  class="remem"> Remember me</label>
+        <a href="#" class="forgetpass">Forget Password ?</a>
     </div>
-    <input type="button" value="Login" class="signinbtn" id="signinbutton3">
-    <input type="button" value="Sign Up" class="signinbtn" id="signinbutton3">
-    </form>
+    <input type="button" value="Login" class="signinbtn" id="signinbutton2">  
+</form>
+<input type="button" value="Sign Up" class="signinbtn" id="signupbutton">
 </div>
 <div class="adminsigninform">
     <img  src="../Icons/s2.png" class="formimage"  alt="Image not Found">  
-    <span id="spantext"> Admin Login</span> 
-    <form>
-    <label for="username">Username<span>*</span></label>
-    <input type="text" name="username" id="username" class="username" required autocomplete="off">
-    <label for="passwrd">Password<span>*</span></label>
-    <input type="password" name="passwrd" id="passwrd" class="passwrd" required autocomplete="off">
+    <span class="spantexthead"> Admin Login</span> 
+    <form class="mainform">
+    <label for="username"  class="formlabel" >Username<span>*</span></label>
+    <input type="text" name="username" id="username" class="username" required autocomplete="off" placeholder="Username">
+    <label for="passwrd" class="formlabel" >Password<span>*</span></label>
+      
+    <span><input type="password" name="passwrd" id="passwrd" class="passwrd" required autocomplete="off" placeholder="Password">
+    <i class="far fa-eye" id="togglePassword"></i></span>
     <div class="forgetandremeber">
         <input type="checkbox" name="rememberme" id="rememberme">
-        <label for="rememberme"> Remember me</label>
-        <a href="#">Forget Password ?</a>
+        <label for="rememberme" class="remem"> Remember me</label>
+        <a href="#" class="forgetpass">Forget Password ?</a>
     </div>
     <input type="button" value="Login" class="signinbtn" id="signinbutton3">
     </form>
@@ -100,3 +107,6 @@
         
         </div>
     </section>
+    
+</body>
+</html>
