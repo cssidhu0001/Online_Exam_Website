@@ -160,9 +160,15 @@ box-shadow: -1px 2px 23px -7px rgba(11,107,255,0.43);
     padding: 1.2rem;
     cursor: pointer;
 }
+.signinbtn:focus{
+ outline:none;
+}
 
 .studentsigninform{
-    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+   align-items: center;
     margin-top: 20rem;
     margin-left: 25rem;
     height: 60rem;
@@ -173,11 +179,11 @@ box-shadow: -1px 2px 23px -7px rgba(11,107,255,0.43);
     box-shadow: -1px 2px 45px 6px rgba(90,90,90,0.60);
 }
 
-.formimage{
-    height: 30%;
-}
 .teachersigninform{
-    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+   align-items: center;
     margin-top: 20rem;
     margin-left: 25rem;
     height: 60rem;
@@ -187,8 +193,13 @@ box-shadow: -1px 2px 23px -7px rgba(11,107,255,0.43);
     -webkit-box-shadow: -1px 2px 45px 6px rgba(90,90,90,0.60); 
     box-shadow: -1px 2px 45px 6px rgba(90,90,90,0.60);
 }
+
+
 .adminsigninform{
-    justify-content: center;
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     margin-top: 20rem;
     margin-left: 25rem;
     height: 60rem;
@@ -198,3 +209,120 @@ box-shadow: -1px 2px 23px -7px rgba(11,107,255,0.43);
     -webkit-box-shadow: -1px 2px 45px 6px rgba(90,90,90,0.60); 
     box-shadow: -1px 2px 45px 6px rgba(90,90,90,0.60);
 }
+.formimage{
+    display: flex;
+    width: 50%;
+    height: 30%;
+   
+    align-items: center;
+}
+.formimage1{
+    display: flex;
+    width: 40%;
+    height: 20%;
+    margin-top: 1rem;
+    align-items: center;
+}
+.spantexthead{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(100, 100, 100);
+    text-shadow: -1px 2px 4px rgba(48,21,13,0.79);
+    padding-bottom: 1.5rem;
+}
+.spantexthead:hover{
+    color: rgb(65, 64, 64);
+}
+.mainform{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.formlabel{
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: bold;
+    color:rgb(145, 145, 145);
+padding: 0.1rem;
+padding-bottom: 0rem;
+margin-left: 2rem;
+
+}
+.formlabel span{
+    color: rgb(245, 35, 35);
+}
+
+.mainform input[type="text"], input[type="password"]{
+padding:1.5rem;
+width: 37rem;
+margin: 1rem;   
+margin-left: 1.9rem;
+margin-top: 0.3rem;
+margin-bottom: 2rem;
+border-radius: 0.8rem;
+border: 2px solid rgb(199, 198, 198);
+font-size: 1.8em;
+color:rgb(173, 173, 173);
+}
+.mainform input[type="text"]:focus, input[type="password"]:focus{
+outline: none;
+
+}
+.mainform input[type="text"]:hover, input[type="password"]:hover{
+border-radius: 1rem;
+border:6px solid rgb(13, 113, 228);
+}
+.mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+font-size: 1.4rem;
+color:rgb(207, 207, 207);
+letter-spacing: 1px;
+}
+.forgetandremeber{
+    display: flex;
+    margin-left: 3rem;
+}
+.remem{
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:rgb(117, 117, 117);
+    padding-left: 0.4rem;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.forgetandremeber  input[type="checkbox"]{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.forgetandremeber  input[type="checkbox"]:hover{
+    height: 1.7rem;
+    width: 1.7rem;
+   transition: 0.1ms all ease;
+
+}
+
+.forgetpass{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    flex: 1;
+    color:rgb(13, 113, 228);
+    padding-left: 10rem;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.forgetpass:hover{
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.far{
+    font-size: 2rem; 
+    background-color: transparent;
+    border: transparent;
+    border-radius:none;
+    color: rgb(100, 99, 99);
+margin-left: -6rem;
+    
+    }
