@@ -3787,7 +3787,7 @@ letter-spacing: 1px;
                     text-transform: none;
                     }
                     
-                    .buttonsdiv .btn:hover{
+                    .buttonsdiv .btn:hover{ 
                     border:4px solid    rgb(107, 106, 106);
                     font-size: 2.2rem;
                     }
