@@ -371,3 +371,19 @@ margin-left: -6rem;
       text-decoration: underline;
       font-size: 1.65rem;
     }
+    .mainheadofslideshow{
+        font-size: 2.3rem;
+        text-align: center;
+        font-weight: bold;
+        color:rgb(102, 102, 104);
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .textofslideshow{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        color:rgb(143, 142, 142);
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        letter-spacing: 1px;
+    }
