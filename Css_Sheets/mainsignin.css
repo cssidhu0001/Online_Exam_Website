@@ -118,7 +118,7 @@ body{
     display: flex;
     align-content: center;
     align-items: center;
-    width:80%;
+    width:90%;
     height: auto;
     margin-top: 10rem;
     margin-left: 25rem;
@@ -371,6 +371,10 @@ margin-left: -6rem;
       text-decoration: underline;
       font-size: 1.65rem;
     }
+    .resverdmanaged1{
+        display: none;
+    }
+    
     .mainheadofslideshow{
         font-size: 2.3rem;
         text-align: center;
@@ -387,3 +391,1894 @@ margin-left: -6rem;
         font-family: 'Ubuntu', sans-serif;
         letter-spacing: 1px;
     }
+
+
+
+    /* MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE */
+
+/* when the width of the screen is max 4000px mainly for the big screens  LED PRojectors and other */
+@media (max-width:4300px){
+
+.headertop{
+    height: 9rem; 
+}
+#head span img{
+    margin: 0.7rem;
+    padding:0.7rem;
+    height: 110px;
+    width: 110px;
+}
+#dashtext {
+    margin-top:  1.3rem;  
+    font-size: 5em;
+}
+.teacherDetail{
+    margin-right: 2.3rem;
+    margin-top: 0.3rem;  
+}
+.teacherDetail p img{
+    width: 70px;
+    height: 70px;
+}
+#connect{
+    margin-top: 2.2rem;
+    font-size:4em;
+}
+
+/*---------------------------------- HEADER END ----------------------------------*/
+
+
+#previous_button{  
+    padding-top: 11rem;
+   margin-left: 2rem;
+}
+.imagesslideshowdiv{
+    width:90%;
+    margin-top: 0rem;
+    margin-left: 50rem;
+}
+.mainheadofslideshow{
+    font-size: 2.3rem;
+}
+.textofslideshow{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.buttondiv{
+    margin-top: 4rem;
+    margin-left: 40rem;
+    height: 65rem;
+    width: 60rem;
+}
+.buttondiv img{
+    height: 37%;
+    margin-top: 3rem;
+}
+#spantext{
+    margin-top: -6rem;
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+#spantext img{
+    height: 80px;   
+    padding-left: 1rem; 
+}
+.signinbtn{
+    margin: 1.4rem;
+    padding:1.5rem;
+    font-size: 2.5em;
+    width: 650px;
+}
+.signinbtn:hover{
+    font-size: 2.6rem;
+    padding: 1.6rem;
+    cursor: pointer;
+}
+.studentsigninform{
+   margin-top: 4rem;
+   margin-left: 40rem;
+   height: 65rem;
+   width: 60rem;
+}
+.teachersigninform{ 
+   margin-top: 4rem;
+   margin-left: 40rem;
+   height: 65rem;
+   width: 60rem;
+}
+.adminsigninform{
+    margin-top: 4rem;
+    margin-left: 40rem;
+    height: 65rem;
+    width: 60rem;
+}
+.formimage{
+    width: 50%;
+    height: 35%;
+}
+.spantexthead{
+    margin-top: 1rem;
+    font-size: 4.3rem;
+    padding-bottom: 1.5rem;
+}
+.formlabel{
+    font-size: 2rem;    
+padding: 0.1rem;
+padding-bottom: 0rem;
+margin-left: 2rem;
+
+}
+.mainform input[type="text"], input[type="password"]{
+padding:1.8rem;
+width: 40rem;
+margin: 1rem;   
+margin-left: 1.9rem;
+margin-top: 0.3rem;
+margin-bottom: 2rem;
+font-size: 1.9em;
+}
+.mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+font-size: 1.5rem;
+}
+.remem{
+    font-size: 1.7rem;
+    padding-left: 0.4rem;
+}
+.forgetandremeber  input[type="checkbox"]{
+    margin-top: 0.1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.forgetandremeber  input[type="checkbox"]:hover{
+    height: 1.7rem;
+    width: 1.7rem;
+}
+.forgetpass{
+    font-size: 1.6rem;
+    padding-left: 7rem;
+}
+.forgetpass:hover{
+    font-size: 1.7rem;
+}
+.far{
+    font-size: 2.3rem; 
+    padding-left: -2rem;
+margin-left: -6rem;
+    }
+    footer{
+        margin-top: 6rem;
+        font-size: 2.5rem; 
+    }
+    footer a:hover  {
+      font-size: 2.6rem;
+    }
+}    
+
+   /* MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE */
+
+/* when the width of the screen is max 34500px mainly for the big screens  LED PRojectors and other */
+
+
+@media (max-width:3450px){
+    #dashtext {
+        margin-top:  2rem;  
+        font-size: 4.5em;
+    }
+    #connect{
+        margin-top: 2.5rem;
+        font-size:3.5em;
+    }
+    .imagesslideshowdiv{
+        margin-left: 40rem;
+    }
+     .buttondiv{
+        margin-left: 30rem;
+    }
+    .studentsigninform{
+        margin-left: 30rem;
+    }
+    .teachersigninform{
+        margin-left: 20rem;
+    }
+    .adminsigninform{
+        margin-left: 20rem;
+    }
+}
+@media (max-width:3000px){
+    #dashtext {
+        margin-top:  2rem;  
+        font-size: 4.2em;
+    }
+    #connect{
+        margin-top: 2.5rem;
+        font-size:3.2em;
+    }
+    .imagesslideshowdiv{
+        margin-left: 36rem;
+    }
+     .buttondiv{
+        margin-left: 15rem;
+    }
+    .studentsigninform{
+        margin-left: 15rem;
+    }
+    .teachersigninform{
+        margin-left: 15rem;
+    }
+    .adminsigninform{
+        margin-left: 15rem;
+    }
+}
+@media (max-width:2700px){
+    #dashtext {
+        margin-top:  2rem;  
+        font-size: 4em;
+    }
+    #connect{
+        margin-top: 2.9rem;
+        font-size:3em;
+    }
+    .imagesslideshowdiv{
+        margin-left: 26rem;
+    }
+     .buttondiv{
+        margin-left: 14rem;
+    }
+    .studentsigninform{
+        margin-left: 14rem;
+    }
+    .teachersigninform{
+        margin-left: 14rem;
+    }
+    .adminsigninform{
+        margin-left: 14rem;
+    }
+    footer{
+        margin-top: 6rem;
+        font-size: 2rem; 
+    }
+    footer a:hover  {
+      font-size: 2.1rem;
+    }
+   .resverdmanaged{
+       text-align: center;
+       margin-left:15rem;
+   }
+}
+@media (max-width:2500px){
+    #dashtext {
+        margin-top:  2.6rem;  
+        font-size: 3.6em;
+    }
+    #connect{
+        margin-top: 2.9rem;
+        font-size:2.7em;
+    }
+    .imagesslideshowdiv{
+        margin-left: 15rem;
+    }
+     .buttondiv{
+        margin-left: 14rem;
+    }
+    .studentsigninform{
+        margin-left: 14rem;
+    }
+    .teachersigninform{
+        margin-left: 14rem;
+    }
+    .adminsigninform{
+        margin-left: 14rem;
+    }
+   .resverdmanaged{
+       text-align: center;
+       margin-left:15rem;
+   }
+}
+@media (max-width:2210px){
+    .headertop{
+        height: 7rem; 
+    }
+    #head span img{
+        margin: 0.7rem;
+        padding:0.7rem;
+        height: 90px;
+        width: 90px;
+    }
+    #previous_button{  
+        padding-top: 9rem;
+       margin-left: 2rem;
+    }
+    #dashtext {
+        margin-top:  2rem;  
+        font-size: 3.3em;
+    }
+    #connect{
+        margin-top: 2.9rem;
+        font-size:2.4em;
+    }
+    .imagesslideshowdiv{
+        margin-left: 9rem;
+    }
+     .buttondiv{
+        margin-left: 9rem;
+    }
+    .studentsigninform{
+        margin-left: 9rem;
+    }
+    .teachersigninform{
+        margin-left: 9rem;
+    }
+    .adminsigninform{
+        margin-left: 9rem;
+    }
+    footer{
+        margin-top: 6rem;
+        font-size: 2.3rem; 
+    }
+    footer a:hover  {
+      font-size: 2.4rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 15rem;
+   }
+   
+}
+@media (max-width:1820px){
+    #dashtext {
+        margin-top:  2rem;  
+        font-size: 3em;
+    }
+    #connect{
+        margin-top: 2.9rem;
+        font-size:2em;
+    }
+    #previous_button{  
+        padding-top: 9rem;
+       margin-left: 2rem;
+    }
+    .imagesslideshowdiv{
+        margin-left: 5rem;
+    }
+     .buttondiv{
+        margin-left: 5rem;
+    }
+    .studentsigninform{
+        margin-left: 5rem;
+    }
+    .teachersigninform{
+        margin-left: 5rem;
+    }
+    .adminsigninform{
+        margin-left: 5rem;
+    }
+    footer{
+        margin-top: 6rem;
+        font-size: 2.3rem; 
+    }
+    footer a:hover  {
+      font-size: 2.4rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 14rem;
+   }
+   
+}
+@media (max-width:1700px){
+    #dashtext {
+        margin-top:  2rem;  
+        font-size: 3em;
+    }
+    #connect{
+        margin-top: 2.9rem;
+        font-size:2em;
+    }
+    #previous_button{  
+        padding-top: 9rem;
+       margin-left: 2rem;
+    }
+    .imagesslideshowdiv{
+        margin-left: 5rem;
+    }
+     .buttondiv{
+        margin-left: 5rem;
+    }
+    .studentsigninform{
+        margin-left: 5rem;
+    }
+    .teachersigninform{
+        margin-left: 5rem;
+    }
+    .adminsigninform{
+        margin-left: 5rem;
+    }
+  
+    footer{
+        margin-top: 6rem;
+        font-size: 1.5rem; 
+    }
+    footer a:hover  {
+      font-size: 1.6rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 40rem;}
+   
+   
+}
+@media (max-width:1500px){
+    .headertop{
+        height: 5rem; 
+    }
+    #head span img{
+        margin: 0.5rem;
+        margin-top: 0.2rem;
+        padding:0.5rem;
+        height: 80px;
+        width: 80px;
+    }
+    #previous_button{  
+        padding-top: 7rem;
+       margin-left: 2rem;
+    }
+  
+    #dashtext {
+        margin-top:  1.7rem;  
+        font-size: 2em;
+    }
+    #connect{
+        margin-top: 1.8rem;
+        font-size:1.5em;
+    }
+   
+    .imagesslideshowdiv{
+        display: none;
+    }
+     .buttondiv{
+        margin-left: 12rem;
+    }
+    .studentsigninform{
+        margin-left: 12rem;
+    }
+    .teachersigninform{
+        margin-left: 12rem;
+    }
+    .adminsigninform{
+        margin-left: 12rem;
+    }
+    footer{
+        margin-top: 6rem;
+        font-size: 2rem; 
+    }
+    footer a:hover  {
+      font-size: 2.1rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 0rem;}
+   
+   
+}
+@media (max-width:1350px){
+   
+  
+    #dashtext {
+        margin-top:  1.7rem;  
+        font-size: 1.8em;
+    }
+    #connect{
+        margin-top: 1.8rem;
+        font-size:1.2em;
+    }
+   
+    .imagesslideshowdiv{
+        display: none;
+    }
+     .buttondiv{
+        margin-left: 10rem;
+    }
+    .studentsigninform{
+        margin-left: 10rem;
+    }
+    .teachersigninform{
+        margin-left: 10rem;
+    }
+    .adminsigninform{
+        margin-left: 10rem;
+    }
+    footer{
+        margin-top: 6rem;
+        font-size: 2rem; 
+    }
+    footer a:hover  {
+      font-size: 2.1rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 0rem;}
+   
+}
+@media (max-width:1250px){
+    #dashtext {
+        margin-top:  0.7rem;  
+        font-size: 1.8em;
+    }
+    #connect{
+        margin-top: 1.8rem;
+        font-size:1.4em;
+    }
+   
+    .imagesslideshowdiv{
+        display: none;
+    }
+     .buttondiv{
+        margin-left: 7rem;
+    }
+    .studentsigninform{
+        margin-left: 7rem;
+    }
+    .teachersigninform{
+        margin-left: 7rem;
+    }
+    .adminsigninform{
+        margin-left: 7rem;
+    }
+    footer{
+     margin-left:20rem;
+     margin: 1rem;
+     margin-top: 6rem;
+     font-size: 1.6rem;
+ }
+ footer{
+    margin-top: 6rem;
+    font-size: 2rem; 
+}
+footer a:hover  {
+  font-size: 2.1rem;
+}
+.resverdmanaged{
+  display: none;
+}
+.resverdmanaged1{
+  display: inline-block;
+  margin-left: 0rem;}
+}
+@media (max-width:1150px){
+/* image in the dasbaord heading and coanting the logo of the website */
+.headertop{
+    height: 6rem; 
+}
+#head span img{
+    flex: 1;
+    margin: 0.3rem;
+    padding:0.5rem;
+    height: 80px;
+    filter: invert(90%);
+    width: 80px;
+}
+
+#dashtext {
+    flex: 1;
+    margin-top:0.5rem;
+    font-size: 2em;
+}
+
+
+#connect{
+    font-size:1.5em;
+    
+}
+
+/*---------------------------------- HEADER END ----------------------------------*/
+
+#previous_button{
+    padding-top:7rem;
+}
+.buttondiv{
+    margin-top: 2rem;
+    margin-left: 8rem;
+    height: 55rem;
+    width: 50rem;
+}
+
+.buttondiv img{
+    height: 30%;
+    margin-top: 3rem;
+
+}
+#spantext{
+    margin-top: -6rem;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+#spantext img{
+    height: 80px;   
+    padding-left: 1rem; 
+}
+
+.signinbtn{
+    margin: 1rem;
+    padding:0.8rem;
+    font-size: 2.1em;
+    width: 478px;
+}
+.signinbtn:hover{
+    font-size: 2.2rem;
+    padding: 1rem;
+ 
+}
+
+.studentsigninform{
+     margin-top: 2rem;
+    margin-left: 12rem;
+    height: 50rem;
+    width: 40rem;
+}
+
+.teachersigninform{
+    margin-top: 2rem;
+    margin-left: 12rem;
+    height: 50rem;
+    width: 40rem;
+}
+
+
+.adminsigninform{
+    margin-top: 2rem;
+    margin-left: 12rem;
+    height: 50rem;
+    width: 40rem;
+}
+.formimage{
+    display: flex;
+    width: 50%;
+    height: 30%;
+   
+    align-items: center;
+}
+.formimage1{
+    display: flex;
+    width: 40%;
+    height: 20%;
+    margin-top: 1rem;
+    align-items: center;
+}
+.spantexthead{
+    margin-top: 1rem;
+    font-size: 3rem;
+    padding-bottom: 1.2rem;
+}
+
+.formlabel{
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+.mainform input[type="text"], input[type="password"]{
+padding:1.2rem;
+width: 30rem;
+margin: 1rem;   
+margin-left:1rem;
+font-size: 1.5em;
+}
+
+
+.mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+font-size: 1.1rem;
+}
+.forgetandremeber{
+    display: flex;
+    margin-left: 2rem;
+}
+.remem{
+    flex: 1;
+    font-weight: bold;
+    font-size: 1rem;
+    color:rgb(117, 117, 117);
+    padding-left: 0.4rem;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.forgetandremeber  input[type="checkbox"]{
+    height: 1rem;
+    width: 1rem;
+}
+.forgetandremeber  input[type="checkbox"]:hover{
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.forgetpass{
+    font-size: 1rem;
+    padding-left: 4rem;
+ 
+}
+.forgetpass:hover{
+    font-size: 1.1rem;
+}
+
+.far{
+    display: inline;
+    font-size: 1.4rem; 
+   padding-left: 0rem;
+margin-left: -4rem;
+    
+    }
+    
+    footer{
+        margin-top: 6rem;
+        font-size: 1.7rem; 
+    }
+    footer a:hover  {
+      font-size: 1.9rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 0rem;}
+ 
+}
+
+
+@media (max-width:1000px){
+    /* image in the dasbaord heading and coanting the logo of the website */
+    .headertop{
+        height: 6rem; 
+    }
+    #head span img{
+        flex: 1;
+        margin: 0.3rem;
+        padding:0.5rem;
+        height: 80px;
+        filter: invert(90%);
+        width: 80px;
+    }
+    
+    #dashtext {
+        flex: 1;
+        margin-top:1rem;
+        font-size: 1.7em;
+    }
+    
+    
+    #connect{
+        margin-top: 2.2rem;
+        font-size:1.2em;
+        
+    }
+    
+    /*---------------------------------- HEADER END ----------------------------------*/
+    
+    #previous_button{
+        padding-top:7rem;
+    }
+    .buttondiv{
+        margin-top: 2rem;
+        margin-left: 9rem;
+        width: 40rem;
+        height: 55rem;
+    }
+    
+    .buttondiv img{
+        height: 30%;
+        margin-top: 3rem;
+    
+    }
+    #spantext{
+        margin-top: -6rem;
+        font-size: 3rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+    #spantext img{
+        height: 80px;   
+        padding-left: 1rem; 
+    }
+    
+    .signinbtn{
+        margin: 1rem;
+        padding:0.8rem;
+        font-size: 2.1em;
+        width: 478px;
+    }
+    .signinbtn:hover{
+        font-size: 2.2rem;
+        padding: 1rem;
+     
+    }
+    
+    .studentsigninform{
+         margin-top: 2rem;
+         margin-left: 5rem;
+         width: 40rem;
+        width: 40rem;
+    }
+    
+    .teachersigninform{
+        margin-top: 2rem;
+        margin-left: 9rem;
+        width: 40rem;
+        height: 50rem;
+        
+    }
+    
+    
+    .adminsigninform{
+        margin-top: 2rem;
+        margin-left: 9rem;
+        width: 40rem;
+        height: 50rem;
+    }
+   
+    footer{
+        margin-top: 6rem;
+        font-size: 1.5rem; 
+    }
+    footer a:hover  {
+      font-size: 1.6rem;
+    }
+   .resverdmanaged{
+      display: none;
+   }
+   .resverdmanaged1{
+      display: inline-block;
+      margin-left: 0rem;}
+    }
+
+
+
+    @media (max-width:900px){
+        /* image in the dasbaord heading and coanting the logo of the website */
+        .headertop{
+            height: 6rem; 
+        }
+        #head span img{
+            flex: 1;
+            margin: 0.3rem;
+            padding:0.5rem;
+            height: 80px;
+            filter: invert(90%);
+            width: 80px;
+        }
+        
+        #dashtext {
+            flex: 1;
+            margin-top:1rem;
+            font-size: 1.7em;
+        }
+        
+        
+        #connect{
+            margin-top: 2.2rem;
+            font-size:1.2em;
+            
+        }
+        
+        /*---------------------------------- HEADER END ----------------------------------*/
+        
+        #previous_button{
+            padding-top:7rem;
+        }
+        .buttondiv{
+            margin-top: 2rem;
+            margin-left: 7rem;
+            width: 40rem;
+            height: 55rem;
+        }
+        
+        .buttondiv img{
+            height: 30%;
+            margin-top: 3rem;
+        
+        }
+        #spantext{
+            margin-top: -6rem;
+            font-size: 3rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+        #spantext img{
+            height: 80px;   
+            padding-left: 1rem; 
+        }
+        
+        .signinbtn{
+            margin: 1rem;
+            padding:0.8rem;
+            font-size: 2.1em;
+            width: 478px;
+        }
+        .signinbtn:hover{
+            font-size: 2.2rem;
+            padding: 1rem;
+         
+        }
+        
+        .studentsigninform{
+             margin-top: 2rem;
+             margin-left: 7rem;
+             width: 40rem;
+            width: 40rem;
+        }
+        
+        .teachersigninform{
+            margin-top: 2rem;
+            margin-left: 7rem;
+            width: 40rem;
+            height: 50rem;
+            
+        }
+        
+        
+        .adminsigninform{
+            margin-top: 2rem;
+            margin-left: 7rem;
+            width: 40rem;
+            height: 50rem;
+        }
+       
+        footer{
+            margin-top: 6rem;
+            font-size: 1.3rem; 
+        }
+        footer a:hover  {
+          font-size: 1.4rem;
+        }
+       .resverdmanaged{
+          display: none;
+       }
+       .resverdmanaged1{
+          display: inline-block;
+          margin-left: 0rem;}   
+            
+        }
+
+
+        @media (max-width:800px){
+            /* image in the dasbaord heading and coanting the logo of the website */
+            .headertop{
+                height: 6rem; 
+            }
+            #head span img{
+                flex: 1;
+                margin: 0.3rem;
+                padding:0.5rem;
+                height: 80px;
+                filter: invert(90%);
+                width: 80px;
+            }
+            
+            #dashtext {
+                flex: 1;
+                margin-top:1.3rem;
+                font-size: 1.5em;
+            }
+            
+            
+            #connect{
+                margin-right: 0rem;
+                margin-top: 2.2rem;
+                font-size:1.1em;
+                
+            }
+            
+            /*---------------------------------- HEADER END ----------------------------------*/
+            
+            #previous_button{
+                padding-top:7rem;
+            }
+            .buttondiv{
+                margin-top: 2rem;
+                margin-left: 3rem;
+                width: 40rem;
+                height: 55rem;
+                border-radius: 2.5rem;
+            }
+            
+            .buttondiv img{
+                height: 30%;
+                margin-top: 3rem;
+            
+            }
+            #spantext{
+                margin-top: -6rem;
+                font-size: 3rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                padding-bottom: 1.5rem;
+            }
+            #spantext img{
+                height: 80px;   
+                padding-left: 1rem; 
+            }
+            
+            .signinbtn{
+                margin: 1rem;
+                padding:0.8rem;
+                font-size: 2.1em;
+                width: 478px;
+            }
+            .signinbtn:hover{
+                font-size: 2.2rem;
+                padding: 1rem;
+             
+            }
+            
+            .studentsigninform{
+                 margin-top: 2rem;
+                 margin-left: 3rem;
+                 width: 40rem;
+                width: 40rem;
+                border-radius: 2.5rem;
+            }
+            
+            .teachersigninform{
+                margin-top: 2rem;
+                margin-left: 3rem;
+                width: 40rem;
+                height: 50rem;
+                border-radius: 2.5rem;
+                
+            }
+            
+            
+            .adminsigninform{
+                margin-top: 2rem;
+                margin-left: 3rem;
+                width: 40rem;
+                height: 50rem;
+                border-radius: 2.5rem;
+            }
+           
+            footer{
+                margin-top: 6rem;
+                font-size: 1.1rem; 
+            }
+            footer a:hover  {
+              font-size: 1.2rem;
+            }
+           .resverdmanaged{
+              display: none;
+           }
+           .resverdmanaged1{
+              display: inline-block;
+              margin-left: 0rem;}   
+                
+            }
+
+
+
+            @media (max-width:700px){
+                /* image in the dasbaord heading and coanting the logo of the website */
+                .headertop{
+                    height: 6rem; 
+                }
+                #head span img{
+                    flex: 1;
+                    margin: 0.3rem;
+                    padding:0.5rem;
+                    height: 80px;
+                    filter: invert(90%);
+                    width: 80px;
+                }
+                
+                #dashtext {
+                    flex: 1;
+                    margin-top:1.2rem;
+                    font-size: 1.3em;
+                }
+                
+                
+                #connect{
+                    margin-right: -2rem;
+                    margin-top: 2.2rem;
+                    font-size:1.2em;
+                    
+                }
+                
+                /*---------------------------------- HEADER END ----------------------------------*/
+                
+                #previous_button{
+                    padding-top:7rem;
+                }
+                .buttondiv{
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+                    width: 32rem;
+                    height: 55rem;
+                    border-radius: 2.3rem;
+                }
+                
+                .buttondiv img{
+                    height: 30%;
+                    margin-top: 3rem;
+                
+                }
+                #spantext{
+                    margin-top: -6rem;
+                    font-size: 3rem;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    padding-bottom: 1.5rem;
+                }
+                #spantext img{
+                    height: 80px;   
+                    padding-left: 1rem; 
+                }
+                
+                .signinbtn{
+                    margin: 1rem;
+                    padding:0.8rem;
+                    font-size: 2.1em;
+                    width: 478px;
+                }
+                .signinbtn:hover{
+                    font-size: 2.2rem;
+                    padding: 1rem;
+                 
+                }
+                
+                .studentsigninform{
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+                    width: 32rem;
+                    height: 50rem;
+                    border-radius: 2.3rem;
+                }
+                
+                .teachersigninform{
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+                    width: 32rem;
+                    height: 50rem;
+                    border-radius: 2.3rem;
+                    
+                }
+                
+                
+                .adminsigninform{
+                    margin-top: 2rem;
+                    margin-left: 3rem;
+                    width: 32rem;
+                    height: 50rem;
+                    border-radius: 2.3rem;
+                }
+               
+                footer{
+                    margin-top: 6rem;
+                    font-size: 0.9rem; 
+                }
+                footer a:hover  {
+                  font-size: 1rem;
+                }
+               .resverdmanaged{
+                  display: none;
+               }
+               .resverdmanaged1{
+                  display: inline-block;
+                  margin-left: 0rem;}   
+                    
+                }
+    
+                @media (max-width:600px){
+                    /* image in the dasbaord heading and coanting the logo of the website */
+                    .headertop{
+                        height: 6rem; 
+                    }
+                    #head span img{
+                        flex: 1;
+                        margin: 0.3rem;
+                        padding:0.5rem;
+                        height: 80px;
+                        filter: invert(90%);
+                        width: 80px;
+                    }
+                    
+                    #dashtext {
+                        flex: 1;
+                        margin-top:0.8rem;
+                        font-size: 1.3em;
+                    }
+                    
+                    
+                    #connect{
+                        margin-right: 0rem;
+                        margin-top: 2.2rem;
+                        font-size:1.1em;
+                        
+                    }
+                    
+                    /*---------------------------------- HEADER END ----------------------------------*/
+                    
+                    #previous_button{
+                        margin-left: 1rem;
+                        padding-top:7rem;
+                    }
+                    .buttondiv{
+                        margin-top: 1rem;
+                        margin-left: 2rem;
+                        width: 28rem;
+                        height: 45rem;
+                        border-radius: 2rem;
+                    }
+                    
+                    .buttondiv img{
+                        height: 30%;
+                        padding-top: 3rem;
+                        margin-top: 3rem;
+                    
+                    }
+                    #spantext{
+                        margin-top: -6rem;
+                        font-size: 2rem;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                        padding-bottom: 1.5rem;
+                    }
+                    #spantext img{
+                        height: 80px;   
+                        padding-left: 1rem; 
+                    }
+                    
+                    .signinbtn{
+                        margin: 1rem;
+                        padding:0.7rem;
+                        font-size: 1.6em;
+                        width: 350px;
+                        
+                    }
+                    .signinbtn:hover{
+                        font-size: 1.7rem;
+                        padding: 1.8rem;
+                     
+                    }
+
+                    
+                    
+                    .studentsigninform{
+                        margin-top: 1rem;
+                        margin-left: 2rem;
+                        width: 28rem;
+                        height: 45rem;
+                        border-radius: 2rem;
+                    }
+                    
+                    .teachersigninform{
+                        margin-top: 1rem;
+                        margin-left: 2rem;
+                        width: 28rem;
+                        height: 45rem;
+                        border-radius: 2rem;
+                        
+                    }
+                    
+                    
+                    .adminsigninform{
+                        margin-top: 1   rem;
+                        margin-left: 2rem;
+                        width: 28rem;
+                        height: 45rem;
+                        border-radius: 2rem;
+                    }
+
+                    .formimage{
+                        width: 50%;
+                        height: 35%;
+                    }
+                    .spantexthead{
+                        margin-top: 1rem;
+                        font-size: 2.5rem;
+                        padding-bottom: 1.5rem;
+                    }
+                    .formlabel{
+                        font-size: 1.3rem;    
+                    padding: 0.1rem;
+                    padding-bottom: 0rem;
+                    margin-left: 0.9rem;
+                    
+                    }
+                    .mainform input[type="text"], input[type="password"]{
+                    padding:1rem;
+                    width: 25rem;
+                    margin: 1rem;   
+                    margin-left: 1rem;
+                    margin-top: 0.3rem;
+                    margin-bottom: 1rem;
+                    font-size: 1.2em;
+                    }
+                    .mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+                    font-size: 1rem;
+                    }
+                    .mainform input[type="button"]{
+                        margin-left: 2.5rem;
+                    }
+                    .remem{
+                        font-size: 1rem;
+                        padding-left: 0.4rem;
+                    }
+                    .forgetandremeber  input[type="checkbox"]{
+                        margin-top: 0.1rem;
+                        height: 1rem;
+                        width: 1rem;
+                    }
+                    .forgetandremeber  input[type="checkbox"]:hover{
+                        height: 1.1rem;
+                        width: 1.1rem;
+                    }
+                    .forgetpass{
+                        font-size: 1rem;
+                        padding-left: 2rem;
+                    }
+                    .forgetpass:hover{
+                        font-size: 1.1rem;
+                    }
+                    .far{
+                        font-size: 1.5rem; 
+                        margin-top: 4rem;
+                        padding-left: -2rem;
+                    margin-left: -4rem;
+                        }
+                   
+                    footer{
+                        margin-top: 6rem;
+                        font-size: 0.7rem; 
+                    }
+                    footer a:hover  {
+                      font-size: 0.8rem;
+                    }
+                   .resverdmanaged{
+                      display: none;
+                   }
+                   .resverdmanaged1{
+                      display: inline-block;
+                      margin-left: 0rem;}   
+                        
+                    }
+
+
+
+                    @media (max-width:500px){
+                        /* image in the dasbaord heading and coanting the logo of the website */
+                        .headertop{
+                            height: 6rem; 
+                        }
+                        #head span img{
+                            flex: 1;
+                            margin: 0.3rem;
+                            padding:0.5rem;
+                            height: 80px;
+                            filter: invert(90%);
+                            width: 80px;
+                        }
+                        
+                        #dashtext {
+                            flex: 1;
+                            margin-top:0.8rem;
+                            font-size: 1.2em;
+                        }
+                        
+                        
+                        #connect{
+                            margin-right: -1.8rem;
+                            margin-top: 2.2rem;
+                            font-size:0.8em;
+                            
+                        }
+                        
+                        /*---------------------------------- HEADER END ----------------------------------*/
+                        
+                        #previous_button{
+                            margin-left: 1rem;
+                            padding-top:7rem;
+                        }
+                        .buttondiv{
+                            border-radius: 1.5rem;
+                            margin-top: 1rem;
+                            margin-left: 1rem;
+                            width: 23rem;
+                            height: 40rem;
+                        }
+                        .buttondiv img{
+                            height: 30%;
+                            padding-top: 3rem;
+                            margin-top: 2rem;
+                        
+                        }
+                        #spantext{
+                            margin-top: -6rem;
+                            font-size: 2rem;
+                            font-family: 'Ubuntu', sans-serif;
+                            font-weight: bold;
+                            text-align: center;
+                            padding-bottom: 1.5rem;
+                        }
+                        #spantext img{
+                            height: 80px;   
+                            padding-left: 1rem; 
+                        }
+                        
+                        .signinbtn{
+                            margin: 1rem;
+                            padding:0.7rem;
+                            font-size: 1.6em;
+                            width: 300px;
+                            
+                        }
+                        .signinbtn:hover{
+                            font-size: 1.7rem;
+                            padding: 1.8rem;
+                         
+                        }
+    
+                        
+                        
+                        .studentsigninform{
+                            border-radius: 1.5rem;
+                            margin-top: 1rem;
+                            margin-left: 1rem;
+                            width: 23rem;
+                            height: 40rem;
+                        }
+                        
+                        .teachersigninform{
+                            border-radius: 1.5rem;
+                            margin-top: 1rem;
+                            margin-left: 1rem;
+                            width: 23rem;
+                            height: 40rem;
+                            
+                        }
+                        
+                        
+                        .adminsigninform{
+                            border-radius: 1.5rem;
+                            margin-top: 1rem;
+                            margin-left: 1rem;
+                            width: 23rem;
+                            height: 40rem;
+                        }
+    
+                        .formimage{
+                            width: 50%;
+                            height: 35%;
+                        }
+                        .spantexthead{
+                            margin-top: 1rem;
+                            font-size: 2.2rem;
+                            padding-bottom: 1.5rem;
+                        }
+                        .formlabel{
+                            font-size: 1.1rem;    
+                        padding: 0.1rem;
+                        padding-bottom: 0rem;
+                        margin-left: 1.8rem;
+                        
+                        }
+                        .mainform input[type="text"], input[type="password"]{
+                        padding:1rem;
+                        width: 20rem;
+                        margin: 1rem;   
+                        margin-left: 1.8rem;
+                        margin-top: 0.3rem;
+                        margin-bottom: 0.8rem;
+                        font-size: 1em;
+                        }
+                        .mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+                        font-size: 1rem;
+                        }
+                        .mainform input[type="button"]{
+                            margin-left: 2.2rem;
+                        }
+                        .remem{
+                            font-size: 0.8rem;
+                            padding-left: 0.4rem;
+                        }
+                        .forgetandremeber  input[type="checkbox"]{
+                            margin-top: 0.1rem;
+                            height: 0.8rem;
+                            width: 0.8rem;
+                        }
+                        .forgetandremeber  input[type="checkbox"]:hover{
+                            height: 0.9rem;
+                            width: 0.9rem;
+                        }
+                        .forgetpass{
+                            font-size: 0.8rem;
+                            padding-left: 2rem;
+                        }
+                        .forgetpass:hover{
+                            font-size:0.9rem;
+                        }
+                        .far{
+                            font-size: 1rem; 
+                            margin-top: 4rem;
+                            padding-left: -2rem;
+                        margin-left: -4rem;
+                            }
+                       
+                        footer{
+                            margin-top: 6rem;
+                            font-size: 0.5rem; 
+                        }
+                        footer a:hover  {
+                          font-size: 0.6rem;
+                        }
+                       .resverdmanaged{
+                          display: none;
+                       }
+                       .resverdmanaged1{
+                          display: inline-block;
+                          margin-left: 0rem;}   
+                            
+                        }
+
+
+                        @media (max-width:400px){
+                            /* image in the dasbaord heading and coanting the logo of the website */
+                            .headertop{
+                                height: 6rem; 
+                            }
+                            #head span img{
+                                flex: 1;
+                                margin: 0.3rem;
+                                padding:0.5rem;
+                                height: 80px;
+                                filter: invert(90%);
+                                width: 80px;
+                            }
+                            
+                            #dashtext {
+                                flex: 1;
+                                margin-top:0.8rem;
+                                font-size: 1.2em;
+                            }
+                            
+                            
+                            #connect{
+                                margin-right: -1.8rem;
+                                margin-top: 2.2rem;
+                                font-size:0.8em;
+                                
+                            }
+                            
+                            /*---------------------------------- HEADER END ----------------------------------*/
+                            
+                            #previous_button{
+                                font-size: 20px;
+                                margin-left: 1rem;
+                                padding-top:7rem;
+                            }
+                            .buttondiv{
+                                border-radius: 1.5rem;
+                                margin-top: 1rem;
+                                margin-left: 2rem;
+                                width: 18rem;
+                                height: 35rem;
+                            }
+                            .buttondiv img{
+                                height: 30%;
+                                padding-top: 3rem;
+                                margin-top: 2rem;
+                            
+                            }
+                            #spantext{
+                                margin-top: -6rem;
+                                font-size: 1.6rem;
+                                font-family: 'Ubuntu', sans-serif;
+                                font-weight: bold;
+                                text-align: center;
+                                padding-bottom: 1.5rem;
+                            }
+                            #spantext img{
+                                height: 80px;   
+                                padding-left: 0.5rem; 
+                            }
+                            
+                            .signinbtn{
+                                margin: 1rem;
+                                padding:0.7rem;
+                                font-size: 1.2em;
+                                width: 250px;
+                                
+                            }
+                            .signinbtn:hover{
+                                font-size: 1.3rem;
+                                padding: 1.8rem;
+                             
+                            }
+        
+                            
+                            
+                            .studentsigninform{
+                                border-radius: 1.5rem;
+                                margin-top: 1rem;
+                                margin-left: 2rem;
+                                width: 18rem;
+                                height: 30rem;
+                            }
+                            
+                            .teachersigninform{
+                                border-radius: 1.5rem;
+                                margin-top: 1rem;
+                                margin-left: 2rem;
+                                width: 18rem;
+                                height: 35rem;
+                                
+                            }
+                            
+                            
+                            .adminsigninform{
+                                border-radius: 1.5rem;
+                                margin-top: 1rem;
+                                margin-left: 2rem;
+                                width: 18rem;
+                                height: 30rem;  
+                            }
+        
+                            .formimage{
+                                width: 50%;
+                                height: 35%;
+                            }
+                            .spantexthead{
+                                margin-top: 1rem;
+                                font-size: 2rem;
+                                padding-bottom: 1.5rem;
+                            }
+                            .formlabel{
+                                font-size: 0.9rem;    
+                            padding: 0.1rem;
+                            padding-bottom: 0rem;
+                            margin-left: 1.5rem;
+                            
+                            }
+                            .mainform input[type="text"], input[type="password"]{
+                            padding:0.9rem;
+                            width: 16rem;
+                            margin: 1rem;   
+                            margin-left: 1.4rem;
+                            margin-top: 0.3rem;
+                            margin-bottom: 0.5rem;
+                            font-size: 0.9em;
+                            }
+                            .mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+                            font-size: 0.8rem;
+                            }
+                            .mainform input[type="button"]{
+                                margin-left: 1.5rem;
+                            }
+                            .remem{
+                                font-size: 0.7rem;
+                                padding-left: 0.4rem;
+                            }
+                            .forgetandremeber  input[type="checkbox"]{
+                                padding-left: 1rem;
+                                margin-top: 0.1rem;
+                                height: 0.7rem;
+                                width: 0.7rem;
+                            }
+                           
+                            .forgetandremeber  input[type="checkbox"]:hover{
+                                height: 0.8rem;
+                                width: 0.8rem;
+                            }
+                            .forgetpass{
+                                font-size: 0.7rem;
+                                padding-left: 0.5rem;
+                            }
+                            .forgetpass:hover{
+                                font-size:0.8rem;
+                            }
+                            footer{
+                                margin-top: 6rem;
+                                font-size: 0.5rem; 
+                            }
+                            footer a:hover  {
+                              font-size: 0.6rem;
+                            }
+                           .resverdmanaged{
+                              display: none;
+                           }
+                           .resverdmanaged1{
+                              display: inline-block;
+                              margin-left: 0rem;}   
+                                
+                            }
+
+
+
+                            @media (max-width:350px){
+                                /* image in the dasbaord heading and coanting the logo of the website */
+                                .headertop{
+                                    height: 6rem; 
+                                }
+                                #head span img{
+                                    flex: 1;
+                                    margin: 0.3rem;
+                                    padding:0.5rem;
+                                    height: 80px;
+                                    filter: invert(90%);
+                                    width: 80px;
+                                }
+                                
+                                #dashtext {
+                                    flex: 1;
+                                    margin-top:0.8rem;
+                                    font-size: 1.2em;
+                                }
+                                
+                                
+                                #connect{
+                                    margin-right: -1.8rem;
+                                    margin-top: 2.2rem;
+                                    font-size:0.8em;
+                                    
+                                }
+                                
+                                /*---------------------------------- HEADER END ----------------------------------*/
+                                
+                                #previous_button{
+                                    font-size: 20px;
+                                    margin-left: 1rem;
+                                    padding-top:7rem;
+                                }
+                                .buttondiv{
+                                    border-radius: 1.5rem;
+                                    margin-top: 1rem;
+                                    margin-left: 0.5rem;
+                                    width: 18rem;
+                                    height: 35rem;
+                                }
+                                .buttondiv img{
+                                    height: 30%;
+                                    padding-top: 3rem;
+                                    margin-top: 2rem;
+                                
+                                }
+                                #spantext{
+                                    margin-top: -6rem;
+                                    font-size: 1.6rem;
+                                    font-family: 'Ubuntu', sans-serif;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    padding-bottom: 1.5rem;
+                                }
+                                #spantext img{
+                                    height: 80px;   
+                                    padding-left: 0.5rem; 
+                                }
+                                
+                                .signinbtn{
+                                    margin: 1rem;
+                                    padding:0.7rem;
+                                    font-size: 1.2em;
+                                    width: 250px;
+                                    
+                                }
+                                .signinbtn:hover{
+                                    font-size: 1.3rem;
+                                    padding: 1.8rem;
+                                 
+                                }
+            
+                                
+                                
+                                .studentsigninform{
+                                    border-radius: 1.5rem;
+                                    margin-top: 1rem;
+                                    margin-left: 2rem;
+                                    width: 18rem;
+                                    height: 30rem;
+                                }
+                                
+                                .teachersigninform{
+                                    border-radius: 1.5rem;
+                                    margin-top: 1rem;
+                                    margin-left: 2rem;
+                                    width: 18rem;
+                                    height: 35rem;
+                                    
+                                }
+                                
+                                
+                                .adminsigninform{
+                                    border-radius: 1.5rem;
+                                    margin-top: 1rem;
+                                    margin-left: 2rem;
+                                    width: 18rem;
+                                    height: 30rem;  
+                                }
+            
+                                .formimage{
+                                    width: 50%;
+                                    height: 35%;
+                                }
+                                .spantexthead{
+                                    margin-top: 1rem;
+                                    font-size: 2rem;
+                                    padding-bottom: 1.5rem;
+                                }
+                                .formlabel{
+                                    font-size: 0.9rem;    
+                                padding: 0.1rem;
+                                padding-bottom: 0rem;
+                                margin-left: 1.5rem;
+                                
+                                }
+                                .mainform input[type="text"], input[type="password"]{
+                                padding:0.9rem;
+                                width: 16rem;
+                                margin: 1rem;   
+                                margin-left: 1.4rem;
+                                margin-top: 0.3rem;
+                                margin-bottom: 0.5rem;
+                                font-size: 0.9em;
+                                }
+                                .mainform input[type="text"]::placeholder, input[type="password"]::placeholder{
+                                font-size: 0.8rem;
+                                }
+                                .mainform input[type="button"]{
+                                    margin-left: 1.5rem;
+                                }
+                                .remem{
+                                    font-size: 0.7rem;
+                                    padding-left: 0.4rem;
+                                }
+                                .forgetandremeber  input[type="checkbox"]{
+                                    padding-left: 1rem;
+                                    margin-top: 0.1rem;
+                                    height: 0.7rem;
+                                    width: 0.7rem;
+                                }
+                               
+                                .forgetandremeber  input[type="checkbox"]:hover{
+                                    height: 0.8rem;
+                                    width: 0.8rem;
+                                }
+                                .forgetpass{
+                                    font-size: 0.7rem;
+                                    padding-left: 0.5rem;
+                                }
+                                .forgetpass:hover{
+                                    font-size:0.8rem;
+                                }
+                                footer{
+                                    margin-top: 6rem;
+                                    font-size: 0.4rem; 
+                                }
+                                footer a:hover  {
+                                  font-size: 0.5rem;
+                                }
+                               .resverdmanaged{
+                                  display: none;
+                               }
+                               .resverdmanaged1{
+                                  display: inline-block;
+                                  margin-left: 0rem;}   
+                                    
+                                }
